@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: A Marathon in Three Parts, Epilogue
 ---
@@ -55,4 +55,6 @@ but I’ll do another Fall marathon.  I’m disappointed in my finish, but I’m
 3:53:28 PM me: Well! I believe I just got schooled.  
 
 Footnote – my favorite motivational sign, which I saw at multiple points was:
-> Some day, you won’t be able to finish a marathon; today is not that day.
+
+> Some day, you won’t be able to finish a marathon  
+today is not that day.
