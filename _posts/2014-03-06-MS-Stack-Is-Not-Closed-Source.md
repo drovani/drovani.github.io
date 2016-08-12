@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Just Because It's On the Microsoft Stack Doesn't Mean It's Closed Source
 ---

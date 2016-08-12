@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: The Ugliest Week in Chicago
 ---

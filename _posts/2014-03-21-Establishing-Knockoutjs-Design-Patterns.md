@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Establishing KnockoutJs Design Patterns
 ---
