@@ -73,7 +73,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems: ["jekyll-sitemap", "jekyll-feed", "jekyll-paginate", "jekyll-gist"]
+gems: ["jekyll-sitemap", "jekyll-feed"]
 
 # Exclude these files from your production _site
 exclude:
