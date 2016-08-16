@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Que Sera, Sera: The Value of Content
+title: "Que Sera, Sera: The Value of Content"
 ---
 
 > Content is King  
