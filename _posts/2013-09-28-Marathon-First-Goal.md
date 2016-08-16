@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: A Marathon in Three Parts, The First Goal
 ---

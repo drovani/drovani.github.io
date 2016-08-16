@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: April 2014 Arizona Trip
 ---

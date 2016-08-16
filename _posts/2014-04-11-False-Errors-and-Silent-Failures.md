@@ -1,4 +1,4 @@
----
+Ôªø---
 layout: post
 title: False Errors Are Better Than Silent Failures
 ---
@@ -16,6 +16,6 @@ I ran into an issue this week where users were saying that an action they were a
 
 From the time the issue was first report to me to the time it was fixed was approximately four minutes. No one in the organization really gave it a second thought, and merrily they went about their day. I, however, was thoroughly distraught. How did this pass through automated tests, manual testing, and user testing, and find its way into the production environment?
 
-Today, I finally rearranged the entire testing suite, streamlining both the ability to add a new test and to determine code coverage. In reporting back to my boss about what I did this week (ìre-factored the testing proceduresî), he was thoroughly confused why I spent more than twenty hours on something that was fixed in four minutes. Even the explanation of ìso it wonít happen againî only slightly satisfied his question. However, as soon as I took the deep breath to fully explain why I did what I did and how it will help, he just cut me off say ìëit wonít happen againí is fineî and he moved onto other things. It is really comforting knowing my boss has this level of trust. That he knows that whatever I have decided to spend my time on is almost assuredly results in the best service to our organization.
+Today, I finally rearranged the entire testing suite, streamlining both the ability to add a new test and to determine code coverage. In reporting back to my boss about what I did this week (‚Äúre-factored the testing procedures‚Äù), he was thoroughly confused why I spent more than twenty hours on something that was fixed in four minutes. Even the explanation of ‚Äúso it won‚Äôt happen again‚Äù only slightly satisfied his question. However, as soon as I took the deep breath to fully explain why I did what I did and how it will help, he just cut me off say ‚Äú‚Äòit won‚Äôt happen again‚Äô is fine‚Äù and he moved onto other things. It is really comforting knowing my boss has this level of trust. That he knows that whatever I have decided to spend my time on is almost assuredly results in the best service to our organization.
 
 Or maybe he has no trust in me, but I am reading it as a message of success.

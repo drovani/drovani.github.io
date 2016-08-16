@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Que Sera, Sera: The Value of Content"
 ---
