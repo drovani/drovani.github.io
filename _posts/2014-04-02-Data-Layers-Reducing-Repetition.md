@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Data Layers, and Finding Ways to Reduce Repetition
 ---

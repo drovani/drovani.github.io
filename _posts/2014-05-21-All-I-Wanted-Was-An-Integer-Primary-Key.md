@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: All I Wanted Was an Integer Primary Key
 ---

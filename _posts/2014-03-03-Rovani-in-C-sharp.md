@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: Rovani in C♯
+title: Rovani in C?
 ---
 
 I do not have much to write about.
@@ -15,7 +15,7 @@ Perhaps they are words many others think.
 
 What matters to me is that they are words that I think. I need some place to collect them; some place to go and see what I thought was intriguing enough to commit to some medium more lasting than neurons. These writings may range across the gamut of technology, video games, board games, art history, ramblings on the climate of micro economies in eastern European countries, or the migratory patterns of the western tanager.
 
-Primarily, though, my thoughts focus on what I am actively doing – so obvious, I am unsure of why I felt the need to write that fact.
+Primarily, though, my thoughts focus on what I am actively doing ? so obvious, I am unsure of why I felt the need to write that fact.
 
 I need to write, because I need to work on my articulation and artistic creativity. I need get better at putting my thoughts, ideas, and visions into written form. At this point, I cannot think of a better way to do this than to just keep posting to this blog (a term I still loathe). Some projects of note that I will be commenting (read: rambling) about in the near term include: A Movie (as yet untitled) that I have been tinkering with over the better part of a decade, Another Movie (as yet untitled) that I have been tinkering with for the last two years, (re)learning Ruby on Rails, expanding my knowledge of [Knockout.js](http://knockoutjs.com/), learning at least one other JavaScript framework (probably [Ember.js](http://emberjs.com/)), my time spent in the world of [Sanctuary](http://us.battle.net/d3/en/), and learning a [second language](https://www.duolingo.com/drovani).
 

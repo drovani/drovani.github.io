@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: A Marathon in Three Parts, Goal the Third
 ---
@@ -12,7 +12,7 @@ happen my first time out, so I'm settling for **sub-4:00:00 finish**.
 
 Chicago is going to be my first marathon because it is convenient; I live here, so getting here is simple. What better place to show off
 the culmination of all this training, then by taking a running tour of this town? There will be a couple hundred thousand neighbors cheering
-me on (and the other 36,000+ people… thirty-six thousand!). For many, just finishing the race is their only goal. However, I'm driven by tangible
+me on (and the other 36,000+ people? thirty-six thousand!). For many, just finishing the race is their only goal. However, I'm driven by tangible
 goals, so I had to set something to target. For my first half-marathon, I'd set a goal of sub-2:00. I failed miserably due to over training, a
 lack of body awareness, and generally being under prepared. This year, sub-2:00 was my initial goal, and I was very confident that I was going to
 achieve it. I had been training at a 9:00 mile pace, so holding that would get me in at 1:57:54. However, the day before my race, my good friend
@@ -22,7 +22,7 @@ hard that race, and came in at 1:48:56, averaging an 8:19 pace. I had to push ha
 I've been training all year at a 9:00 pace, running in the 6:00am group out of Montrose Beach with the excellent
 [Chicago Area Runners Association](http://cararuns.org/) (side-note: I can't say enough good things about CARA. If you are training for a marathon,
 don't look anywhere else for your summer training. More about that in another post.). That pace puts me at the finish line with a time of
-3:55:48, giving me 4:12 of wiggle room. Barring injury, accident, or mental breakdown, I'll be **finishing the marathon with a big ‘ole Three at
+3:55:48, giving me 4:12 of wiggle room. Barring injury, accident, or mental breakdown, I'll be **finishing the marathon with a big ?ole Three at
 the start of my time**, and it will feel great. If you are bored, or already plan on being along the course, I'll be the tall white guy with long
 dark hair, wearing a yellow shirt with 10017 pinned to my chest. I'm probably going to be in my own head, calculating splits and pace and thinking
 of all the lines I should change in these posts when I get back home, and eventually crawling across the finish line, and hobbling my way home.
