@@ -66,7 +66,7 @@ It covers:
 - Common issues that you might encounter while using Jekyll
 - Importing from Wordpress, using your own domain name, and blogging in your favorite editor
 - Theming in Jekyll, with Liquid templating examples
-- A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
+- A quick look at Jekyll 2.0's new features, including Sass/Coffeescript support and Collections
 
 ## Jekyll Now Features
 

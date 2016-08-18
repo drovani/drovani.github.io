@@ -40,7 +40,7 @@ A common approach to handling querying the event dates is to store a list of all
 the gift was actually created, and use this as an audit for gift creation. By tying the Audit to the Schedule, it is very easy to find
 out exactly why an Audit was created.
 
-![Recurring Schema](imges/recurring-schema.png)
+![Recurring Schema](/images/recurring-schema.png)
 
 ## Evolution Path
 
