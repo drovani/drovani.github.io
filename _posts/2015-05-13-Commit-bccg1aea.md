@@ -1,70 +1,85 @@
 ---
 layout: post
-title: "Commit 4b684657: Laying the Foundation"
+title: "Commit bccg1aea: Preemptively Structuring the Chaos"
 ---
 
-## Entity Framework and ASP.NET Identity Framework
+I have found that it is better to put structure in place around a project before going hog wild on implementation. While I recognize that some
+practices grow organically, a healthy amount of structure up-front can save a project from technical bankruptcy down the line. The two tools that
+I use early and often are interfaces and contract classes.
 
-Two key library decisions needed to be made this week: choosing the object-relational Mapping (ORM) framework, and choosing a membership provider.
-To cut right to the end, Entity Framework and ASP.NET Identity were the solutions that I have chosen to utilize throughout the software. This week's
-commit has been getting the initial implementation created, customized, and tested.
+## Interfaces and Contract Classes
 
-- Create NotImplementedAttribute
-- Extend Identity membership classes
-- Create Interface for data context
-- Create Data Context
-- Create minimal tests
-- Minor Clean ups
+There are a collection of interfaces that I regularly utilize throughout most projects.
 
-## NotImplementedAttribute
+- ICreated
+  - VigilUser CreatedBy
+  - DateTime CreatedOn
+- IModified : ICreated
+  - VigilUser ModifiedBy
+  - DateTime? ModifiedOn
+  - bool MarkModified(VigilUser, DateTime)
+- IDeleted
+  - VigilUser DeletedBy
+  - DateTime? DeletedOn
+  - bool MarkDeleted(VigilUser, DateTime)
+- IOrdered
+  - int Ordinal
+- IEffective
+  - DateTime EffectiveOn
+  - bool SetEffectiveOn(DateTime)
+- IEffectiveRange : IEffective
+  - DateTime EffectiveUntil
+  - bool SetEffectiveRange(DateTime, DateTime)
 
-Sort of like a TODO in the code, I pepper classes that still need work, or are just a placeholder shell with this attribute. This makes it so I
-can easily add a Code Analysis rule to mark it as incomplete, or I can add an ObsoleteAttribute to the NotImplementedAttribute. The compiler will
-issue a warning and I can easily track down any places I left marked as Not Implemented.
+## The Obvious ? ICreated, IModified, IDeleted, IOrdered
 
-## Vigil Identity Classes
+These four interfaces serve to ensure that all properties are identically named throughout the solution. They also serve as a guide to future
+developers about what restrictions should be placed on the class. Every class that persists data to storage should implement ICreated ? everything
+was created by someone and at some time.  An object that doesn?t implement IModified should never actually be modified. A class with IDeleted
+should not have the records actually removed from storage, but just fill in these fields to flag them as deleted. IOrdered means we know to set
+a default sort on the Ordinal field.
 
-By default, the Identity classes use a string as the primary key. Internally, it is a serialized Guid, but I could not find a good reason why
-this was masked. Also, I wanted to play with inheriting the classes ? so I did exactly that. For now, the "System" classes are just the Identity classes,
-with a Guid key, and table names explicitly set to match the class name (thus overriding the [IdentityDbContext's default](http://stackoverflow.com/questions/29904898/classes-inherited-from-identity-objects-not-included-in-code-first-migrations)
-of naming them "AspNet_____").
+## Instead of Deleting It ? Effective It!
 
-## Data Context
+For values where we need historical data to be easily accessible, such as changing schedules or payment information, an interface is created to track the EffectiveOn date. Starting at that specific date and time, the new record becomes effective. There needs to be some way to group the different records, which is usually performed with a header type table. By definition, there can only be one effective record at any given date.
 
-Now is when the fun gets to start ? time to start making some actual progress towards real data.
+An example of its use is storing the payment information for a recurring transaction. The historical data for payment information is useful when looking into the past, and frequently the patron may want to change the payment option effective some future date. However, at no point will two or more payment methods be active. By implementing the IEffective and ICreated, the details of who made the change (and when) fully replace any functionality that might be lost by not implementing IModified.
 
-1. Create the IVigilContext interface, to expose the bare minimums.
-1. Create the Database Context: VigilContext
-1. Inherit it from the IdentityDbContext generic class (so I can use those beautiful Vigil____ classes I created).
-1. Inherit it from the IVigilContext interface and implement the "AffectedBy" and "Now" properties.
-1. Create three tests:
-  2. Initialize and Create the database ? this runs Entity Framework model validation. I wish I could find a way to do this without actually having to create the database, but I was unable to find a way to expose the EF method that runs the validation.
-  2. Verify that the explicit constructor is setting the AffectedBy and Now properties. It is a menial test, but it makes sure no one breaks it in the future.
-  2. Assert that the Set method works for at least one model. This serves two purposes ? it makes sure that the Context is calling its base class's Set method, and it makes it so that code gets covered by a test, thus passing Code Coverage analysis.
+## Need Multiple, Overlapping Effectives ? Range It!
 
-## Minor Clean Up Duty
+When multiple records need to have their history saved or allow for changes effective in the future, the IEffectiveRange comes into utility. For IEffective records, the end of their effectiveness is the beginning of the next record?s effective date. However, for classes where there can be multiple records that come and go, an explicit range is required. This is useful for line items on a gift ? do see when any given detail was the authoritative record, especially useful after the gift has been posted and receipted.
 
-I misspelled the name of the core project, spelling it "Vigi.Data.Core". This meant renaming the project, updating the Assembly name,
-default Namespace, the folder name (which also caused a rename on all files in the project), the namespace in existing classes, and
-references to the project. Thankfully, I caught it before I was creating objects that referencing those elsewhere.
+## Contract Classes For
 
-In order to get complete Code Coverage for unit tests, I created a test just to call the constructor for the NotImplemented Attribute (it throws
-a NotImplemented Exception). However, the last line in that test is an Assert.Fail, which should never be reached. This causes the Code Coverage
-to say that line was never executed, and thus not covered. Obviously, I do not care about Code Coverage in the Testing project, so I added a
-codeCoverage.runsettings file, which explicitly excludes the Vigil.Testing.Data assembly from analysis.
+I battled back and forth with whether to include the shell for code contracts with every interface I write, or to only build it out when needed. I quickly found that I was including, at minimum, a contract invariant method on each interface, so I decided to just make it a standard part of every interface. Even if the Contract Class contains no Contracts, at least the shell is there, and I can easily add them later, as needed.
 
-> Added Vigil Users and Roles implementation of the Identity framework, and added two quick tests for VigilContext.
+A quick standard I have put together is that all Contract Classes are contained in the same file as the interface, in a child namespace of ?Contracts,? and named after the interface. Keeping the classes as internal and abstract means it can only be called within the assembly,
+
+## Minimum Viable Framework
+
+I finally feel that I am at a stage where I have the minimum of a framework on which I can start to build an actual product. From here, I will slowly add and expand modules, slowly drifting towards the user interface, and tool with refactoring, templating, scripting, and finding other ways that I can reduce the complexity of complex tasks.
+
+> Added generic interfaces, and began cleaning up some Code Analysis rules from the ?All Rules? playlist.
 >  
-> &emdash;Commit 9bca8542c5a0f099032631c133215a5bd9c28aae
+> &emdash;[Commit 4010e840a8b168a1ab65466fa5c61cc342b56d8e]()
 
-> Added Entity Framework and Identity Framework.
-> Customized the Identity objects with Vigil objects, including using a Guid as the primary key, and adding a RoleType enum.
-> Added a .runsettings file to exclude the Vigil.Testing.Data project from Code Coverage reports. Corrected the "Vigi.Data.Core"
-> misspelling to "Vigil.Data.Core".
+> Added new Code Analysis rule sets to eliminate rules that I would be ignoring anyway.
+> Resolved several Code Contracts and Code Analysis issues.
 >  
-> &emdash;Commit 8be35473aa84138f6ee362d083dd424726345089
+> &emdash;[Commit 2b1ff8a55711cb585750d4241df9c97895b7edfc]()
 
-> Added tests to validate that the Vigil* tables have the correct names, since there was a problem with them being overwritten by the IdentityDbContext.
+> Decided I didn?t like having fields for the context, testuser, and now. Put them back as variables in each test method, and added a ContractVerification(false) attribute to the whole class. I think I?m going to find myself adding that attribute to a lot of testing classes.
 >  
-> &emdash;Commit 4b68465701f111a806a920e7ec4d12de697aeee7
+> &emdash;[Commit df9e61081f22471546dd1fd1132c8ecfecc3a26c]()
 
+> Added Contract Classes for each of the Interfaces.
+> Created the Identity and TypeBase classes to expand the foundation of classes before working on POCO?s.
+> Need to add more unit tests to fill out the Code Coverage.
+>  
+> &emdash;[Commit 716da101f6da28158ab0ed52aaba037b4c027676]()
+
+> Added ExcludeFromCodeCoverage attributes to the ObjectInvariant methods in the interface contract classes.
+> Added tests for the TypeBase class (via inheritance through a TestTypeBase class).
+> Filled out the ChangeLogTests tests.
+>  
+> &emdash;[Commit bcc51aeaa46dc8780ffcd9c33f88d8ecb1c2fffd]()
