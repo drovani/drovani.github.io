@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Recurring Gifts – Part 1: Database Schema"
+title: "Recurring Gifts ? Part 1: Database Schema"
 ---
 ##Overview
 
@@ -17,13 +17,13 @@ as a way to document the process I went through to build the current system. Som
 A few limitations that may constraint its universe utility:
 
 - Only one active schedule can be created. Can only do "first Friday of every Month", not "first Friday of every Month, and third Tuesday of every other Month."
-- Cannot schedule by the phase of the moon (not even joking – this was an actual request) – though it could be fudged by using a Daily schedule.
+- Cannot schedule by the phase of the moon (not even joking ? this was an actual request) ? though it could be fudged by using a Daily schedule.
 - Cannot schedule based on National Holidays (also an actual request).
 - Schedules can only pause and restart once (via the Header.HoldUntilDate).
 
 ##Database Schema
 
-Instead of inventing a database schema from nothing, I did what I do best – stand on the shoulders of giants, and Microsoft's SQL Server team
+Instead of inventing a database schema from nothing, I did what I do best ? stand on the shoulders of giants, and Microsoft's SQL Server team
 is a pretty huge giant. Turning to their documentation on the [SQL Server Agent job schedules](https://msdn.microsoft.com/en-us/library/ms178644.aspx),
 I opened up the msdb.dbo.sysschedules table. I adjusted some of the definitions to fit my need and built my schema from there.
 
