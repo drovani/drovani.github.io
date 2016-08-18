@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Recurring Gifts ? Part 1: Database Schema"
+title: "Recurring Gifts &mdash; Part 1: Database Schema"
 ---
+
 ##Overview
 
 There are many posts out there for how to configure a database schema to handle scheduling events. The part that I found difficult to
