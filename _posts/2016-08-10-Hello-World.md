@@ -13,3 +13,4 @@ Also, because I want to use my domain to host this, and I _think_ that I can do 
 
 - 2016-08-11: I migrated from the beginning through 02 April 2014. It's a good start, I think.
 - 2016-08-12: I've migrated through 23 Jan 2015. Slowly but surely!
+- 2016-08-17: Since I had to fix the encoding on all of the markdown files, I spent most of the day fixing all of the question marks.

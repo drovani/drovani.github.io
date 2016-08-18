@@ -6,7 +6,7 @@ title: Establishing KnockoutJs Design Patterns
 Now that I have been tinkering with Knockout for about a year, I have finally settled on a host of design patterns that I feel strike a nice
 balance between rigid consistency and flexible prototyping. I like to have all of my code look very similar. I can look at most code that
 I have written and know about when I worked on it last. I can usually even look at code that several other developers have touched and see
-what is mine and what is everyone else?s code. Now that I have a team to direct and an expanding code base to maintain, I have realized that
+what is mine and what is everyone else's code. Now that I have a team to direct and an expanding code base to maintain, I have realized that
 I need to document my own code patterns.
 
 [!["It's good to be the king"](http://img.youtube.com/vi/lZKiYgcgBAY/0.jpg)](https://youtu.be/lZKiYgcgBAY "It's good to be the king'")
@@ -24,12 +24,12 @@ question, which had a very nice explanation on why what I was doing was a bad id
 > - A lack of standards can make your code unreadable.
 > - Disagreement over standards can cause check-in wars between developers.
 > - Seeing different standards in the same class can be extremely irritating.
-> I?m a big fan of what [Uncle Bob has to say](http://c2.com/cgi/wiki?UncleBobOnCodingStandards) about standards:
+> I'm a big fan of what [Uncle Bob has to say](http://c2.com/cgi/wiki?UncleBobOnCodingStandards) about standards:
 > 
 > 1. Let them evolve during the first few iterations.
 > 1. Let them be team specific instead of company specific.
-> 1. Don?t write them down if you can avoid it. Rather, let the code be the way the standards are captured.
-> 1. Don?t legislate good design. (e.g. don?t tell people not to use goto)
+> 1. Don't write them down if you can avoid it. Rather, let the code be the way the standards are captured.
+> 1. Don't legislate good design. (e.g. don't tell people not to use goto)
 > 1. Make sure everyone knows that the standard is about communication, and nothing else.
 > 1. After the first few iterations, get the team together to decide.
 

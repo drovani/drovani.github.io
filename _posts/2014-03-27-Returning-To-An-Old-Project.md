@@ -9,9 +9,9 @@ Thus, the yak shaving begins. The code compiles just fine, the tests all pass, a
 
 It was nice of NuGet, though, to notify me that one of the libraries that I am using has an updated version available. Well, I think I will just click that handy Update Packages button.
 
-Oh, there is a conflict between a file that already exists and the new version coming in ? go ahead and overwrite the file. I am pretty sure it is something minor that I will easily discover; and if it does not work, then that is what source control is for.
+Oh, there is a conflict between a file that already exists and the new version coming in - go ahead and overwrite the file. I am pretty sure it is something minor that I will easily discover; and if it does not work, then that is what source control is for.
 
-> Whoa! WHOA! Slow down there, cowboy. You told me there was only one package to update, not the fourteen you just updated. Now my project no longer builds. Wait? you REMOVED A PACKAGE? Now we have a problem.
+> Whoa! WHOA! Slow down there, cowboy. You told me there was only one package to update, not the fourteen you just updated. Now my project no longer builds. Wait&hellip; you REMOVED A PACKAGE? Now we have a problem.
 
 At this point, I went back to TFS to figure out what package had been removed. Then I had to go research what that package used to do, find its replacement, discover how to interact with it, find that there is a better way to utilize it, rebuild the whole solution, fix a plethora of bugs this caused, and eventually get that small portion working.
 
