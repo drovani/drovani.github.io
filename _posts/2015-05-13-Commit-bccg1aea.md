@@ -61,25 +61,25 @@ I finally feel that I am at a stage where I have the minimum of a framework on w
 
 > Added generic interfaces, and began cleaning up some Code Analysis rules from the ?All Rules? playlist.
 >  
-> &emdash;[Commit 4010e840a8b168a1ab65466fa5c61cc342b56d8e]()
+> &mdash;[Commit 4010e840a8b168a1ab65466fa5c61cc342b56d8e]()
 
 > Added new Code Analysis rule sets to eliminate rules that I would be ignoring anyway.
 > Resolved several Code Contracts and Code Analysis issues.
 >  
-> &emdash;[Commit 2b1ff8a55711cb585750d4241df9c97895b7edfc]()
+> &mdash;[Commit 2b1ff8a55711cb585750d4241df9c97895b7edfc]()
 
 > Decided I didn?t like having fields for the context, testuser, and now. Put them back as variables in each test method, and added a ContractVerification(false) attribute to the whole class. I think I?m going to find myself adding that attribute to a lot of testing classes.
 >  
-> &emdash;[Commit df9e61081f22471546dd1fd1132c8ecfecc3a26c]()
+> &mdash;[Commit df9e61081f22471546dd1fd1132c8ecfecc3a26c]()
 
 > Added Contract Classes for each of the Interfaces.
 > Created the Identity and TypeBase classes to expand the foundation of classes before working on POCO?s.
 > Need to add more unit tests to fill out the Code Coverage.
 >  
-> &emdash;[Commit 716da101f6da28158ab0ed52aaba037b4c027676]()
+> &mdash;[Commit 716da101f6da28158ab0ed52aaba037b4c027676]()
 
 > Added ExcludeFromCodeCoverage attributes to the ObjectInvariant methods in the interface contract classes.
 > Added tests for the TypeBase class (via inheritance through a TestTypeBase class).
 > Filled out the ChangeLogTests tests.
 >  
-> &emdash;[Commit bcc51aeaa46dc8780ffcd9c33f88d8ecb1c2fffd]()
+> &mdash;[Commit bcc51aeaa46dc8780ffcd9c33f88d8ecb1c2fffd]()
