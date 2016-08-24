@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I Need a New Backpack
+category: Exactly One Hobby
 ---
 
 It has been almost over ten years since I last bought a backpack[^1], and now I need a new one.  My three primary use cases are while commuting on a Divvy bike, riding on my motorcycle, and generally walking around.  It needs to be comfortable and secure in all three scenarios. Other requirements (in no particular order):

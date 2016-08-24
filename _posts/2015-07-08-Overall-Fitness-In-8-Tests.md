@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Overall Fitness In 8 Tests
+category: Exactly One Hobby
 ---
 
 A friend forwarded me an article from Runner's World (written by editors at Men's Health) titled "[8 True Tests of Your Overall Fitness](http://www.runnersworld.com/workouts/8-true-tests-of-your-overall-fitness)".

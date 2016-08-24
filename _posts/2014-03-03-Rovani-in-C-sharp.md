@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rovani in C&#9839;
+category: "Rovani on C&sharp;"
 ---
 
 I do not have much to write about.

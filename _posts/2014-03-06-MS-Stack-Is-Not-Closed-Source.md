@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Just Because It's On the Microsoft Stack Doesn't Mean It's Closed Source
+category: "Rovani on C&sharp;"
 ---
 
 I work almost exclusively on the Microsoft WISC stack. The first response that I hear from almost _every single developer_ that I've

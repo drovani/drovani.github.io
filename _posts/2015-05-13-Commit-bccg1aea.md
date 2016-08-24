@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Commit bccg1aea: Preemptively Structuring the Chaos"
+category: "Rovani on C&sharp;"
+tags:
 ---
 
 I have found that it is better to put structure in place around a project before going hog wild on implementation. While I recognize that some
@@ -31,7 +33,7 @@ There are a collection of interfaces that I regularly utilize throughout most pr
   - DateTime EffectiveUntil
   - bool SetEffectiveRange(DateTime, DateTime)
 
-## The Obvious ? ICreated, IModified, IDeleted, IOrdered
+## The Obvious &mdash; ICreated, IModified, IDeleted, IOrdered
 
 These four interfaces serve to ensure that all properties are identically named throughout the solution. They also serve as a guide to future
 developers about what restrictions should be placed on the class. Every class that persists data to storage should implement ICreated ? everything
@@ -39,13 +41,13 @@ was created by someone and at some time.  An object that doesn?t implement IModi
 should not have the records actually removed from storage, but just fill in these fields to flag them as deleted. IOrdered means we know to set
 a default sort on the Ordinal field.
 
-## Instead of Deleting It ? Effective It!
+## Instead of Deleting It &mdash; Effective It!
 
 For values where we need historical data to be easily accessible, such as changing schedules or payment information, an interface is created to track the EffectiveOn date. Starting at that specific date and time, the new record becomes effective. There needs to be some way to group the different records, which is usually performed with a header type table. By definition, there can only be one effective record at any given date.
 
 An example of its use is storing the payment information for a recurring transaction. The historical data for payment information is useful when looking into the past, and frequently the patron may want to change the payment option effective some future date. However, at no point will two or more payment methods be active. By implementing the IEffective and ICreated, the details of who made the change (and when) fully replace any functionality that might be lost by not implementing IModified.
 
-## Need Multiple, Overlapping Effectives ? Range It!
+## Need Multiple, Overlapping Effectives &mdash; Range It!
 
 When multiple records need to have their history saved or allow for changes effective in the future, the IEffectiveRange comes into utility. For IEffective records, the end of their effectiveness is the beginning of the next record?s effective date. However, for classes where there can be multiple records that come and go, an explicit range is required. This is useful for line items on a gift ? do see when any given detail was the authoritative record, especially useful after the gift has been posted and receipted.
 

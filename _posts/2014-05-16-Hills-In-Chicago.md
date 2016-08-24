@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hills In Chicago
+category: Exactly One Hobby
 ---
 
 For any serious runner, looking through training plans inevitably leads to the discovery that they all want you to do hill repeats.  Hal Higdon (basically the godfather of running in Chicago), recommends that [hills be a quarter-mile](http://www.halhigdon.com/training/51142/Marathon-Advanced-2-Training-Program) or longer.  If you have never been to Chicago, allow me to clue you in - the city is flat.  The largest and longest "hills" we have are the on and off ramps for the expressways.  Finding long stretches of elevation are difficult, and I cannot think of any that are a full quarter-mile long.  However, here are a couple of spots that I have found that make for at least a somewhat noticeable incline.

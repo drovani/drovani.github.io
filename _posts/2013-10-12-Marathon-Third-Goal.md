@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Marathon in Three Parts, Goal the Third
+category: Exactly One Hobby
 ---
 
 Three Hours, Five Minutes, Zero Seconds _or less_. For a male, 34 years or younger on race day, 3:05:00 is the qualifying time to register for the

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Month With Divvy
+category: Exactly One Hobby
 ---
 
 After a month of having a Divvy membership, I have been on only nine trips.  A slacker, I know; but with two weeks of vacation in there, I'm averaging one trip every other day.  As the weather improves, I will certainly be upping that to my goal of seven out of ten trips in a week.

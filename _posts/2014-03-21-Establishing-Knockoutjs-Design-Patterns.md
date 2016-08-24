@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Establishing KnockoutJs Design Patterns
+category: "Rovani on C&sharp;"
 ---
 
 Now that I have been tinkering with Knockout for about a year, I have finally settled on a host of design patterns that I feel strike a nice

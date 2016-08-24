@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Marathon in Three Parts, Goal Number Two
+category: Exactly One Hobby
 ---
 
 Everything in threes, but before the third comes the second and after one comes number two. As a logical extension to my first

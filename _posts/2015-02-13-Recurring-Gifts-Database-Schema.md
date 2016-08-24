@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Recurring Gifts &mdash; Part 1: Database Schema"
+category: "Rovani on C&sharp;"
 ---
 
 There are many posts out there for how to configure a database schema to handle scheduling events. The part that I found difficult to

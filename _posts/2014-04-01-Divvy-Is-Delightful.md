@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Divvy Is Delightful
+category: Exactly One Hobby
 ---
 
 About nine months ago, [Divvy bike](http://divvybikes.com/) sharing program went live in Chicago.  I was thrilled with the concept of it from the initial launch, and was excited to see it quickly expand throughout the city*.  Over the winter, I learned of the [corporate memberships](http://www.divvybikes.com/pricing/corporate-memberships) that they offer.  The simplest of which was a one-time $100 start-up fee, and all employees then received $10 off of annual memberships.
