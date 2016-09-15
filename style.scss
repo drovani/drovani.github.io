@@ -1,11 +1,36 @@
 ---
 ---
-//
-// IMPORTS
-//
-// @import "reset";
-@import "variables";
-// Syntax highlighting @import is at the bottom of this file
+
+/*************/
+/* VARIABLES */
+/*************/
+
+// Colors
+$background: #ffffff;
+$section: #d7cdcc;
+$text: #35212B;
+$highlight: #dfcc74;
+$lowlight: #75485e;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
 
 /**************/
 /* BASE RULES */
@@ -81,20 +106,8 @@ ul, ol {
     padding-left: 30px;
 }
 
-ul {
-    list-style-type: disc;
-}
-
-ol {
-    list-style-type: decimal;
-}
-
 ol ul, ul ol, ul ul, ol ol {
     margin: 0;
-}
-
-ul ul, ol ul {
-    list-style-type: circle;
 }
 
 em, i {
@@ -105,24 +118,9 @@ strong, b {
     font-weight: bold;
 }
 
-img {
-    max-width: 100%;
-}
-
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-    max-width: none;
-}
-
 .date {
     font-style: italic;
     color: $text;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-    color: $text;
-    background: $highlight;
 }
 
 ::selection {
@@ -273,11 +271,11 @@ nav {
     .category {
         float: right;
     }
+}
 
-    .tags li {
-        display: inline;
-        padding-right: 1em;
-    }
+.tags li {
+    display: inline;
+    padding-right: 1em;
 }
 
 .code {
