@@ -273,6 +273,11 @@ nav {
     .category {
         float: right;
     }
+
+    .tags li {
+        display: inline;
+        padding-right: 1em;
+    }
 }
 
 .code {
