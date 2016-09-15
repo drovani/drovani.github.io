@@ -15,7 +15,7 @@ The first thing that I learned with Dependency Injection is that it encourages a
 
 A "User" in this case is the arbitrary creator of a command and consumer of the factory. For now, the User is the test suite (powered by xUnit).
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 using Moq;
 using System;
 using Vigil.Domain;
@@ -53,7 +53,7 @@ namespace Vigil.Patrons.Tests
 At this point, I am going to define Create as issuing the command to __something else__ to instantiate and persist a new
 representation of the entity.
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 using System.Diagnostics.Contracts;
 using Vigil.Domain;
 using Vigil.MessageQueue;
@@ -90,7 +90,7 @@ namespace Vigil.Patrons
 A patron, this early in development, is an abstract representation of what should be created - it does not care about persistance
 or structure.
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Vigil.Domain;
@@ -118,7 +118,7 @@ difficult to understand what the referenced, but not shown, code pieces actually
 
 The most basic, simple interface with the bare minimum for what a Queue would need to implement.
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 using Vigil.Domain;
 
 namespace Vigil.MessageQueue
@@ -134,7 +134,7 @@ namespace Vigil.MessageQueue
 
 This is just a simple way to identify commands and provide a way for future restrictions and contracts, when I need them.
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 namespace Vigil.Domain
 {
     public interface ICommand
@@ -148,7 +148,7 @@ namespace Vigil.Domain
 By abstracting the key to an interface, I can decide late if and how I would like to change it. This will limit the places
 that are impacted if I need to change out the type of the Id, or add more fields.
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 using System;
 
 namespace Vigil.Domain
@@ -164,7 +164,7 @@ namespace Vigil.Domain
 
 This is the basic implementation of the IKeyIdentity interface. It follows the ValueObject convention, making the Guid immutable.
 
-{% highlight c# linenos %}
+{% highlight c# linenos=table %}
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Contracts;
