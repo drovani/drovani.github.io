@@ -30,7 +30,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $helveticaNeue;
-    color: $lowlight;
+    color: $text;
     font-weight: bold;
     line-height: 1.7;
     margin: 1em 0 15px;
@@ -121,12 +121,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-    color: $black;
+    color: $text;
     background: $highlight;
 }
 
 ::selection {
-    color: $black;
+    color: $text;
     background: $highlight;
 }
 
