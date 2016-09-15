@@ -273,15 +273,6 @@ nav {
     .category {
         float: right;
     }
-
-    .tags {
-        li:before {
-            font-family: 'FontAwesome';
-            content: '\f02b';
-            margin: 0 1em 0 -1em;
-            color: $text;
-        }
-    }
 }
 
 .code {
