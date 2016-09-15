@@ -273,10 +273,8 @@ nav {
     }
 }
 
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.tags .tag{
+    padding-right: 2em;
 }
 
 .code {
