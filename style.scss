@@ -54,6 +54,7 @@ body {
 
 .navbar-header * {
     display: inline;
+    vertical-align: bottom;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -71,7 +72,7 @@ body {
 
 /* Customize container */
 @media (min-width: 768px) {
-    .container {
+    header, main, footer {
         max-width: 730px;
     }
 }
