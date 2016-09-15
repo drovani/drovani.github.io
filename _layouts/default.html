@@ -15,18 +15,16 @@
 <body>
     <section class="container">
         <header class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
+            <nav class="navbar navbar-light bg-faded">
+                <a href="{{ site.baseurl }}/" class="navbar-brand">
+                    <img src="{{ site.avatar }}" />
+                    {{ site.name }}
+                </a>
+                <ul class="nav navbar-nav pull-right">
                     <li role="presentation"><a href="{{ site.baseurl }}/">Blog</a></li>
                     <li role="presentation"><a href="{{ site.baseurl }}/about">About</a></li>
                 </ul>
             </nav>
-            <a href="{{ site.baseurl }}/" class="navbar-left">
-                <img src="{{ site.avatar }}" />
-                <h3 class="text-muted">
-                    {{ site.name }}
-                </h3>
-            </a>
         </header>
     </section>
     <main id="main" role="main" class="main">
