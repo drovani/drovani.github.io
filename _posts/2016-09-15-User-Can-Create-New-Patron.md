@@ -107,7 +107,7 @@ namespace Vigil.MessageQueue.Commands
         public string PatronType { get; set; }
     }
 }
-{$ endhighlight %}
+{% endhighlight %}
 
 ## The Rest of the Code
 
@@ -128,7 +128,7 @@ namespace Vigil.MessageQueue
         void QueueCommand(ICommand command, IKeyIdentity key);
     }
 }
-{$ endhighlight %}
+{% endhighlight %}
 
 ### ICommand Interface
 
@@ -141,7 +141,7 @@ namespace Vigil.Domain
     {
     }
 }
-{$ endhighlight %}
+{% endhighlight %}
 
 ### IKeyIdentity Interface
 
@@ -158,7 +158,7 @@ namespace Vigil.Domain
         Guid Id { get; }
     }
 }
-{$ endhighlight %}
+{% endhighlight %}
 
 ### KeyIdentity Interface
 
@@ -247,4 +247,4 @@ namespace Vigil.Domain
         }
     }
 }
-{$ endhighlight %}
+{% endhighlight %}
