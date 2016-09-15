@@ -14,11 +14,11 @@ layout: default
     </div>
 
     <section class="tags">
-        <ul class="fa-ul">
-            {% for tag in page.tags %}
-            <li><i class="fa-li fa fa-tag"></i>{{ tag }}</li>
-            {% endfor %}
-        </ul>
+        {% for tag in page.tags %}
+        <span class="tag">
+            <i class="fa fa-tag"></i>{{ tag }}
+        </span>
+        {% endfor %}
     </section>
 
     {% include disqus.html %}

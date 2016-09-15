@@ -273,9 +273,10 @@ nav {
     }
 }
 
-.tags li {
-    display: inline;
-    padding-right: 1em;
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .code {
