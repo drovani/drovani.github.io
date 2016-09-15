@@ -144,25 +144,7 @@ strong, b {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
-
-.wrapper-masthead {
-    margin-bottom: 2em;
-}
-
-.masthead {
-    padding: 1em 0;
-    border-bottom: 1px solid $lowlight;
-
-    @include mobile {
-        text-align: center;
-    }
-}
-
 .site-avatar {
-    float: left;
     width: 70px;
     height: 70px;
     margin-right: 15px;
@@ -274,7 +256,7 @@ nav {
 }
 
 .tags .tag{
-    padding-right: 2em;
+    padding-right: 1em;
 }
 
 .code {
