@@ -39,11 +39,13 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.main,
-.footer {
+header,
+main,
+footer {
     padding-right: 15px;
     padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Custom page header */
