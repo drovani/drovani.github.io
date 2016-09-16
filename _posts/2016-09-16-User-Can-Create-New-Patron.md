@@ -113,12 +113,7 @@ namespace Vigil.MessageQueue.Commands
 }
 {% endhighlight %}
 
-## The Rest of the Code
-
-It always annoys me when a post references classes, interfaces, or other code that is no included in the actual post. It makes it terribly
-difficult to understand what the referenced, but not shown, code pieces actually do. As such, here is the rest of it.
-
-### ICommandQueue Interface
+## ICommandQueue Interface
 
 The most basic, simple interface with the bare minimum for what a Queue would need to implement.
 
@@ -134,7 +129,7 @@ namespace Vigil.MessageQueue
 }
 {% endhighlight %}
 
-### ICommand Interface
+## ICommand Interface
 
 This is just a simple way to identify commands and provide a way for future restrictions and contracts, when I need them.
 
@@ -143,112 +138,6 @@ namespace Vigil.Domain
 {
     public interface ICommand
     {
-    }
-}
-{% endhighlight %}
-
-### IKeyIdentity Interface
-
-By abstracting the key to an interface, I can decide late if and how I would like to change it. This will limit the places
-that are impacted if I need to change out the type of the Id, or add more fields.
-
-{% highlight c# linenos=table %}
-using System;
-
-namespace Vigil.Domain
-{
-    public interface IKeyIdentity
-    {
-        Guid Id { get; }
-    }
-}
-{% endhighlight %}
-
-### KeyIdentity Interface
-
-This is the basic implementation of the IKeyIdentity interface. It follows the ValueObject convention, making the Guid immutable.
-
-{% highlight c# linenos=table %}
-using System;
-using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Contracts;
-
-namespace Vigil.Domain
-{
-    public class KeyIdentity : IEquatable<KeyIdentity>, IKeyIdentity
-    {
-        public static KeyIdentity NewIdentity()
-        {
-            return new KeyIdentity();
-        }
-
-        [Key]
-        public Guid Id { get; protected set; }
-
-        protected KeyIdentity()
-        {
-            Id = Guid.NewGuid();
-        }
-
-        protected KeyIdentity(Guid id)
-        {
-            Id = id;
-        }
-
-        /// <summary>Compares two Vigil.Data.Core.Identity classes for equality by Id.
-        /// </summary>
-        /// <param name="obj">The Vigil.Data.Core.Identity class to compare Id values.</param>
-        /// <returns>Returns true if the two Id values are equal; otherwise, false.</returns>
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-            if (obj.GetType() != GetType())
-            {
-                return false;
-            }
-            return Equals((KeyIdentity)obj);
-        }
-
-        public bool Equals(KeyIdentity other)
-        {
-            if (other == null)
-            {
-                return false;
-            }
-            return Equals(other.Id, Id);
-        }
-
-        public static bool operator ==(KeyIdentity left, KeyIdentity right)
-        {
-            return Equals(left, right);
-        }
-        public static bool operator !=(KeyIdentity left, KeyIdentity right)
-        {
-            return !Equals(left, right);
-        }
-
-        public override int GetHashCode()
-        {
-            return Id.GetHashCode();
-        }
-
-        public override string ToString()
-        {
-            return Id.ToString();
-        }
-
-        [ContractInvariantMethod]
-        private void ObjectInvariant()
-        {
-            Contract.Invariant(Id != Guid.Empty);
-        }
     }
 }
 {% endhighlight %}
