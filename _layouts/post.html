@@ -11,13 +11,13 @@ layout: default
         {{ content }}
     </div>
 
+    {% if page.tags %}
     <aside class="tags">
-        <ul>
-            {% for tag in page.tags %}
-            <li>{{ tag }}</li>
-            {% endfor %}
-        </ul>
+        {% for tag in page.tags %}
+        <span>{{ tag }}</span>
+        {% endfor %}
     </aside>
+    {% endif %}
 
     {% include disqus.html %}
 </article>
