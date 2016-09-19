@@ -28,19 +28,19 @@ After searching around the internet and asking a few friends, I have narrowed it
 - [Timbuk2 Especial Tres](http://www.timbuk2.com/tb2/products/especial-tres-waterproof-cycling-laptop-backpack) - the roll-top of the backpack could be too much of an inconvenience for me.  With a 40.0 liter capacity, it may be too large for what I need.
 - [Timbuk2 Especial Vuelo](http://www.timbuk2.com/especial-vuelo-cycling-laptop-backpack/458-3-2182.html) - the smallest of the Especial line, I think its lack of features and smaller size might not suit my needs.  I want to get a hold of it though, to find out if it is larger than it appears.
 
-### Late Additions
+#### Late Additions
 
 Two different sources suggested that I take a look at Deuter, a company that I had never heard of before.
 
 - [Deuter Futura 28](http://www.deuter.com/us/us/hiking/futura-28-34214-119.html) - A friend went through a similar exercise, settled on this, and has been gracious enough to let me borrow it for a little bit to see how it fits. Unfortunately, it turned out have a frame too high to comfortably wear on a bicycle.
 
-### Rejects
+#### Rejects
 
 While most of these are not inherently bad backpacks, they just do not fit my purpose.
 
 - [Osprey Pixel](http://www.ospreypacks.com/en/product/tech/pixel) - main compartment is too small for my needs.
 
-### Honorable Mentions
+#### Honorable Mentions
 
 There were some bags that I came across that had neat little features that are of no use to me, but I thought I would give them a little credit for creativity.
 

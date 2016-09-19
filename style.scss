@@ -1,16 +1,12 @@
 ---
 ---
-/*************/
-/* VARIABLES */
-/*************/
-// Colors
+
 $background: #ffffff;
 $section: #d7cdcc;
 $text: #35212B;
 $highlight: #dfcc74;
 $lowlight: #75485e;
 
-/* Space out content a bit */
 body {
     padding-top: 1vw;
     padding-bottom: 2vw;
@@ -53,20 +49,38 @@ header {
     }
 }
 
-.tests dt:before{
-  font-family: FontAwesome;
-  content: '\f0dd';
-   display: inline-block;
-   padding-right: .5em;
+aside {
+    padding: 1em;
+    border: solid 1px $lowlight;
+    display: inline-block;
 }
-.tests ul{
-  list-style: none;
+
+h1 a, h2 a, h3 a, h4 a {
+    color: inherit;
 }
-.tests li:before {
-  font-family: 'FontAwesome';
-  content: '\f058';
-  margin:0 5px 0 -15px;
-  color: green;
+
+.tests {
+    dl {
+        margin: 0;
+    }
+
+    dt:before {
+        font-family: FontAwesome;
+        content: '\f0dd';
+        display: inline-block;
+        padding-right: .5em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li:before {
+        font-family: 'FontAwesome';
+        content: '\f058';
+        margin: 0 5px 0 -15px;
+        color: green;
+    }
 }
 
 @import "highlights";

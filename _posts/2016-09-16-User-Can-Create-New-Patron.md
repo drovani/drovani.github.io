@@ -15,7 +15,7 @@ to put in the bare minimum for what might pass a test, even though I know it wil
 To start this little experiment, I am going to put together a tiny amount of arguably functional code. I will start with the very simple
 definition of what a User is, what it means to Create an entity, and how a Patron is represented.
 
-## <sup>*</sup>"User"
+### <sup>*</sup>"User"
 
 A "User" in this case is the arbitrary creator of a command and consumer of the factory. For now, the User is the test suite (powered by xUnit).
 
@@ -52,7 +52,7 @@ namespace Vigil.Patrons
 }
 {% endhighlight %}
 
-## <sup>**</sup> "Create"
+### <sup>**</sup> "Create"
 
 At this point, I am going to define Create as issuing the command to _something else_ to instantiate and persist a new
 representation of the entity.
@@ -89,7 +89,7 @@ namespace Vigil.Patrons
 }
 {% endhighlight %}
 
-## <sup>***</sup> "Patron"
+### <sup>***</sup> "Patron"
 
 A patron, this early in development, is an abstract representation of what should be created - it does not care about persistance
 or structure.
@@ -113,7 +113,7 @@ namespace Vigil.MessageQueue.Commands
 }
 {% endhighlight %}
 
-## ICommandQueue Interface
+### ICommandQueue Interface
 
 The most basic, simple interface with the bare minimum for what a Queue would need to implement.
 
@@ -129,7 +129,7 @@ namespace Vigil.MessageQueue
 }
 {% endhighlight %}
 
-## ICommand Interface
+### ICommand Interface
 
 This is just a simple way to identify commands and provide a way for future restrictions and contracts, when I need them.
 

@@ -16,7 +16,7 @@ to solve some particular problem, and end up losing several hours while I resear
 (or, usually, an acronym) at the end of a post as some kind of _a posteriori_. The two largest design patterns that I am most
 excited about are Command Query Responsibility Segregation (CQRS) and Event Sourcing (ES).
 
-## Accidentally Implementing CQRS
+### Accidentally Implementing CQRS
 
 I found that I wasn't enjoying how all of my database logic was being tied up first inside of my Controller. I refactored, pulling
 all of the database logic out and putting it into its own class (someone had used the word _Repository_ somewhere, so I called it
@@ -34,7 +34,7 @@ Factories. Event Sourcing is also half way to being implemented, because my comm
 handles what to do with them. This means all I am really missing is separating the validation of a command from the actual
 execution of the command, and I still need to add Event Sourcing.
 
-## Where Am I Going With This?
+### Where Am I Going With This?
 
 There are lots of examples of implementing little pieces of CQRS and ES here and there, spread throughout the web. What I could
 not find was a single series of posts about taking a completely greenfield project and building up each component of the code,

@@ -3,23 +3,19 @@ layout: default
 ---
 
 <article class="post">
-    <div class="category"><i class="fa fa-cube" aria-hidden="true"></i>{{ page.category }}</div>
-    <h1>{{ page.title }}</h1>
+    <h2>{{ page.title }}</h2>
+    <time datetime="{{ page.date | date: "%e %B %Y" }}">{{ page.date | date: "%e %B %Y" }}</time>
     <div class="entry">
         {{ content }}
     </div>
 
-    <div class="date">
-        Written on {{ page.date | date: "%B %e, %Y" }}
-    </div>
-
-    <section class="tags">
-        {% for tag in page.tags %}
-        <span class="tag">
-            <i class="fa fa-tag"></i>{{ tag }}
-        </span>
-        {% endfor %}
-    </section>
+    <aside class="tags">
+        <ul>
+            {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    </aside>
 
     {% include disqus.html %}
 </article>

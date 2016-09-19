@@ -15,7 +15,7 @@ it in some useful manor) is all well and good, until someone tries to stuff in d
 so I am going to attempt to protect against it from the beginning. Additionally, by setting up the mechanisms to test validation and perform validation,
 I should be able to keep a culture of enforcing these conventions throughout development.
 
-## <sup>*</sup>Cannot
+### <sup>*</sup>Cannot
 
 With everything revolving around commands, telling a user something can't be done is less accurate, and it is more about declining to queue the
 command and letting the user know why. This starts by actually validating the command in question.
@@ -63,7 +63,7 @@ namespace Vigil.Patrons
 }
 {% endhighlight %}
 
-## <sup>**</sup>"Validation"
+### <sup>**</sup>"Validation"
 
 Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid.
 As a first step, I am just using the DataAnnotations attributes, as they serve my needs for now. In the future, I know that I will need to
@@ -88,7 +88,7 @@ namespace Vigil.MessageQueue.Commands
 }
 {% endhighlight %}
 
-## Testing the Code
+### Testing the Code
 
 <aside>
 	<dl class="tests">

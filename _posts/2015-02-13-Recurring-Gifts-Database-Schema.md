@@ -21,7 +21,7 @@ A few limitations that may constraint its universe utility:
 - Cannot schedule based on National Holidays (also an actual request).
 - Schedules can only pause and restart once (via the Header.HoldUntilDate).
 
-## Database Schema
+### Database Schema
 
 Instead of inventing a database schema from nothing, I did what I do best ? stand on the shoulders of giants, and Microsoft's SQL Server team
 is a pretty huge giant. Turning to their documentation on the [SQL Server Agent job schedules](https://msdn.microsoft.com/en-us/library/ms178644.aspx),
@@ -41,7 +41,7 @@ out exactly why an Audit was created.
 
 ![Recurring Schema](/images/recurring-schema.png)
 
-## Evolution Path
+### Evolution Path
 
 There were two mistakes I made in the original implementation of this schema. First, I had the End conditions on the Schedule.
 The thought was that this would be mildly helpful with knowing why the generation of gifts might have started and stopped. Potentially,
@@ -52,7 +52,7 @@ Additionally, I previously had the Start Date on the Schedule. This also was con
 gap in the timeline. It is much more easier to implement one "pause until" setting than try and handle skips. My use case was exactly zero
 for needing multiple start and stops, which is why I have pulled back on the complexity a bit for this second round.
 
-## Up Next
+### Up Next
 
 The next post is going to start to demonstrate how I implemented various parts of the c# algorithm to generate the dates in a schedule.
 These collections then are combined to provide for a final list of all dates.
