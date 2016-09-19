@@ -24,7 +24,7 @@ layout: default
             <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
         </header>
         <div class="entry">
-            {{ post.excerpt | append:  }}
+            {{ post.excerpt }}
             &nbsp;<a href="{{ site.baseurl }}{{ post.url }}" class="read-more fa fa-long-arrow-right"></a>
         </div>
     </article>
