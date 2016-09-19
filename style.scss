@@ -65,6 +65,23 @@ body {
     }
 }
 
+.posts .post {
+    border-bottom: 1px solid $highlight;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+
+    p::first-letter {
+        color: #dfcc74;
+        font-size: 6rem;
+        line-height: 4rem;
+        float: left;
+    }
+
+    .entry {
+        text-align: justify;
+    }
+}
+
 article {
     header {
         text-align: center;
@@ -74,7 +91,6 @@ article {
 }
 
 .entry {
-    text-align: justify;
 
     img {
         max-width: 100%;
@@ -83,12 +99,7 @@ article {
     .read-more {
         float: right;
         margin-top: -10px;
-    }
-    ::first-letter {
-        color: #dfcc74;
-        font-size: 6rem;
-        line-height: 4rem;
-        float: left;
+        color: $lowlight;
     }
 }
 
