@@ -90,8 +90,8 @@ namespace Vigil.MessageQueue.Commands
 
 ### Testing the Code
 
-<aside>
-	<dl class="tests">
+<aside class="tests">
+	<dl>
 		<dt>CreatePatronCommandTest</dt>
 		<dd>
 			<ul>
