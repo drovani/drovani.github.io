@@ -8,7 +8,6 @@ tags:
 - ddd
 - validation
 - vigiljouney
-excerpt_separator: <!--more-->
 ---
 
 Creating a patron (by which I mean, issuing a command such that some process somewhere will instantiate an actual Patron entity, and perhaps persist
@@ -16,27 +15,7 @@ it in some useful manor) is all well and good, until someone tries to stuff in d
 so I am going to attempt to protect against it from the beginning. Additionally, by setting up the mechanisms to test validation and perform validation,
 I should be able to keep a culture of enforcing these conventions throughout development.
 
-<!--more-->
-<aside style="tests">
-	<dl>
-		<dt>CreatePatronCommandTest</dt>
-		<dd>
-			<ul>
-				<li>Validation_On_DisplayName_Has_Maximum_String_Length</li>
-				<li>Validation_Requires_DisplayName_and_PatronType</li>
-			</ul>
-		</dd>
-		<dt>PatronFactoryTest</dt>
-		<dd>
-			<ul>
-				<li>User_Can_Create_New_Patron</li>
-				<li>User_Cannot_Create_Patron_That_Fails_Validation</li>
-			</ul>
-		</dd>
-	</dl>
-</aside>
-
-## <sup>*</sup> Cannot
+## <sup>*</sup>Cannot
 
 With everything revolving around commands, telling a user something can't be done is less accurate, and it is more about declining to queue the
 command and letting the user know why. This starts by actually validating the command in question.
@@ -84,7 +63,7 @@ namespace Vigil.Patrons
 }
 {% endhighlight %}
 
-## <sup>**</sup> "Validation"
+## <sup>**</sup>"Validation"
 
 Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid.
 As a first step, I am just using the DataAnnotations attributes, as they serve my needs for now. In the future, I know that I will need to
@@ -110,6 +89,25 @@ namespace Vigil.MessageQueue.Commands
 {% endhighlight %}
 
 ## Testing the Code
+
+<aside>
+	<dl class="tests">
+		<dt>CreatePatronCommandTest</dt>
+		<dd>
+			<ul>
+				<li>Validation_On_DisplayName_Has_Maximum_String_Length</li>
+				<li>Validation_Requires_DisplayName_and_PatronType</li>
+			</ul>
+		</dd>
+		<dt>PatronFactoryTest</dt>
+		<dd>
+			<ul>
+				<li>User_Can_Create_New_Patron</li>
+				<li>User_Cannot_Create_Patron_That_Fails_Validation</li>
+			</ul>
+		</dd>
+	</dl>
+</aside>
 
 Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the
 solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and

@@ -28,28 +28,46 @@ footer {
     max-width: 730px;
 }
 
-header {
-    border-bottom: .5vw solid $highlight;
-}
-
 footer {
     padding-top: 19px;
     color: #777;
-    border-top: .5vw solid $highlight;
+    border-top: 1 solid $highlight;
     text-align: center;
 }
 
-header .navbar-brand {
-  padding: 0px;
-  display: flex;
-  align-items: center;
-}
-header .navbar-brand>img {
-  height: 100%;
-  width: auto;
-  padding: 7px 14px;
+header {
+    .navbar-brand {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+
+        > img {
+            height: 100%;
+            width: auto;
+            padding: 7px 14px;
+        }
+    }
+
+    .navbar-default {
+        border-color: $highlight;
+    }
 }
 
+.tests dt:before{
+  font-family: FontAwesome;
+  content: '\f0dd';
+   display: inline-block;
+   padding-right: .5em;
+}
+.tests ul{
+  list-style: none;
+}
+.tests li:before {
+  font-family: 'FontAwesome';
+  content: '\f058';
+  margin:0 5px 0 -15px;
+  color: green;
+}
 
 @import "highlights";
 @import "svg-icons";
