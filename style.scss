@@ -84,6 +84,12 @@ article {
         float: right;
         margin-top: -10px;
     }
+    ::first-letter {
+        color: #dfcc74;
+        font-size: 6rem;
+        line-height: 4rem;
+        float: left;
+    }
 }
 
 h1 a, h2 a, h3 a, h4 a {
