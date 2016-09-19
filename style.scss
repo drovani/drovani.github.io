@@ -79,9 +79,10 @@ article {
     img {
         max-width: 100%;
     }
-    
-    a:last-child {
+
+    .read-more {
         float: right;
+        margin-top: -10px;
     }
 }
 
@@ -140,6 +141,16 @@ h1 a, h2 a, h3 a, h4 a {
     }
 }
 
+@media (max-width: 700px) {
+  .next, .previous {
+    display: none;
+  }
+}
+@media (max-width: 290px) {
+    .sitename {
+        display: none;
+    }
+}
 
 @import "highlights";
 @import "svg-icons";

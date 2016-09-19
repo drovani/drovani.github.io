@@ -52,7 +52,7 @@ namespace Vigil.Patrons
 }
 {% endhighlight %}
 
-### <sup>**</sup> "Create"
+### <sup>**</sup>"Create"
 
 At this point, I am going to define Create as issuing the command to _something else_ to instantiate and persist a new
 representation of the entity.
@@ -89,7 +89,7 @@ namespace Vigil.Patrons
 }
 {% endhighlight %}
 
-### <sup>***</sup> "Patron"
+### <sup>***</sup>"Patron"
 
 A patron, this early in development, is an abstract representation of what should be created - it does not care about persistance
 or structure.
