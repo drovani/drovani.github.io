@@ -3,8 +3,10 @@ layout: default
 ---
 
 <article class="post">
-    <h2>{{ page.title }}</h2>
-    <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%e %B %Y" }}</time>
+    <header>
+        <h2>{{ page.title }}</h2>
+        <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%e %B %Y" }}</time>
+    </header>
     <div class="entry">
         {{ content }}
     </div>

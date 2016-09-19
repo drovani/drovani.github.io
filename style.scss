@@ -48,9 +48,28 @@ body {
     }
 }
 
+.pagination {
+    display: flex;
+    padding: 1em;
+    margin: 20px 0;
+    justify-content: space-between;
+    border: 1px solid #dfcc74;
+    background: #f8f8f8;
+
+    >* {
+        flex-grow: 1;
+        text-align: center;
+    }
+    .page_number {
+        flex-grow: 5;
+    }
+}
+
 article {
     header {
         text-align: center;
+        border-bottom: 1px solid $highlight;
+        margin-bottom: 1em;
     }
 
     aside {
@@ -65,6 +84,10 @@ article {
 
     img {
         max-width: 100%;
+    }
+    
+    a:last-child {
+        float: right;
     }
 }
 
