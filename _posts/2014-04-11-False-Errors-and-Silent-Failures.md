@@ -2,6 +2,7 @@
 layout: post
 title: False Errors Are Better Than Silent Failures
 category: "Rovani on C&sharp;"
+excerpt_separator: <!--more-->
 ---
 
 In terms of reaction to a request for work, there are several responses. In order from most desirable to least desirable:
@@ -12,6 +13,8 @@ In terms of reaction to a request for work, there are several responses. In orde
 1. Successful action with a message of failure.
 1. Failed action without a message.
 1. Failed action with a message of success.
+
+<!--more-->
 
 I ran into an issue this week where users were saying that an action they were attempt to perform was reporting success. However, the later steps in their workflow were showing that the original task had failed. This was a disaster for the user experience. I dug into the code and found the offending switch. It was an entirely acceptable failure and a very common occurrence. However, because it was reporting success, users were obviously confused and overall productivity quickly ground to a halt. When my success is determined by the productivity gains that my software provides to others, this is clearly a very serious concern of mine.
 

@@ -4,7 +4,7 @@ layout: default
 
 <article class="post">
     <h2>{{ page.title }}</h2>
-    <time datetime="{{ page.date | date: "%e %B %Y" }}">{{ page.date | date: "%e %B %Y" }}</time>
+    <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%e %B %Y" }}</time>
     <div class="entry">
         {{ content }}
     </div>

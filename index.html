@@ -2,30 +2,43 @@
 layout: default
 ---
 
+{% if paginator.previous_page %}
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous fa fa-long-arrow-left"></a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">Newer Posts</a>
+    {% endif %}
+    <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Older Posts</a>
+    <a href="{{ paginator.next_page_path }}" class="next fa fa-long-arrow-right"></a>
+    {% endif %}
+</div>
+{% endif %}
+
 <div class="posts">
     {% for post in paginator.posts %}
     <article class="post">
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        <time datetime="{{ post.date | date: "%e %B %Y" }}">{{ post.date | date: "%e %B %Y" }}</time>
+        <header>
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
+        </header>
         <div class="entry">
             {{ post.excerpt }}
+            &nbsp;<a href="{{ site.baseurl }}{{ post.url }}" class="read-more fa fa-long-arrow-right"></a>
         </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
     {% endfor %}
 </div>
 
-<!-- Pagination links -->
 <div class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-    {% else %}
-    <span class="previous">Previous</span>
+    <a href="{{ paginator.previous_page_path }}" class="previous fa fa-long-arrow-left"></a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">Newer Posts</a>
     {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-    <span class="next ">Next</span>
+    <a href="{{ paginator.next_page_path }}" class="next">Older Posts</a>
+    <a href="{{ paginator.next_page_path }}" class="next fa fa-long-arrow-right"></a>
     {% endif %}
 </div>
