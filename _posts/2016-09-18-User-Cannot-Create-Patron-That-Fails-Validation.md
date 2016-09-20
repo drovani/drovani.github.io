@@ -23,7 +23,6 @@ command and letting the user know why. This starts by actually validating the co
 {% highlight c# linenos=table %}
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Contracts;
 using System.Linq;
 using Vigil.Domain;
 using Vigil.MessageQueue;
@@ -42,9 +41,6 @@ namespace Vigil.Patrons
 
         public FactoryResult CreatePatron(CreatePatronCommand command)
         {
-            Contract.Requires(command != null);
-            Contract.Ensures(Contract.Result<IKeyIdentity>() != null);
-
             List<ValidationResult> validationResults = new List<ValidationResult>();
             Validator.TryValidateObject(command, new ValidationContext(command), validationResults, true);
 
