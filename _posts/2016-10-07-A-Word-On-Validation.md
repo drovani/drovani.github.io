@@ -14,7 +14,7 @@ For a while, I have been battling with where validation should occur, and who is
 
 ### Simple Validation
 
-Taking a queue from the [IValidatableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.ivalidatableobject.aspx interface, simple validation logic will be handled by the Command itself. I am defining _simple_ as validation that requires no external knowledge.
+Taking a queue from the [IValidatableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.ivalidatableobject.aspx) interface, simple validation logic will be handled by the Command itself. I am defining _simple_ as validation that requires no external knowledge.
 
 {% highlight c# linenos=table %}
 using System.ComponentModel;
