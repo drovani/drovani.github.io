@@ -27,9 +27,9 @@ layout: default
             {{ post.excerpt }}
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more fa fa-long-arrow-right"></a>
         </div>
-        {% if page.tags %}
+        {% if post.tags %}
         <aside class="tags">
-            {% for tag in page.tags %}
+            {% for tag in post.tags %}
             <span>{{ tag }}</span>
             {% endfor %}
         </aside>
