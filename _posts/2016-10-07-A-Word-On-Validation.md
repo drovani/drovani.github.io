@@ -10,7 +10,7 @@ tags:
 - vigiljouney
 ---
 
-For a while, I have been battling with where validation should occur, and who is responsible for ensuring that the information in a command is good data. For the first layer of data validation, I am turning to the Command to validate itself &emdash; the mere application of data types is a rudimentary form of data validation, so including addition simple validation extends that basic logic.
+For a while, I have been battling with where validation should occur, and who is responsible for ensuring that the information in a command is good data. For the first layer of data validation, I am turning to the Command to validate itself &mdash; the mere application of data types is a rudimentary form of data validation, so including addition simple validation extends that basic logic.
 
 ### Simple Validation
 
@@ -39,7 +39,7 @@ This validates that both the DisplayName and the PatronType are no longer than 2
 
 ### Why A Command Does Not Require Itself Be Valid
 
-Even though the Command knows _how_ to validate itself, I have decided that the command is not required to actually ensure that it is valid before work is performed on it &emdash; for two reasons. First, a Command is merely a carrier for information, and only understands simple rules governing whether the data is in a valid state. There are many cases where it is acceptable for a Command to be in an invalid state &emdash; when logging failed attempts, or when saving an in progress state. Second, a Command does not actually know when work is being performed on its information. Other objects (the message queue, the command handler, the command logger) are responsible for deciding if the data needs to be fully valid and then whether the data actually is valid. This was a bit of a struggle for me early on, because if the object knows _how_ to validate itself, shouldn't it also make sure that it is always in a valid state? It was when I started thinking about persisting partial states and persisting failed states that I began to realize how to solve this conundrum.
+Even though the Command knows _how_ to validate itself, I have decided that the command is not required to actually ensure that it is valid before work is performed on it &mdash; for two reasons. First, a Command is merely a carrier for information, and only understands simple rules governing whether the data is in a valid state. There are many cases where it is acceptable for a Command to be in an invalid state &mdash; when logging failed attempts, or when saving an in progress state. Second, a Command does not actually know when work is being performed on its information. Other objects (the message queue, the command handler, the command logger) are responsible for deciding if the data needs to be fully valid and then whether the data actually is valid. This was a bit of a struggle for me early on, because if the object knows _how_ to validate itself, shouldn't it also make sure that it is always in a valid state? It was when I started thinking about persisting partial states and persisting failed states that I began to realize how to solve this conundrum.
 
 ### Who Validates the Validation?
 
