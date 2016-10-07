@@ -23,7 +23,7 @@ using Vigil.Domain;
 
 namespace Vigil.MessageQueue.Commands
 {
-    public class CreatePatronCommand : [ICommand](https://github.com/drovani/Vigil/blob/master/src/Vigil.Domain/ICommand.cs)
+    public class CreatePatronCommand : ICommand
     {
         [Required, StringLength(250)]
         public string DisplayName { get; set; }
@@ -57,27 +57,27 @@ namespace Vigil.Patrons
 {
     public class PatronFactory
     {
-        protected readonly [ICommandQueue](https://github.com/drovani/Vigil/blob/master/src/Vigil.MessageQueue/ICommandQueue.cs) _queue;
+        protected readonly ICommandQueue _queue;
 
-        public PatronFactory([ICommandQueue](https://github.com/drovani/Vigil/blob/master/src/Vigil.MessageQueue/ICommandQueue.cs) queue)
+        public PatronFactory(ICommandQueue queue)
         {
             _queue = queue;
         }
 
-        public FactoryResult CreatePatron([CreatePatronCommand](https://github.com/drovani/Vigil/blob/master/src/Vigil.MessageQueue/Commands/CreatePatronCommand.cs) command)
+        public FactoryResult CreatePatron(CreatePatronCommand command)
         {
             List<ValidationResult> validationResults = new List<ValidationResult>();
             Validator.TryValidateObject(command, new ValidationContext(command), validationResults, true);
 
             if (validationResults.Any())
             {
-                return new [FactoryResult](https://github.com/drovani/Vigil/blob/master/src/Vigil.Domain/FactoryResult.cs)(validationResults);
+                return new FactoryResult(validationResults);
             }
             else
             {
-                var key = [KeyIdentity](https://github.com/drovani/Vigil/blob/master/src/Vigil.Domain/KeyIdentity.cs).NewIdentity();
+                var key = KeyIdentity.NewIdentity();
                 _queue.QueueCommand(command, key);
-                return new [FactoryResult](https://github.com/drovani/Vigil/blob/master/src/Vigil.Domain/FactoryResult.cs)(key);
+                return new FactoryResult(key);
             }
         }
     }
