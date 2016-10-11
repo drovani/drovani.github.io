@@ -8,7 +8,7 @@ After a month of having a Divvy membership, I have been on only nine trips.  A s
 
 But here-in lies a problem that I have discovered.  The Divvy rental is for a thirty minute period, and that is terribly close to the amount of time it takes me to make the trip [between LaSalle & Washington and Racine & Belmont](https://goo.gl/maps/rX8KRLvEU6U2).
 
-[![Divvy Route]({{ site.baseurl }}/images/divvy-route.png "Divvy Route"](https://goo.gl/maps/rX8KRLvEU6U2)
+[![Divvy Route]({{ site.baseurl }}/images/divvy-route.png "Divvy Route")](https://goo.gl/maps/rX8KRLvEU6U2)
 
 For my first three trips I averaged 27:53, which is dangerously close to the 30 minute allotment. For the next six trips, I took advantage of the "unlimited" rides feature of my pass.  In order to be able to take a more leisurely ride home (and be less worried about hitting every damn stop light along the way), I have been stopping at some point along the route, docking my bike, then borrowing the same bike again.
 

@@ -2,15 +2,17 @@
 layout: post
 title: "Disney's Dopey Challenge"
 category: "Exactly One Hobby"
+tags:
+- marathon
 ---
 
-The Dopy Challenge is a four day event at Walt Disney World Resorts.
+The _Dopy Challenge_ is a four day event at Walt Disney World Resorts.
 1. Thursday - Pluto's 5k
 1. Friday - Minnie's 10k
 1. Saturday - Donald Duck's Half Marathon
 1. Sunday - Mickey Mouse's Marathon
 
-In completing the Half Marathon and full Marathon, Dopey Challenge participants also satisfy the requirements for the _Goofy's Race and a Half Challenge_. This results in six medals, six t-shirts, and four extremely early mornings. I had a lot of fun doing the events, but once is certainly enough for me. It was a unique tour of the parks, getting to run through two for the half marathon and all four for the full marathon; however, circling Epcot two additional times for the 5k and 10k made the final return trip at the end of the marathon torturous. Getting up at 3:45 for four mornings in a row put a huge damper on enjoying the rest of the trip. Combine that with the overall cost, and I cannot see myself doing the challenge again.
+In completing the Half Marathon and full Marathon, _Dopey Challenge_ participants also satisfy the requirements for the _Goofy's Race and a Half Challenge_. This results in six medals, six t-shirts, and four extremely early mornings. I had a lot of fun doing the events, but once is certainly enough for me. It was a unique tour of the parks, getting to run through two for the half marathon and all four for the full marathon; however, circling Epcot two additional times for the 5k and 10k made the final return trip at the end of the marathon torturous. Getting up at 3:45 for four mornings in a row put a huge damper on enjoying the rest of the trip. Combine that with the overall cost, and I cannot see myself doing the challenge again; however, I would consider doing the _Goofy Challenge_, again.
 
 ### My Experience and Lessons Learned
 
@@ -27,3 +29,11 @@ It wasn't until I was halfway through the Half Marathon that I had the realizati
 ### You Will Get Sick Of Seeing That Damn Golfball
 
 Since all four races start and end in the Epcot parking lot, you will have to run through the front, and around back of _Spaceship Earth_ four different times. Come the end of the marathon, you are going to loathe seeing that geodesic horror once more. After I finished the marathon, I had the choice of which park we were going to visit, and while I would have liked to walk around Epcot, I hated the idea of seeing it yet again that I chose to go to _Animal Kingdom_ instead (had a wonderful time there, too).
+
+### Extend Your Trip An Extra Day
+
+A friend who works for Disney said that the second weekend in January used to be the slowest weekend at the parks, which is why that weekend is now Marathon Weekend. It is now also one of their business non-holiday weekends. However, I can attest from experience that nearly everyone goes home on the Monday after the marathon. The park and the resort we lodged at were both nearly empty. Park lines were almost nonexistent and there were no crowds at restaurants during peak meal times. If you can afford to stay an extra day, definitely plan on spending Monday doing all of the things that you would normally have to wait in long lines.
+
+### Enjoy The weekend
+
+In spite of all of these early mornings, terribly long corrals, mediocre race support, and exhaustive expense &mdash; it certainly was a fun weekend, made all the better by the company and the visits to the parks. I am glad to have done it, but more at being able to say that I've done it. In the future, there are certainly bigger challenges that await the ambitious feats of endurance I might undertake (Ragnar, RAGBRAI, Ironman, etc).
