@@ -6,6 +6,8 @@ layout: default
     <header>
         <h2>{{ page.title }}</h2>
         <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%e %B %Y" }}</time>
+        &mdash;
+        <span class="category">{{ page.category }}</span>
     </header>
     <div class="entry">
         {{ content }}
