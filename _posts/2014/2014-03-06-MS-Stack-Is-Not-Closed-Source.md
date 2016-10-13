@@ -4,9 +4,7 @@ title: Just Because It's On the Microsoft Stack Doesn't Mean It's Closed Source
 category: "Rovani on C&sharp;"
 ---
 
-I work almost exclusively on the Microsoft WISC stack. The first response that I hear from almost _every single developer_ that I've
-chatted with is something along the lines of "oh, that's all closed source software". It makes me want to throttle them.
-Mostly because it is an entirely antiquated line of thinking that just shows a lack of actual knowledge of the ecosystem.
+I work almost exclusively on the Microsoft WISC stack. The first response that I hear from almost _every single developer_ that I've chatted with is something along the lines of "oh, that's all closed source software". It makes me want to throttle them. Mostly because it is an entirely antiquated line of thinking that just shows a lack of actual knowledge of the ecosystem.
 
 Here is a list of the different libraries used in my current project:
 
@@ -33,8 +31,6 @@ The tools that I use are a mix of paid closed source, freemium closed source, an
 - LinqPad (freemium closed source) - well worth every penny
 - Visual Studio Online (freemium closed source service) - also known as Team Foundation Service
 
-The core Microsoft part of the stack is paid, closed source - sure. They have to make their money somehow. However, just because the
-base part of the stack is closed source does not mean that every developer is producing closed source code. There is lots of open source
-software written for the WISC stack, and plenty more will be written. Both by Microsoft, and by other developers.
+The core Microsoft part of the stack is paid, closed source - sure. They have to make their money somehow. However, just because the base part of the stack is closed source does not mean that every developer is producing closed source code. There is lots of open source software written for the WISC stack, and plenty more will be written. Both by Microsoft, and by other developers.
 
 Elitism at its finest&hellip; and people wonder why sometimes I hate socializing with developers.

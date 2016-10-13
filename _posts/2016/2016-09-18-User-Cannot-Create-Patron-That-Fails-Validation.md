@@ -10,15 +10,11 @@ tags:
 - vigiljouney
 ---
 
-Creating a patron (by which I mean, issuing a command such that some process somewhere will instantiate an actual Patron entity, and perhaps persist
-it in some useful manor) is all well and good, until someone tries to stuff in data that isn't valid. Users like to do things like this all the time,
-so I am going to attempt to protect against it from the beginning. Additionally, by setting up the mechanisms to test validation and perform validation,
-I should be able to keep a culture of enforcing these conventions throughout development.
+Creating a patron (by which I mean, issuing a command such that some process somewhere will instantiate an actual Patron entity, and perhaps persist it in some useful manor) is all well and good, until someone tries to stuff in data that isn't valid. Users like to do things like this all the time, so I am going to attempt to protect against it from the beginning. Additionally, by setting up the mechanisms to test validation and perform validation, I should be able to keep a culture of enforcing these conventions throughout development.
 
 ### <sup>*</sup>"Cannot"
 
-With everything revolving around commands, telling a user something can't be done is less accurate, and it is more about declining to queue the
-command and letting the user know why. This starts by actually validating the command in question.
+With everything revolving around commands, telling a user something can't be done is less accurate, and it is more about declining to queue the command and letting the user know why. This starts by actually validating the command in question.
 
 {% highlight c# linenos=table %}
 using System.Collections.Generic;
@@ -61,9 +57,7 @@ namespace Vigil.Patrons
 
 ### <sup>**</sup>"Validation"
 
-Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid.
-As a first step, I am just using the DataAnnotations attributes, as they serve my needs for now. In the future, I know that I will need to
-do look-up validation (is the PatronType valid), but for now I am just demonstrating that the bare minimum works.
+Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid. As a first step, I am just using the DataAnnotations attributes, as they serve my needs for now. In the future, I know that I will need to do look-up validation (is the PatronType valid), but for now I am just demonstrating that the bare minimum works.
 
 {% highlight c# linenos=table %}
 using System.ComponentModel;
@@ -105,11 +99,7 @@ namespace Vigil.MessageQueue.Commands
 	</dl>
 </aside>
 
-Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the
-solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and
-projects that hold the unit tests for those projects. Test projects have the same name as their target, suffixed with '.Tests' (eg.
-src\Vigil.Domain and test\Vigil.Domain.Tests). The folder structure in the two projects should be identical, and all test classes
-have the same name as their target class, suffixed with 'Test' (eg. Vigil.Patrons.PatronFactory, Vigil.Patrons.PatronFactoryTest).
+Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and projects that hold the unit tests for those projects. Test projects have the same name as their target, suffixed with '.Tests' (eg. src\Vigil.Domain and test\Vigil.Domain.Tests). The folder structure in the two projects should be identical, and all test classes have the same name as their target class, suffixed with 'Test' (eg. Vigil.Patrons.PatronFactory, Vigil.Patrons.PatronFactoryTest).
 
 {% highlight c# linenos=table %}
 using System.Collections.Generic;

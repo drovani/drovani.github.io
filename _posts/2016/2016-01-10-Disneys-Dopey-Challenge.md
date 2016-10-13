@@ -4,6 +4,7 @@ title: "Disney's Dopey Challenge"
 category: "Exactly One Hobby"
 tags:
 - marathon
+excerpt_separator: <!--more-->
 ---
 
 The _Dopy Challenge_ is a four day event at Walt Disney World Resorts.
@@ -14,6 +15,8 @@ The _Dopy Challenge_ is a four day event at Walt Disney World Resorts.
 1. Sunday - Mickey Mouse's Marathon
 
 In completing the Half Marathon and full Marathon, _Dopey Challenge_ participants also satisfy the requirements for the _Goofy's Race and a Half Challenge_. This results in six medals, six t-shirts, and four extremely early mornings. I had a lot of fun doing the events, but once is certainly enough for me. It was a unique tour of the parks, getting to run through two for the half marathon and all four for the full marathon; however, circling Epcot two additional times for the 5k and 10k made the final return trip at the end of the marathon torturous. Getting up at 3:45 for four mornings in a row put a huge damper on enjoying the rest of the trip. Combine that with the overall cost, and I cannot see myself doing the challenge again; however, I would consider doing the _Goofy Challenge_, again.
+
+<!--more-->
 
 ### My Experience and Lessons Learned
 

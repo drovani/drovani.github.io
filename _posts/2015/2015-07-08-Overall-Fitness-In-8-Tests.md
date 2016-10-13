@@ -4,8 +4,7 @@ title: Overall Fitness In 8 Tests
 category: Exactly One Hobby
 ---
 
-A friend forwarded me an article from Runner's World (written by editors at Men's Health) titled "[8 True Tests of Your Overall Fitness](http://www.runnersworld.com/workouts/8-true-tests-of-your-overall-fitness)".
-The article describes the test, drones on about the author's experiences, and then gives some helpful tips on how to meet the test objectives. I wanted a quick chart that I could easily reference, so I'll just post it here. The 30 pound dumbbells and 315 pound deadlift assumes 200 pound body weight.
+A friend forwarded me an article from Runner's World (written by editors at Men's Health) titled "[8 True Tests of Your Overall Fitness](http://www.runnersworld.com/workouts/8-true-tests-of-your-overall-fitness)". The article describes the test, drones on about the author's experiences, and then gives some helpful tips on how to meet the test objectives. I wanted a quick chart that I could easily reference, so I'll just post it here. The 30 pound dumbbells and 315 pound deadlift assumes 200 pound body weight.
 
 | | STANDARD |
 | STIFF ARMS PLANK | 10 seconds |

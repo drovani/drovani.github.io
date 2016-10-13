@@ -4,9 +4,7 @@ title: "Recurring Gifts &mdash; Part 1: Database Schema"
 category: "Rovani on C&sharp;"
 ---
 
-There are many posts out there for how to configure a database schema to handle scheduling events. The part that I found difficult to
-find was an algorithm for calculating future dates for each type of recurring schedule. I have started this series on Recurring Gifts
-as a way to document the process I went through to build the current system. Some features include:
+There are many posts out there for how to configure a database schema to handle scheduling events. The part that I found difficult to find was an algorithm for calculating future dates for each type of recurring schedule. I have started this series on Recurring Gifts as a way to document the process I went through to build the current system. Some features include:
 
 - Ability to scheduled gifts by daily intervals, weekly intervals, monthly (by date) intervals, and monthly intervals by relative point. From there, it is simple math to do Quarterly, Yearly, or any other multiple.
 - Ability to place gift generation On Hold until a certain date.
@@ -23,11 +21,9 @@ A few limitations that may constraint its universe utility:
 
 ### Database Schema
 
-Instead of inventing a database schema from nothing, I did what I do best ? stand on the shoulders of giants, and Microsoft's SQL Server team
-is a pretty huge giant. Turning to their documentation on the [SQL Server Agent job schedules](https://msdn.microsoft.com/en-us/library/ms178644.aspx),
-I opened up the msdb.dbo.sysschedules table. I adjusted some of the definitions to fit my need and built my schema from there.
+Instead of inventing a database schema from nothing, I did what I do best &mdash; stand on the shoulders of giants, and Microsoft's SQL Server team is a pretty huge giant. Turning to their documentation on the [SQL Server Agent job schedules](https://msdn.microsoft.com/en-us/library/ms178644.aspx), I opened up the msdb.dbo.sysschedules table. I adjusted some of the definitions to fit my need and built my schema from there.
 
-Schedules Data Schema
+### Schedules Data Schema
 
 There were three major changes that I made to the SQL schedule.
 
@@ -43,16 +39,10 @@ out exactly why an Audit was created.
 
 ### Evolution Path
 
-There were two mistakes I made in the original implementation of this schema. First, I had the End conditions on the Schedule.
-The thought was that this would be mildly helpful with knowing why the generation of gifts might have started and stopped. Potentially,
-a termination point would be reached, gifts would stop being generated, then a new schedule would be added, thus resuming creation.
-However, the actual hit rate for this situation was zero. All it did was ridiculously complicate the algorithm for parsing the schedules.
+There were two mistakes I made in the original implementation of this schema. First, I had the End conditions on the Schedule. The thought was that this would be mildly helpful with knowing why the generation of gifts might have started and stopped. Potentially, a termination point would be reached, gifts would stop being generated, then a new schedule would be added, thus resuming creation. However, the actual hit rate for this situation was zero. All it did was ridiculously complicate the algorithm for parsing the schedules.
 
-Additionally, I previously had the Start Date on the Schedule. This also was confusing, as two schedules could be created and cause a
-gap in the timeline. It is much more easier to implement one "pause until" setting than try and handle skips. My use case was exactly zero
-for needing multiple start and stops, which is why I have pulled back on the complexity a bit for this second round.
+Additionally, I previously had the Start Date on the Schedule. This also was confusing, as two schedules could be created and cause a gap in the timeline. It is much more easier to implement one "pause until" setting than try and handle skips. My use case was exactly zero for needing multiple start and stops, which is why I have pulled back on the complexity a bit for this second round.
 
 ### Up Next
 
-The next post is going to start to demonstrate how I implemented various parts of the c# algorithm to generate the dates in a schedule.
-These collections then are combined to provide for a final list of all dates.
+The next post is going to start to demonstrate how I implemented various parts of the C&sharp; algorithm to generate the dates in a schedule. These collections then are combined to provide for a final list of all dates.

@@ -5,9 +5,7 @@ category: "Rovani on C&sharp;"
 tags:
 ---
 
-I have found that it is better to put structure in place around a project before going hog wild on implementation. While I recognize that some
-practices grow organically, a healthy amount of structure up-front can save a project from technical bankruptcy down the line. The two tools that
-I use early and often are interfaces and contract classes.
+I have found that it is better to put structure in place around a project before going hog wild on implementation. While I recognize that some practices grow organically, a healthy amount of structure up-front can save a project from technical bankruptcy down the line. The two tools that I use early and often are interfaces and contract classes.
 
 ### Interfaces and Contract Classes
 
@@ -35,11 +33,7 @@ There are a collection of interfaces that I regularly utilize throughout most pr
 
 ### The Obvious &mdash; ICreated, IModified, IDeleted, IOrdered
 
-These four interfaces serve to ensure that all properties are identically named throughout the solution. They also serve as a guide to future
-developers about what restrictions should be placed on the class. Every class that persists data to storage should implement ICreated ? everything
-was created by someone and at some time.  An object that doesn?t implement IModified should never actually be modified. A class with IDeleted
-should not have the records actually removed from storage, but just fill in these fields to flag them as deleted. IOrdered means we know to set
-a default sort on the Ordinal field.
+These four interfaces serve to ensure that all properties are identically named throughout the solution. They also serve as a guide to future developers about what restrictions should be placed on the class. Every class that persists data to storage should implement ICreated &mdash; everything was created by someone and at some time.  An object that doesn?t implement IModified should never actually be modified. A class with IDeleted should not have the records actually removed from storage, but just fill in these fields to flag them as deleted. IOrdered means we know to set a default sort on the Ordinal field.
 
 ### Instead of Deleting It &mdash; Effective It!
 

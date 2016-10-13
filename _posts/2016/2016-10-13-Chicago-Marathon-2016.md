@@ -18,7 +18,7 @@ After having run 48.6 miles over the course of four days, I then had seventeen s
 
 Having had a [miserable, terrible, never-to-be-repeated experience]({% post_url 2015-05-06-2015-Wisconsin-Marathon %}) at the Wisconsin Marathon in 2015, I had elected to go somewhere completely different for 2016. Since my girlfiend was from New Jersey, it seemed like a really good idea at the time[^flw] to go ahead and sign up for the 2016 Novo Nordisk New Jersey Marathon. The course was splendid for the size of the race, and the running company was good. This was the first time that I tried running with a pace group, and it is an experience which I shall endevour to replicate in future races. My initial goal was to run with the 3:45:00 pace group (would would have still been a six minute PR), but at the very beginning of the race, I decided to throw caution to the wind (a very strong, raining, cross wind at that) and quickly catch up to the 3:30:00 pace group. If I was reading this on someone else's blog, I would expect a tale of misery at going out to fast, and then crashing around mile 16. Inconceivably, at mile 16, I instead pulled away from the pace group and absolutely shattered my personal record, setting a new best time of [3:24:31](https://www.athlinks.com/Athletes/193315718/Race/256045904).
 
-### "#Whole30 Nutrition Program & A Personal Trainer"
+### #Whole30 Nutrition Program &amp; A Personal Trainer
 
 As the summer rolled in, my girlfiend and I decided to do the #Whole30 challenge. In support of her, I did not alter any of my meals or nutrition to cheat the program. Some other endurance athletes, I had read, would mostly do the challenge, but still use their sugar-filled gels during the run. I was determined to be fully compliant throughout the 30 days, including on long runs. The first thing that I noticed was the change in energy output during my weekend runs. Previously, I would experience a high energy for many miles, but I could feel this slowly fade away as the miles grew longer. However, on the #Whole30 plan, I felt I had a high level of energy through many more miles than before - but with a significant and sudden drop after some point. After a bit of trial and error, I was able to add more calories throughout the week, which I found boosted the number of miles I could sustain until exhaustion.
 
@@ -64,4 +64,4 @@ The other thing that I learned is that two LaraBars are not nearly enough nutrit
 
 [![Adorable Pups Were The Cutest Spectators At The 2016 Chicago Marathon](https://scontent.cdninstagram.com/t51.2885-15/sh0.08/e35/p640x640/14566788_120617625071487_3990823095353999360_n.jpg)](https://www.dnainfo.com/chicago/20161009/downtown/chicago-marathon-dogs)
 
-[^flw] Famous Last Words
+[^flw]: Famous Last Words
