@@ -7,7 +7,7 @@ tags:
 - factory
 - ddd
 - validation
-- vigiljouney
+- vigiljourney
 ---
 
 For a while, I have been battling with where validation should occur, and who is responsible for ensuring that the information in a command is good data. For the first layer of data validation, I am turning to the Command to validate itself &mdash; the mere application of data types is a rudimentary form of data validation, so including addition simple validation extends that basic logic.

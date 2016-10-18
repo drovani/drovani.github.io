@@ -4,7 +4,7 @@ title: A Word On Factory Results and Contracts
 category: "Rovani on C&sharp;"
 tags:
 - factory
-- vigiljouney
+- vigiljourney
 - codecontracts
 ---
 
