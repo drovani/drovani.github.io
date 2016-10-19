@@ -47,7 +47,16 @@
     <main id="main" role="main" class="main">
         {{ content }}
     </main>
-
+    <aside>
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+        <span class="site-category">
+            <a href="#{{ category | first | slugify }}"
+               {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+                   </a>
+        </span>
+        {% endfor %}
+    </aside>
     <footer class="footer">
         {% include svg-icons.html %}
     </footer>
