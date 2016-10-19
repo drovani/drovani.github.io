@@ -57,7 +57,7 @@ namespace Vigil.Patrons
 
 ### <sup>**</sup>"Validation"
 
-Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid. As a first step, I am just using the DataAnnotations attributes, as they serve my needs for now. In the future, I know that I will need to do look-up validation (is the PatronType valid), but for now I am just demonstrating that the bare minimum works.
+Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid. As a first step, I am just using the `DataAnnotations` attributes, as they serve my needs for now. In the future, I know that I will need to do look-up validation (is the `PatronType` valid), but for now I am just demonstrating that the bare minimum works.
 
 {% highlight c# linenos=table %}
 using System.ComponentModel;
@@ -99,7 +99,7 @@ namespace Vigil.MessageQueue.Commands
 	</dl>
 </aside>
 
-Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and projects that hold the unit tests for those projects. Test projects have the same name as their target, suffixed with '.Tests' (eg. src\Vigil.Domain and test\Vigil.Domain.Tests). The folder structure in the two projects should be identical, and all test classes have the same name as their target class, suffixed with 'Test' (eg. Vigil.Patrons.PatronFactory, Vigil.Patrons.PatronFactoryTest).
+Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and projects that hold the unit tests for those projects. Test projects have the same name as their target, suffixed with '.Tests' (eg. `src\Vigil.Domain` and `test\Vigil.Domain.Tests`). The folder structure in the two projects should be identical, and all test classes have the same name as their target class, suffixed with 'Test' (eg. `Vigil.Patrons.PatronFactory`, `Vigil.Patrons.PatronFactoryTest`).
 
 {% highlight c# linenos=table %}
 using System.Collections.Generic;

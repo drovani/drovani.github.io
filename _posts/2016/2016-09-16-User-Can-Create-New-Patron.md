@@ -110,7 +110,7 @@ namespace Vigil.MessageQueue.Commands
 
 ### ICommandQueue Interface
 
-The most basic, simple interface with the bare minimum for what a Queue would need to implement.
+The most basic, simple interface with the bare minimum for what a message queue would need to implement.
 
 {% highlight c# linenos=table %}
 using Vigil.Domain;

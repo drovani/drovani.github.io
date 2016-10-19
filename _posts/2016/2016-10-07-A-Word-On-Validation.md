@@ -14,7 +14,7 @@ For a while, I have been battling with where validation should occur, and who is
 
 ### Simple Validation
 
-Taking a queue from the [IValidatableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.ivalidatableobject.aspx) interface, simple validation logic will be handled by the Command itself. I am defining _simple_ as validation that requires no external knowledge.
+Taking a queue from the [`IValidatableObject`](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.ivalidatableobject.aspx) interface, simple validation logic will be handled by the command itself. I am defining _simple_ as validation that requires no external knowledge.
 
 {% highlight c# linenos=table %}
 using System.ComponentModel;
@@ -35,7 +35,7 @@ namespace Vigil.MessageQueue.Commands
 }
 {% endhighlight %}
 
-This validates that both the DisplayName and the PatronType are no longer than 250 characters and are not empty. There is no validation as to whether the PatronType exists in some look-up table, or whether the DisplayName is unique (or if it even needs to be unique).
+This validates that both the `DisplayName` and the `PatronType` are not longer than 250 characters and are not empty. There is no validation as to whether the `PatronType` exists in some look-up table, or whether the `DisplayName` is unique (or if it even needs to be unique).
 
 ### Why A Command Does Not Require Itself Be Valid
 
@@ -43,7 +43,7 @@ Even though the Command knows _how_ to validate itself, I have decided that the 
 
 ### Who Validates the Validation?
 
-In my current system design, I am relying on the Factory to handle validating that a Command's data has passed all of its internal data integrity checks. As I've already mentioned the IValidatableObject, it should come as no surprise that I intend to use the DataAnnotations namespace to perform the validation.
+In my current system design, I am relying on the Factory to handle validating that a Command's data has passed all of its internal data integrity checks. As I've already mentioned the `IValidatableObject`, it should come as no surprise that I intend to use the `DataAnnotations` namespace to perform the validation.
 
 {% highlight c# linenos=table %}
 using System.Collections.Generic;

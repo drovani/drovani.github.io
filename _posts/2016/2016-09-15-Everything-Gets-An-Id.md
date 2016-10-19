@@ -30,7 +30,7 @@ namespace Vigil.Domain
 
 ### KeyIdentity Interface
 
-This is the basic implementation of the IKeyIdentity interface. It follows the ValueObject convention, making the Guid immutable, but also adds the ability to compare any two objects by their Guid.
+This is the basic implementation of the `IKeyIdentity` interface. It follows the `ValueObject` convention, making the `Guid` immutable, but also adds the ability to compare any two objects by their `Guid`.
 
 {% highlight c# linenos=table %}
 using System;
@@ -59,10 +59,6 @@ namespace Vigil.Domain
             Id = id;
         }
 
-        /// <summary>Compares two Vigil.Data.Core.Identity classes for equality by Id.
-        /// </summary>
-        /// <param name="obj">The Vigil.Data.Core.Identity class to compare Id values.</param>
-        /// <returns>Returns true if the two Id values are equal; otherwise, false.</returns>
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj))
