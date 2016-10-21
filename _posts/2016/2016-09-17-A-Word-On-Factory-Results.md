@@ -1,10 +1,9 @@
 ---
 layout: post
 title: A Word On Factory Results and Contracts
-category: "Rovani in C&sharp;"
+category: Vigil Journey
 tags:
 - factory
-- vigiljourney
 - codecontracts
 ---
 
