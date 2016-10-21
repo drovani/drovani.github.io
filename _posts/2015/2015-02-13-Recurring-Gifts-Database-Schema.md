@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Recurring Gifts &mdash; Part 1: Database Schema"
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 ---
 
 There are many posts out there for how to configure a database schema to handle scheduling events. The part that I found difficult to find was an algorithm for calculating future dates for each type of recurring schedule. I have started this series on Recurring Gifts as a way to document the process I went through to build the current system. Some features include:

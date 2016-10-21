@@ -23,7 +23,7 @@ layout: default
             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <time datetime="{{ post.date | date: "%F" }}">{{ post.date | date: "%e %B %Y" }}</time>
             &mdash;
-            <span class="category">{{ post.category }}</span>
+            <span class="category"><a href="{{ site.baseurl}}/category/{{ post.category | slugify }}">{{ post.category }}</a></span>
         </header>
         <div class="entry">
             {{ post.excerpt }}

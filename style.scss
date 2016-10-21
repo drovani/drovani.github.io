@@ -102,13 +102,28 @@ article {
     }
 }
 
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5em;
+}
+
 h1 a, h2 a, h3 a, h4 a {
     color: inherit;
 }
 
 blockquote {
     font-size: inherit;
+    max-width: 67%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.category-summary {
+    border-bottom: solid 1px $lowlight;
+}
+
 
 .tests {
     padding: 1em;

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Word On Validation
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 tags:
 - cqrs
 - factory

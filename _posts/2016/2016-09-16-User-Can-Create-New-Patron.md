@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User* Can Create** New Patron***
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 tags:
 - cqrs
 - eventsourcing

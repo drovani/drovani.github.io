@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Commit bccg1aea: Preemptively Structuring the Chaos"
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 tags:
 ---
 

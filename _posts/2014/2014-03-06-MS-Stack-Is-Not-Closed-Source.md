@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Just Because It's On the Microsoft Stack Doesn't Mean It's Closed Source
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 ---
 
 I work almost exclusively on the Microsoft WISC stack. The first response that I hear from almost _every single developer_ that I've chatted with is something along the lines of "oh, that's all closed source software". It makes me want to throttle them. Mostly because it is an entirely antiquated line of thinking that just shows a lack of actual knowledge of the ecosystem.

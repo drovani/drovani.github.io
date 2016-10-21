@@ -1,7 +1,7 @@
 ---
 layout: post
 title: False Errors Are Better Than Silent Failures
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 excerpt_separator: <!--more-->
 ---
 

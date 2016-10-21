@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KnockoutJS Tutorials Suck (But Not As Much As the Documentation)
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 ---
 
 I am not sure why I started using [Knockout](http://knockoutjs.com/), but I have had an overall positive experience with the framework.  I was very intrigued with their hands-on tutorials built into the site, which made getting started fairly easy.  I walked through them step-by-step, writing out all of the code examples by hand, and diligently debugging typos when the example would not execute as expected.  From there, I took the simple step of starting a small side-project just to see how it would all interact.  At that point, it became quickly obvious that the tutorials suck and are missing large pieces of information that are vital to get just a basic application going.  I also found that there are two tutorials that are completely worthless in terms of getting start - they are advanced topics that I still have not found an applicable usage.

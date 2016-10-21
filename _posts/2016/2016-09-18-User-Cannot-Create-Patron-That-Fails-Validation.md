@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Cannot* Create Patron That Fails Validation**
-category: "Rovani on C&sharp;"
+category: "Rovani in C&sharp;"
 tags:
 - cqrs
 - factory

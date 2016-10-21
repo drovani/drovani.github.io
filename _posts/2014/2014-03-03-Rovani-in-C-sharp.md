@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rovani in C&#9839;
-category: "Rovani on C&sharp;"
+title: "Rovani in C&sharp;"
+category: "Rovani in C&sharp;"
 ---
 
 I do not have much to write about.
