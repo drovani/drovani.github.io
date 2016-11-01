@@ -158,6 +158,7 @@ blockquote {
 .tags {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     border: 0;
 

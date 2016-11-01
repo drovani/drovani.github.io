@@ -8,6 +8,9 @@ layout: default
         <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%e %B %Y" }}</time>
         &mdash;
         <span class="category">{{ page.category }}</span>
+        {% if page.treeid %}
+            <a href="https://github.com/drovani/Vigil/tree/{{ page.treeid }}" title="View this tree on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+        {% endif %}
     </header>
     <div class="entry">
         {{ content }}
