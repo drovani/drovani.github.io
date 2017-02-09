@@ -9,3 +9,5 @@ node_modules
 package.json
 /.vs
 /project.lock.json
+/obj
+/bin
