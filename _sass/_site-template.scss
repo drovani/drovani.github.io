@@ -1,0 +1,52 @@
+nav.navbar{
+    background-color: #f8f8f8;
+    border: $highlight ridge .5em;
+    border-radius: 1em .1em;
+    font-size: $large;
+    display: flex;
+    align-items: center;
+    padding: .25em .5em;
+
+    .avatar{
+        overflow: hidden;
+        background-size: contain;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-image: url('https://avatars3.githubusercontent.com/u/898478');
+        min-width: 1em;
+    }
+
+    a, a:visited, a:active{
+        text-decoration: none;
+        color: $text;
+    }
+    a:hover{
+        text-decoration: none;
+        color: darken($text, 100%);
+    }
+    img {
+        width: 100%;
+    }
+
+    .navigation{
+        margin-left: auto;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 19px;
+            padding: 0;
+
+            li {
+                display: block;
+                padding: 1em;
+            
+                :hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
