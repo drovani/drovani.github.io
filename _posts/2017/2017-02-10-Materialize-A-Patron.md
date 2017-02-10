@@ -6,6 +6,7 @@ treeid:
 tags:
 - versionedevent
 - eventsourcing
+- unittests
 ---
 
 There are two ways to retrieve the current values associated with an entity. The canonical source is the collection of events that describe how an entity came into existance and then was affected over time. The standard term for this seems to be "hydrating" the entity. Once the current state of the entity is found, it can then be persisted to a different medium for easier access. In the example of a `Patron`, there are few circumstances where the entire history of the entity is needed. Instead, most requests for the information will only be looking for the most current iteration - which is found in a snapshot database. One of the first challenges that I faced when building this initial prototype was proving that my code could rehydrate a `Patron` from only a list of events.
@@ -14,41 +15,42 @@ Looking into the details of what the process is when hydrating a `Patron`, the b
 
 {% highlight c# linenos=table %}
 
-    using System;
-    using System.Collections.Generic;
-    using Vigil.Domain.EventSourcing;
-    using Vigil.Patrons.Events;
+using System;
+using System.Collections.Generic;
+using Vigil.Domain.EventSourcing;
+using Vigil.Patrons.Events;
 
-    public class Patron : EventSourced
+public class Patron : EventSourced
+{
+    public Patron(Guid patronId, IEnumerable<IVersionedEvent> history) : this(patronId)
     {
-        public Patron(Guid patronId, IEnumerable<IVersionedEvent> history) : this(patronId)
-        {
-           LoadFrom(history);
-        }
-
-        protected Patron(Guid patronId) : base(patronId)
-        {
-            Handles<PatronCreated>(OnPatronCreated);
-            Handles<PatronHeaderChanged>(OnPatronHeaderChanged);
-            Handles<PatronDeleted>(OnPatronDeleted);
-        }
+        LoadFrom(history);
     }
 
-    public abstract class EventSourced : IEventSourced
+    protected Patron(Guid patronId) : base(patronId)
     {
-        private readonly Dictionary<Type, Action<IVersionedEvent>> handlers = new Dictionary<Type, Action<IVersionedEvent>>();
+        Handles<PatronCreated>(OnPatronCreated);
+        Handles<PatronHeaderChanged>(OnPatronHeaderChanged);
+        Handles<PatronDeleted>(OnPatronDeleted);
+    }
+}
 
-        protected void LoadFrom(IEnumerable<IVersionedEvent> pastEvents)
+public abstract class EventSourced : IEventSourced
+{
+    private readonly Dictionary<Type, Action<IVersionedEvent>> handlers
+        = new Dictionary<Type, Action<IVersionedEvent>>();
+
+    protected void LoadFrom(IEnumerable<IVersionedEvent> pastEvents)
+    {
+        var orderedPastEvents = pastEvents.OrderBy(pe => pe.GeneratedOn);
+        foreach (var e in orderedPastEvents)
         {
-            var orderedPastEvents = pastEvents.OrderBy(pe => pe.GeneratedOn);
-            foreach (var e in orderedPastEvents)
-            {
-                handlers[e.GetType()].Invoke(e);
-                Version = e.Version;
-                events.Add(e);
-            }
+            handlers[e.GetType()].Invoke(e);
+            Version = e.Version;
+            events.Add(e);
         }
     }
+}
 
 {% endhighlight %}
 
@@ -58,7 +60,7 @@ I liked the idea of keeping the logic of how an `EventSourced` object is affect 
 
 My initial goal was to create some sort of reflection assembly scanning that would find all methods that match the signature needed for an event and allow them to self-register. I might be able to create a custom attribute for that - perhaps a `HandlesEventAttribute`.
 
-Anyway, each of the event, in creation order, get their appropriate method within the `Patron` object invoked, which updates the properties as appropriate. Unit testing is fairly straightforward.
+Anyway, each of the events, in creation order, get their appropriate method within the `Patron` object invoked, which updates the properties as appropriate. Unit testing is fairly straightforward.
 
 {% highlight c# linenos=table %}
 
