@@ -80,7 +80,8 @@ public void Create_With_ValidCommand_IsPublished_AndReturnsAcceptedResult_WithLo
     };
 
     var mockUrlHelper = new Mock<IUrlHelper>(MockBehavior.Strict);
-    Expression<Func<IUrlHelper, string>> urlSetup = url => url.Action(It.Is<UrlActionContext>(uac => uac.Action == "Get" && GetId(uac.Values) != cmd.Id));
+    Expression<Func<IUrlHelper, string>> urlSetup
+        = url => url.Action(It.Is<UrlActionContext>(uac => uac.Action == "Get" && GetId(uac.Values) != cmd.Id));
     mockUrlHelper.Setup(urlSetup).Returns("a/mock/url/for/testing").Verifiable();
 
     var controller = new PatronController()
