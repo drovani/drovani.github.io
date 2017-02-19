@@ -8,5 +8,8 @@
         "**/.vscode": true,
         "**/.sass-cache":true,
         "**/_site":true
-    }
+    },
+    "markdown.styles": [
+        "**/_site"
+    ]
 }

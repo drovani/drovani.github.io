@@ -1,0 +1,20 @@
+{
+    "language": "en_US",
+    "ignoreWordsList": [
+        "WebAPI",
+        "workflow",
+        "endhighlight",
+        "linenos",
+        "treeid"
+    ],
+    "documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "ignoreRegExp": [
+        "\w{40}"
+    ],
+    "ignoreFileExtensions": [],
+    "checkInterval": 5000
+}

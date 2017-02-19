@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning ASP.NET Core MVC - Part 1
+title: Discovering the ASP.NET Core MVC Stack - Part 1
 category: Vigil Journey
 treeid: 
 tags:
