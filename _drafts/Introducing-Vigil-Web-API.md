@@ -23,7 +23,7 @@ An unexpected (though, in hindsight, entirely predictable) revalation I had whil
 
 Previous versions of ASP.NET MVC separated out the `Controller` base class from the WebAPI controller base class. With ASP.NET Core MVC, there is no difference between an API controller and a web controller. I see this as being a real advantage when it comes to migrating code that was all crammed together in a web application, when an easier way to manage it would be as two different applications. Since a core goal of this entire _Vigil Journey_ is to separate responsibilities wherever possible, I like having the responsibility of user presentation being entirely separate from the responsibility of the command and query part of the workflow.
 
-The `PatronController` is going to start as a simple controller that implements the four basic tenents of data: __C__reate, __R__ead, __U__pdate, __D__elete - or CRUD. Each action has a different Verb, Model, and return values.
+The `PatronController` is going to start as a simple controller that implements the four basic tenents of data: Create, Read, Update, Delete - or CRUD. Each action has a different Verb, Model, and return values.
 
 |        | Http Verb | Model              | Success        | Failure              |
 |--------|-----------|--------------------|----------------|----------------------|
