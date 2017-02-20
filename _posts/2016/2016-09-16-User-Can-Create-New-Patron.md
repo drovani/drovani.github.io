@@ -16,7 +16,7 @@ The first thing that I learned with Dependency Injection is that it encourages a
 
 A "User" in this case is the arbitrary creator of a command and consumer of the factory. For now, the User is the test suite (powered by xUnit).
 
-{% highlight c# linenos=table %}
+```csharp
 using Moq;
 using System;
 using Vigil.Domain;
@@ -47,13 +47,13 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```
 
 ### <sup>**</sup>"Create"
 
 At this point, I am going to define Create as issuing the command to _something else_ to instantiate and persist a new representation of the entity.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Diagnostics.Contracts;
 using Vigil.Domain;
 using Vigil.MessageQueue;
@@ -83,13 +83,13 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```
 
 ### <sup>***</sup>"Patron"
 
 A patron, this early in development, is an abstract representation of what should be created - it does not care about persistance or structure.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Vigil.Domain;
@@ -106,13 +106,13 @@ namespace Vigil.MessageQueue.Commands
         public string PatronType { get; set; }
     }
 }
-{% endhighlight %}
+```
 
 ### ICommandQueue Interface
 
 The most basic, simple interface with the bare minimum for what a message queue would need to implement.
 
-{% highlight c# linenos=table %}
+```csharp
 using Vigil.Domain;
 
 namespace Vigil.MessageQueue
@@ -122,17 +122,17 @@ namespace Vigil.MessageQueue
         void QueueCommand(ICommand command, IKeyIdentity key);
     }
 }
-{% endhighlight %}
+```
 
 ### ICommand Interface
 
 This is just a simple way to identify commands and provide a way for future restrictions and contracts, when I need them.
 
-{% highlight c# linenos=table %}
+```csharp
 namespace Vigil.Domain
 {
     public interface ICommand
     {
     }
 }
-{% endhighlight %}
+```

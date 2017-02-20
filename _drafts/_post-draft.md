@@ -6,5 +6,5 @@ treeid:
 tags:
 ---
 
-{% highlight c# linenos=table %}
-{% endhighlight %}
+```csharp
+```

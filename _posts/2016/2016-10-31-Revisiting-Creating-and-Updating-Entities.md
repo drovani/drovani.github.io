@@ -20,7 +20,7 @@ With this refocus, I now have an `ICommand` that is handled by an `ICommandHandl
 
 A `Command` describes the action that needs to take place. The name of the command (`CreatePatronCommand`) indicates what should be peformed and the data in the command provides the necessary information to fully execute the command.
 
-{% highlight c# linenos=table %}
+```csharp
 using System;
 
 namespace Vigil.Domain.Messaging
@@ -32,11 +32,11 @@ namespace Vigil.Domain.Messaging
         Guid Id { get; }
     }
 }
-{% endhighlight %}
+```
 
 The command, having been put on the bus, is then passed to a `CommandHandler` which creates one or more events, placing them on the event bus, and persists the command to some storage for archival purposes. Otherwise, the command is of no further use and could be discarded.
 
-{% highlight c# linenos=table %}
+```csharp
 namespace Vigil.Domain.Messaging
 {
     public interface ICommandHandler
@@ -49,11 +49,11 @@ namespace Vigil.Domain.Messaging
         void Handle(TCommand command);
     }
 }
-{% endhighlight %}
+```
 
 In order to persist the command, a `CommandRepository` is passed to the command handler to presist the command. When needed, this could also fetch data if it is required to do some kind of look-up when creating events.
 
-{% highlight c# linenos=table %}
+```csharp
 namespace Vigil.Domain.Messaging
 {
     public interface ICommandRepository
@@ -61,4 +61,4 @@ namespace Vigil.Domain.Messaging
         void Save<TCommand>(TCommand command) where TCommand : ICommand;
     }
 }
-{% endhighlight %}
+```

@@ -16,7 +16,7 @@ Having the identifier at the time of initialization turned out to save all kinds
 
 By abstracting the key to an interface, I can decide later if and how I would like to change it. This will limit the places that are impacted if I need to change out the type of the Id, or add more fields. Also, by having methods use an interface instead of a concrete class, it becomes much easier to mock this when testing. Faking an interface is much easier than building entire test classes.
 
-{% highlight c# linenos=table %}
+```csharp
 using System;
 
 namespace Vigil.Domain
@@ -26,13 +26,13 @@ namespace Vigil.Domain
         Guid Id { get; }
     }
 }
-{% endhighlight %}
+```
 
 ### KeyIdentity Interface
 
 This is the basic implementation of the `IKeyIdentity` interface. It follows the `ValueObject` convention, making the `Guid` immutable, but also adds the ability to compare any two objects by their `Guid`.
 
-{% highlight c# linenos=table %}
+```csharp
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Contracts;
@@ -111,4 +111,4 @@ namespace Vigil.Domain
         }
     }
 }
-{% endhighlight %}
+```

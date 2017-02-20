@@ -32,7 +32,7 @@ The `PatronController` is going to start as a simple controller that implements 
 | Update | Put       | UpdatePatronHeader | Accepted       | BadRequest, NotFound |
 | Delete | Delete    | PatronId           | Accepted       | NotFound             |
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
@@ -47,7 +47,8 @@ namespace Vigil.WebApi.Controllers
         private readonly ICommandQueue commandQueue;
         private readonly Func<VigilWebContext> contextFactory;
 
-        public PatronController(ICommandQueue commandQueue, Func<VigilWebContext> contextFactory)
+        public PatronController(ICommandQueue commandQueue,
+            Func<VigilWebContext> contextFactory)
         {
             this.commandQueue = commandQueue;
             this.contextFactory = contextFactory;
@@ -90,7 +91,9 @@ namespace Vigil.WebApi.Controllers
             else
             {
                 commandQueue.Publish(command);
-                return Accepted(Url.Action(nameof(Get), new { id = command.PatronId }));
+                return Accepted(
+                    Url.Action(nameof(Get), new { id = command.PatronId })
+                );
             }
         }
 
@@ -110,7 +113,9 @@ namespace Vigil.WebApi.Controllers
                 {
                     command.PatronId = id;
                     commandQueue.Publish(command);
-                    return Accepted(Url.Action(nameof(Get), new { id = command.PatronId }));
+                    return Accepted(Url.Action(nameof(Get), new {
+                        id = command.PatronId
+                    }));
                 }
                 else
                 {
@@ -126,7 +131,12 @@ namespace Vigil.WebApi.Controllers
             {
                 if (context.Patrons.Any(p => p.Id == id))
                 {
-                    commandQueue.Publish(new DeletePatron(User.Identity.Name, DateTime.Now) { PatronId = id });
+                    commandQueue.Publish(
+                        new DeletePatron(User.Identity.Name, DateTime.Now) 
+                        {
+                            PatronId = id 
+                        }
+                    );
                     return Accepted();
                 }
                 else
@@ -137,13 +147,13 @@ namespace Vigil.WebApi.Controllers
         }
     }
 }
-{% endhighlight %}
+```
 
 ### Unit Tests before Functional testing
 
 Before I attempted to launch Kestrel or IIS Integration, I needed to write a Unit Test. I got a little ahead of myself on this one. I wrote this first unit test, and then went off on a coding tangent, which caused a massive refactoring to occur. The unit tests never got completed for this version of the `PatronController`, but it does provide a quick overview as to how I handled the constructor requirements of the controller and checks for the return value.
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -183,6 +193,6 @@ namespace Vigil.WebApi.Controllers
         }
     }
 }
-{% endhighlight %}
+```
 
 If nothing else, this post reinforced that I need to write posts more often, and do a better job of isolating concepts into branches and merging small amounts of code at a time.
