@@ -9,9 +9,9 @@ tags:
 - mvccore
 ---
 
-Thus far in the series, the Vigil Journey project has been able to [create a patron]({% post_url 2016-09-16-User-Can-Create-New-Patron %}), [update a patron]({% post_url 2016-10-19-User-Can-Update-Patron %}), and have those redefined as "[a patron can be created and updated]({% post_url 2016-11-01-Patron-Can-Be-Created-and-Updated %})". However, as acknowledged in those posts, this was all smoke and mirrors. Nothing was being persisted, and once the unit tests were run, there was no lasting effect of the code. All of the tests passed and there were lots of pretty green check marks, but no residual digital substance. Additionally, there was no application that could be left running with which someone could interact.
+Thus far in the series, the Vigil Journey project has been able to [create a patron]({% post_url 2016/2016-09-16-User-Can-Create-New-Patron %}), [update a patron]({% post_url 2016/2016-10-19-User-Can-Update-Patron %}), and have those redefined as "[a patron can be created and updated]({% post_url 2016/2016-11-01-Patron-Can-Be-Created-and-Updated %})". However, as acknowledged in those posts, this was all smoke and mirrors. Nothing was being persisted, and once the unit tests were run, there was no lasting effect of the code. All of the tests passed and there were lots of pretty green check marks, but no residual digital substance. Additionally, there was no application that could be left running with which someone could interact.
 
-I began getting antsy about needing to have some semblence of real progress. Something that I could launch and point to and say "see there; it works!" This was my primary motivator for quickly (and sloppily) writing the [`SqlCommandQueue` and `SqlEventBus`]({% post_url 2017-01-26-Illusions-of-Queues-and-Buses %}) classes. I wanted to be able to demonstrate _something_.
+I began getting antsy about needing to have some semblence of real progress. Something that I could launch and point to and say "see there; it works!" This was my primary motivator for quickly (and sloppily) writing the [`SqlCommandQueue` and `SqlEventBus`]({% post_url 2017/2017-01-26-Illusions-of-Queues-and-Buses %}) classes. I wanted to be able to demonstrate _something_.
 
 ### Recent Observations
 

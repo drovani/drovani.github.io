@@ -10,7 +10,7 @@ layout: default
 {% endunless %}
 
 <div class="posts">
-    {% for post in site.categories.[page.category] %}
+    {% for post in site.categories[page.category] %}
     <article class="post">
         <header>
             <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>

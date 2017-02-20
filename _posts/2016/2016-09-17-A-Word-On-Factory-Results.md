@@ -34,7 +34,7 @@ namespace Vigil.Domain
 }
 {% endhighlight %}
 
-The `PatronFactory` will now return this class. If there were problems, then the `ValidationResults` collection will contain elements; if all went well, then `IKeyIdentity` should not be null. Tests were updated to reflect this, and now I am ready to add validation ([next post]({% post_url 2016-09-18-User-Cannot-Create-Patron-That-Fails-Validation %}));
+The `PatronFactory` will now return this class. If there were problems, then the `ValidationResults` collection will contain elements; if all went well, then `IKeyIdentity` should not be null. Tests were updated to reflect this, and now I am ready to add validation ([next post]({% post_url 2016/2016-09-18-User-Cannot-Create-Patron-That-Fails-Validation %}));
 
 ### A Quick Note About Contracts
 
