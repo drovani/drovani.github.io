@@ -138,3 +138,51 @@ namespace Vigil.WebApi.Controllers
     }
 }
 {% endhighlight %}
+
+### Unit Tests before Functional testing
+
+Before I attempted to launch Kestrel or IIS Integration, I needed to write a Unit Test. I got a little ahead of myself on this one. I wrote this first unit test, and then went off on a coding tangent, which caused a massive refactoring to occur. The unit tests never got completed for this version of the `PatronController`, but it does provide a quick overview as to how I handled the constructor requirements of the controller and checks for the return value.
+
+{% highlight c# linenos=table %}
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Moq;
+using System;
+using Vigil.Domain.Messaging;
+using Xunit;
+
+namespace Vigil.WebApi.Controllers
+{
+    public class PatronControllerTest
+    {
+        public readonly ICommandQueue cmdQueue = Mock.Of<ICommandQueue>();
+        public readonly Func<VigilWebContext> Context;
+
+        public PatronControllerTest()
+        {
+            var serviceProvider = new ServiceCollection()
+                .AddEntityFrameworkInMemoryDatabase()
+                .BuildServiceProvider();
+            var builder = new DbContextOptionsBuilder<VigilWebContext>()
+                .UseInMemoryDatabase(databaseName: "TestHelper")
+                .UseInternalServiceProvider(serviceProvider);
+
+            Context = () => new VigilWebContext(builder.Options);
+        }
+
+        [Fact]
+        public void Get_Returns_EmptyCollection_WhenThereAreNoPatrons()
+        {
+            var controller = new PatronController(cmdQueue, Context);
+
+            var result = controller.Get() as OkObjectResult;
+
+            Assert.NotNull(result);
+            Assert.NotNull(result.Value);
+        }
+    }
+}
+{% endhighlight %}
+
+If nothing else, this post reinforced that I need to write posts more often, and do a better job of isolating concepts into branches and merging small amounts of code at a time.
