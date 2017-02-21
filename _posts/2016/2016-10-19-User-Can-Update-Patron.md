@@ -10,13 +10,13 @@ tags:
 - ddd
 ---
 
-A simple update of an object is as complex as adding a new instance of the object, which means it is both straight forward and laden with all kinds of caveats and unlying processes. As with [creating a new Patron]({% post_url 2016-09-16-User-Can-Create-New-Patron %}), it is trivial for me to put together a contrived example of code that will technically satisfy the requirements for "User Can Update a Patron". A unit Test will create a new Command that will be validated by the Factory and then passed to the MessageQueue for persistance by some other process.
+A simple update of an object is as complex as adding a new instance of the object, which means it is both straight forward and laden with all kinds of caveats and unlying processes. As with [creating a new Patron]({% post_url 2016/2016-09-16-User-Can-Create-New-Patron %}), it is trivial for me to put together a contrived example of code that will technically satisfy the requirements for "User Can Update a Patron". A unit Test will create a new Command that will be validated by the Factory and then passed to the MessageQueue for persistance by some other process.
 
 ### Command and Tests
 
 There is no surprising code here. The only differences, at this point, between the `CreatePatronCommand` and the `UpdatePatronCommand` is the removal of any fields being required and the addition of an `IKeyIdentity` identifier.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.ComponentModel.DataAnnotations;
 using Vigil.Domain;
 
@@ -34,7 +34,7 @@ namespace Vigil.MessageQueue.Commands
         public string PatronType { get; set; }
     }
 }
-{% endhighlight %}
+```
 
 The intent is that further down the line, the process that actually performs the update will ignore any fields that are _null_. I am partial to the idea of only passing data that actually needs changing. In the future, when I need to handle non-nullable data, then I will worry about how to indicate a removal of information. At this point, though, it is tomorrow-David's problem.
 
@@ -42,7 +42,7 @@ The `IKeyIdentity` is for the issuing code to indicate which entity needs updati
 
 The unit tests for this command are just as basic as those for the `CreatePatronCommand` class. They are just for making sure that validation can be performed on the object and that it is simple to create a case where it will fail validation.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -87,13 +87,13 @@ namespace Vigil.MessageQueue.Commands
         }
     }
 }
-{% endhighlight %}
+```
 
 ### Factory and Added Tests
 
 The factory does not need much more than it already has. Adding the `UpdatePatron` method does show that the validation code between the two methods is the exact same, and so I have refactored that into its own protected method. Otherwise, the only real difference is that the `key` for the `QueueCommand` method comes from the `UpdatePatronCommand` instead of being newly generated.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -152,11 +152,11 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```
 
 The added tests are just as easy to write as one would expect. One test to make sure that everything can successfully complete when everything is correct, and one test to make sure that if fails meaningfully.
 
-{% highlight c# linenos=table %}
+```csharp
 using Moq;
 using System;
 using Vigil.Domain;
@@ -206,6 +206,6 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```
 
 It feels very anti-climactic to be adding so little code just to "Update" an entity, and it is a little overwhelming to thing of all of the code that needs to be written after this to persist the changes, and all of the code that needs to be written before this to allow a real user to generate the command. However, for this small pocket, the work is complete.

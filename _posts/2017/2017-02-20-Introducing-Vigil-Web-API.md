@@ -9,9 +9,9 @@ tags:
 - mvccore
 ---
 
-Thus far in the series, the Vigil Journey project has been able to [create a patron]({% post_url 2016-09-16-User-Can-Create-New-Patron %}), [update a patron]({% post_url 2016-10-19-User-Can-Update-Patron %}), and have those redefined as "[a patron can be created and updated]({% post_url 2016-11-01-Patron-Can-Be-Created-and-Updated %})". However, as acknowledged in those posts, this was all smoke and mirrors. Nothing was being persisted, and once the unit tests were run, there was no lasting effect of the code. All of the tests passed and there were lots of pretty green check marks, but no residual digital substance. Additionally, there was no application that could be left running with which someone could interact.
+Thus far in the series, the Vigil Journey project has been able to [create a patron]({% post_url 2016/2016-09-16-User-Can-Create-New-Patron %}), [update a patron]({% post_url 2016/2016-10-19-User-Can-Update-Patron %}), and have those redefined as "[a patron can be created and updated]({% post_url 2016/2016-11-01-Patron-Can-Be-Created-and-Updated %})". However, as acknowledged in those posts, this was all smoke and mirrors. Nothing was being persisted, and once the unit tests were run, there was no lasting effect of the code. All of the tests passed and there were lots of pretty green check marks, but no residual digital substance. Additionally, there was no application that could be left running with which someone could interact.
 
-I began getting antsy about needing to have some semblence of real progress. Something that I could launch and point to and say "see there; it works!" This was my primary motivator for quickly (and sloppily) writing the [`SqlCommandQueue` and `SqlEventBus`]({% post_url 2017-01-26-Illusions-of-Queues-and-Buses %}) classes. I wanted to be able to demonstrate _something_.
+I began getting antsy about needing to have some semblence of real progress. Something that I could launch and point to and say "see there; it works!" This was my primary motivator for quickly (and sloppily) writing the [`SqlCommandQueue` and `SqlEventBus`]({% post_url 2017/2017-01-26-Illusions-of-Queues-and-Buses %}) classes. I wanted to be able to demonstrate _something_.
 
 ### Recent Observations
 
@@ -32,7 +32,7 @@ The `PatronController` is going to start as a simple controller that implements 
 | Update | Put       | UpdatePatronHeader | Accepted       | BadRequest, NotFound |
 | Delete | Delete    | PatronId           | Accepted       | NotFound             |
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
@@ -47,7 +47,8 @@ namespace Vigil.WebApi.Controllers
         private readonly ICommandQueue commandQueue;
         private readonly Func<VigilWebContext> contextFactory;
 
-        public PatronController(ICommandQueue commandQueue, Func<VigilWebContext> contextFactory)
+        public PatronController(ICommandQueue commandQueue,
+            Func<VigilWebContext> contextFactory)
         {
             this.commandQueue = commandQueue;
             this.contextFactory = contextFactory;
@@ -90,7 +91,9 @@ namespace Vigil.WebApi.Controllers
             else
             {
                 commandQueue.Publish(command);
-                return Accepted(Url.Action(nameof(Get), new { id = command.PatronId }));
+                return Accepted(
+                    Url.Action(nameof(Get), new { id = command.PatronId })
+                );
             }
         }
 
@@ -110,7 +113,9 @@ namespace Vigil.WebApi.Controllers
                 {
                     command.PatronId = id;
                     commandQueue.Publish(command);
-                    return Accepted(Url.Action(nameof(Get), new { id = command.PatronId }));
+                    return Accepted(Url.Action(nameof(Get), new {
+                        id = command.PatronId
+                    }));
                 }
                 else
                 {
@@ -126,7 +131,12 @@ namespace Vigil.WebApi.Controllers
             {
                 if (context.Patrons.Any(p => p.Id == id))
                 {
-                    commandQueue.Publish(new DeletePatron(User.Identity.Name, DateTime.Now) { PatronId = id });
+                    commandQueue.Publish(
+                        new DeletePatron(User.Identity.Name, DateTime.Now) 
+                        {
+                            PatronId = id 
+                        }
+                    );
                     return Accepted();
                 }
                 else
@@ -137,13 +147,13 @@ namespace Vigil.WebApi.Controllers
         }
     }
 }
-{% endhighlight %}
+```
 
 ### Unit Tests before Functional testing
 
 Before I attempted to launch Kestrel or IIS Integration, I needed to write a Unit Test. I got a little ahead of myself on this one. I wrote this first unit test, and then went off on a coding tangent, which caused a massive refactoring to occur. The unit tests never got completed for this version of the `PatronController`, but it does provide a quick overview as to how I handled the constructor requirements of the controller and checks for the return value.
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -183,6 +193,6 @@ namespace Vigil.WebApi.Controllers
         }
     }
 }
-{% endhighlight %}
+```
 
 If nothing else, this post reinforced that I need to write posts more often, and do a better job of isolating concepts into branches and merging small amounts of code at a time.

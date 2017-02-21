@@ -15,7 +15,7 @@ There are many solutions on the market (including [free](https://github.com/zero
 
 Calling this a "queue" is a complete misnomer, since there is no actual queuing of the commands. All this does is persist the command to the database, call the command handler, and then declare the command as handled.
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using System;
@@ -28,7 +28,8 @@ namespace Vigil.Sql
         private readonly IServiceProvider _serviceProvider;
         private readonly Func<SqlMessageDbContext> _dbFactory;
 
-        public SqlCommandQueue(IServiceProvider serviceProvider, Func<SqlMessageDbContext> dbFactory)
+        public SqlCommandQueue(IServiceProvider serviceProvider,
+            Func<SqlMessageDbContext> dbFactory)
         {
             _serviceProvider = serviceProvider;
             _dbFactory = dbFactory;
@@ -51,7 +52,8 @@ namespace Vigil.Sql
                 context.SaveChanges();
             }
 
-            var handler = _serviceProvider.GetRequiredService<ICommandHandler<TCommand>>();
+            var handler = _serviceProvider
+                .GetRequiredService<ICommandHandler<TCommand>>();
             handler.Handle(command);
 
             using (SqlMessageDbContext context = _dbFactory())
@@ -63,7 +65,7 @@ namespace Vigil.Sql
         }
     }
 }
-{% endhighlight %}
+```
 
 A bit of magic happens on lines 28 and 29 &mdash; in order to retrieve an arbitrary object for later consumption, the command needs to be serialized. Additionally, to allow it to be deserialized later, the full AQN of the class should be kept handy. The actual work is done in lines 36 and 37, which get the command handler that has already been globally registered, and then calls the `Handle` method. Since nothing happens asynchronously, the queue is fully able to assume that returning control back to it means the command has been handled. Updating the `HandleOn` property closes that loop.
 
@@ -71,7 +73,7 @@ A bit of magic happens on lines 28 and 29 &mdash; in order to retrieve an arbitr
 
 Just as the "Command Queue" isn't a queue, the `SqlEventBus` isn't a bus, or a topic, or any kind of fancy messaging. What does it do? It persists the event to storage (a database), gets and calls all of the event handlers, then marks the persisted event as handled. The code looks quite similar to the `SqlCommandQueue`.
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using System;
@@ -85,7 +87,8 @@ namespace Vigil.Sql
         private readonly Func<SqlMessageDbContext> _dbFactory;
 
 
-        public SqlEventBus(IServiceProvider serviceProvider, Func<SqlMessageDbContext> dbFactory)
+        public SqlEventBus(IServiceProvider serviceProvider,
+            Func<SqlMessageDbContext> dbFactory)
         {
             _serviceProvider = serviceProvider;
             _dbFactory = dbFactory;
@@ -124,7 +127,7 @@ namespace Vigil.Sql
         }
     }
 }
-{% endhighlight %}
+```
 
 The unit tests are very simple (so simple that I haven't even created them - and probably won't). It would just be a set of tests that verify it is doing exactly what I've told it to do. Since this code is only a demostration, and not meant for any kind of actual use, I'm not bother to fully unit test it. I doubt that this code will survive past the point where I have a real queue and bus living up in Azure.
 

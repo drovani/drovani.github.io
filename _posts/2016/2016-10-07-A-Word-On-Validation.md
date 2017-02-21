@@ -15,7 +15,7 @@ For a while, I have been battling with where validation should occur, and who is
 
 Taking a queue from the [`IValidatableObject`](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.ivalidatableobject.aspx) interface, simple validation logic will be handled by the command itself. I am defining _simple_ as validation that requires no external knowledge.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Vigil.Domain;
@@ -32,7 +32,7 @@ namespace Vigil.MessageQueue.Commands
         public string PatronType { get; set; }
     }
 }
-{% endhighlight %}
+```
 
 This validates that both the `DisplayName` and the `PatronType` are not longer than 250 characters and are not empty. There is no validation as to whether the `PatronType` exists in some look-up table, or whether the `DisplayName` is unique (or if it even needs to be unique).
 
@@ -44,7 +44,7 @@ Even though the Command knows _how_ to validate itself, I have decided that the 
 
 In my current system design, I am relying on the Factory to handle validating that a Command's data has passed all of its internal data integrity checks. As I've already mentioned the `IValidatableObject`, it should come as no surprise that I intend to use the `DataAnnotations` namespace to perform the validation.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -81,7 +81,7 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```
 
 There are some odd quirks that I will have to remember, the primary (at this point) being the order that validation occurs, and when it aborts further validation. Jeff Handley goes into more detail in his post [Validating Objects and Properties with Validator](http://jeffhandley.com/archive/2009/10/16/validator.aspx), but the key piece that I took away from it that I hadn't figured out while playing with the API is this:
 

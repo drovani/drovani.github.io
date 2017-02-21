@@ -9,7 +9,7 @@ tags:
 - 5k
 ---
 
-2016 was a busy year - in total, I ran eight races. While four of them were all in one weekend for [Disney's Dopey Challenge]({% post_url 2016-01-10-Disneys-Dopey-Challenge %}), it was still a lot of early mornings for me. For 2017, I am going to scale things back a bit - which really just means removing the one racing weekend.
+2016 was a busy year - in total, I ran eight races. While four of them were all in one weekend for [Disney's Dopey Challenge]({% post_url 2016/2016-01-10-Disneys-Dopey-Challenge %}), it was still a lot of early mornings for me. For 2017, I am going to scale things back a bit - which really just means removing the one racing weekend.
 
 ### F3 Half Marathon
 
@@ -17,7 +17,7 @@ My favorite half marathon in Chicago is the [F^3 Lake Half Marathon](http://www.
 
 ### Kalamazoo Marathon
 
-I have been doing a different spring marathon each year for the past two years - [Wisconsin]({% post_url 2015-05-06-2015-Wisconsin-Marathon %}) and [New Jersey](https://results.chronotrack.com/event/results/event/event-13270?entryID=16657247). In the spirit of trying something new, I'll be heading to Michigan for this year's spring marathon, running the [Kalamazoo Marathon at the Borgess Run](https://thekalamazoomarathon.com/). My goal is to finish under 3:15:00 (7:26/mile); which, conveniently, is also the fastest pace group that the race offers. My goal is to hold tight with them for as long as I can. If I am feeling really good after 18 miles, then I might try to go ahead of them. Otherwise, I will be thoroughly thrilled with crossing with the group. As with all of my races, the minimum goal for me is to beat my PR of 3:21:43.
+I have been doing a different spring marathon each year for the past two years - [Wisconsin]({% post_url 2015/2015-05-06-2015-Wisconsin-Marathon %}) and [New Jersey](https://results.chronotrack.com/event/results/event/event-13270?entryID=16657247). In the spirit of trying something new, I'll be heading to Michigan for this year's spring marathon, running the [Kalamazoo Marathon at the Borgess Run](https://thekalamazoomarathon.com/). My goal is to finish under 3:15:00 (7:26/mile); which, conveniently, is also the fastest pace group that the race offers. My goal is to hold tight with them for as long as I can. If I am feeling really good after 18 miles, then I might try to go ahead of them. Otherwise, I will be thoroughly thrilled with crossing with the group. As with all of my races, the minimum goal for me is to beat my PR of 3:21:43.
 
 ### Some Unnamed 5k
 

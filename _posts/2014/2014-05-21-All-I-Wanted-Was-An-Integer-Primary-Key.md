@@ -20,7 +20,7 @@ Thus began the big hunt to find out all of the places where I needed to override
 
 Then I had to create a new `UserStore` and `UserManager` to utilize these new classes, and create a new `ClaimsPrincipal` to store and retrieve the new security identifier (Sid) for the user. Finally, a new `BaseController` class was created that all other controllers must inherit from, in order to utilize all of this new code.
 
-{% highlight c# linenos=table %}
+```csharp
 using System;
 using System.Security.Claims;
 using System.Web.Mvc;
@@ -46,9 +46,9 @@ namespace Vigil.Web.Controllers
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Data.Entity;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -71,9 +71,9 @@ namespace Vigil.Web
         public VigilUserManager(IVigilUserStore store) : base(store) { }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight c# linenos=table %}
+```csharp
 using System;
 using System.Security.Claims;
 using Vigil.Data;
@@ -96,9 +96,9 @@ namespace Vigil.Web
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight c# linenos=table %}
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -141,9 +141,9 @@ namespace Vigil.Data
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight c# linenos=table %}
+```csharp
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -165,6 +165,6 @@ namespace Vigil.Data.System
     {
     }
 }
-{% endhighlight %}
+```
 
 At this point, I am wrestling with the fact that now my domain model has a hard requirement on the `Microsoft.AspNet.Identity` library. I had initially hoped to have my `User` and `Role` domain models be completely separated from the actual authentication/authorization system. This creates a hard link that is going to be the death of me unless I can find a way to isolate the framework and run unit tests without requiring the database. For now, though, I am going to continue in this direction, and turn a blind eye to the technical debt accruing from this decision. Maybe before I ship this, I will find a better way to do it all, but for now at least I have my integers.

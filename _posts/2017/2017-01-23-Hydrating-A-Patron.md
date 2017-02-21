@@ -13,7 +13,7 @@ There are two ways to retrieve the current values associated with an entity. The
 
 Looking into the details of what the process is when hydrating a `Patron`, the best place to start is with the constructor. The prelude to calling the constructor, of course, is that something has gone and fetched a collection of `IVersionedEvent` entities with a given `PatronId`.
 
-{% highlight c# linenos=table %}
+```csharp
 
 using System;
 using System.Collections.Generic;
@@ -52,7 +52,7 @@ public abstract class EventSourced : IEventSourced
     }
 }
 
-{% endhighlight %}
+```
 
 I saw two options for where to put the actions that receive an event and cause an entity to be in the proper state. Either I could create an `EventHandler` that receives an entity and then conjures up a new instance of it with the resultant changes (thus making entities immutable), or I could have an entity know how to handle events that affect it (entities are thus mutable objects).
 
@@ -62,7 +62,7 @@ My initial goal was to create some sort of reflection assembly scanning that wou
 
 Anyway, each of the events, in creation order, get their appropriate method within the `Patron` object invoked, which updates the properties as appropriate. Unit testing is fairly straightforward.
 
-{% highlight c# linenos=table %}
+```csharp
 
 using System;
 using Vigil.Domain.EventSourcing;
@@ -207,4 +207,4 @@ namespace Vigil.Patrons
     }
 }
 
-{% endhighlight %}
+```

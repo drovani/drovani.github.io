@@ -15,7 +15,7 @@ Creating a patron (by which I mean, issuing a command such that some process som
 
 With everything revolving around commands, telling a user something can't be done is less accurate, and it is more about declining to queue the command and letting the user know why. This starts by actually validating the command in question.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -52,13 +52,13 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```
 
 ### <sup>**</sup>"Validation"
 
 Who actually performs the validation is questionable. For now, I have decided to place the onus on the command to know what makes it valid. As a first step, I am just using the `DataAnnotations` attributes, as they serve my needs for now. In the future, I know that I will need to do look-up validation (is the `PatronType` valid), but for now I am just demonstrating that the bare minimum works.
 
-{% highlight c# linenos=table %}
+```csharp
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using Vigil.Domain;
@@ -75,7 +75,7 @@ namespace Vigil.MessageQueue.Commands
         public string PatronType { get; set; }
     }
 }
-{% endhighlight %}
+```
 
 ### Testing the Code
 
@@ -100,7 +100,7 @@ namespace Vigil.MessageQueue.Commands
 
 Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and projects that hold the unit tests for those projects. Test projects have the same name as their target, suffixed with '.Tests' (eg. `src\Vigil.Domain` and `test\Vigil.Domain.Tests`). The folder structure in the two projects should be identical, and all test classes have the same name as their target class, suffixed with 'Test' (eg. `Vigil.Patrons.PatronFactory`, `Vigil.Patrons.PatronFactoryTest`).
 
-{% highlight c# linenos=table %}
+```csharp
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -150,9 +150,9 @@ namespace Vigil.MessageQueue.Commands
         }
     }
 }
-{% endhighlight %}
+```
 
-{% highlight c# linenos=table %}
+```csharp
 using Moq;
 using System;
 using Vigil.Domain;
@@ -198,4 +198,4 @@ namespace Vigil.Patrons
         }
     }
 }
-{% endhighlight %}
+```

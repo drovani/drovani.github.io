@@ -7,5 +7,5 @@ tags:
 - coremvc
 ---
 
-{% highlight c# linenos=table %}
-{% endhighlight %}
+```csharp
+```
