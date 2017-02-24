@@ -11,7 +11,7 @@ tags:
 
 As I was writing the [previous post]({% post_url 2017/2017-02-20-Introducing-Vigil-Web-API %}), it came as a shock how far behind my posts on the progress of the Vigil Donor Relationship Management System had gotten. I was going too deep into the code and making too many changes that I didn't pause to write a post about my progress. My posts are 22 commits behind, and there are quite a few changes I've made to the workflow and to the application. As a way to catch up on all the missed posts that I should have written, I am putting this one together as a status report of the project/journey/solution.
 
-In terms of workflow, I have embraced the [GitHub Flow workflow](https://guides.github.com/introduction/flow/). For my little project, since there is no discussion and no deployments (as of yet), the workflow is as simple as Branch, Commit(s), Pull, Merge, Delete. I like the way that a merge can squash all of the commits made on a branch, so that I have one summarized collection of everything that I did. This way, I can easily differentiate the content of a post by doing one per Pull Request / Merge. Hopefully, this process will now keep the posts coming regularly, help me be more concise about what should be in a post, and better contain runaway developing.
+In terms of workflow, I have embraced the [GitHub Flow workflow](https://guides.github.com/introduction/flow/) (both for Vigil and for this blog). For my little project, since there is no discussion and no deployments (as of yet), the workflow is as simple as Branch, Commit(s), Pull, Merge, Delete. I like the way that a merge can squash all of the commits made on a branch, so that I have one summarized collection of everything that I did. This way, I can easily differentiate the content of a post by doing one per Pull Request / Merge. Hopefully, this process will now keep the posts coming regularly, help me be more concise about what should be in a post, and better contain runaway developing.
 
 <!--more-->
 
@@ -35,11 +35,17 @@ The consensus for [testing abstract classes](http://stackoverflow.com/questions/
 
 ### Vigil.Patrons
 
-As is the only concrete implementation of the _Domain Language_, this project is a semi-functional proof-of-concept. I keep trying to focus myself on considering it as production code, thus holding myself to the same requirements to unit test everything and keep functionality as a [complex web of small pieces](https://www.youtube.com/watch?v=R2Aa4PivG0g). Commands available handle the simplest of actions - `CreatePatron`, `UpdatePatronHeader`, `DeletePatron`.
+As is the only concrete implementation of the _Domain Language_, this project is a semi-functional proof-of-concept. I keep trying to focus myself on considering it as production code, thus holding myself to the same requirements to unit test everything and keep functionality as a [complex web of small pieces](https://www.youtube.com/watch?v=R2Aa4PivG0g). Commands available handle the simplest of actions - `CreatePatron`, `UpdatePatronHeader`, `DeletePatron`. The `PatronCommandHandler` knows what to do with the commands, which is to just create the applicable event and push it to the Event Bus. The `PatronEventHandler` methods only update the `Patron` entity that was persisted using an `IPatronContext`.
+
+Upon close examination, the Patron project is barely less of an abstraction than the Domain project from which it derives most of its functionality. It is  disheartening to know that even the after writing roughly 300 lines of code, there is very little that I can do with the code. However, I can also celebrate in knowing that it takes only 300 lines of code to be able to implement the core functionality fo what it takes to Create, Read, Update, and Delete a `Patron`. The only thing left (after I unit tested everything) was to wire the Patron project to a real implementation of all of the interfaces it was depending on.
+
+### Vigil.Sql
+
+I talked about this project in detail in _[Illusions of Queues and Buses]({% post_url 2017/2017-01-26-Illusions-of-Queues-and-Buses %})_. The short of it is that I wanted to put together an extremely simple implementation of the `ICommandQueue` and `IEventBus` so that I could use it in the `Vigil.WebApi` project.
 
 ### Vigil.WebApi
 
-### Vigil.Sql
+The [post previous to this]({% post_url 2017/2017-02-20-Introducing-Vigil-Web-API %}) explains why I decided to venture into the API layer of the application, instead of continuing to implement more of the Patron project or begin working on another subsystem of the application. It certain has been gratifying to see everything come together and be properly integrated and _just work_.
 
 ### Future Tangents
 
@@ -49,7 +55,8 @@ There are a number of quality-of-life improvements that could easily cause me to
 - Set "RepositoryType" to "git"
 - Set "RepositoryUrl" to "https://github.com/drovani/Vigil"
 - Clear the "Description"
-- Set "SignAssembly" to "true", and set the "AssemblyOriginatorKeyFile" to the `vigil.snk` in the root solution folder
+- Set "SignAssembly" to "true"
+- Set the "AssemblyOriginatorKeyFile" to the `vigil.snk` in the root solution folder
 - For Test projects:
   - Set the "RootNamespace" to be the same as the project being tested.
   - Add `xunit.runner.json` and set the "methodDisplay" to "method"
@@ -57,4 +64,4 @@ There are a number of quality-of-life improvements that could easily cause me to
 
 Other side projects would include putting together all of the shiny automated build routines that all of the big projects have. Being able to have Pull Requests kick off builds to make sure nothing breaks - that would be cool. Turning all of the projects into NuGet packages and making them a little more portable would be an interesting experiment.
 
-My problem is that each of these tangents only delay my progress on creating productive code that actually leads the project to a useful state.
+My problem is that each of these tangents only delay my progress on creating productive code that leads the project to a useful state.
