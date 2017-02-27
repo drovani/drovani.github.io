@@ -88,6 +88,14 @@ code {
   border-radius: 1em 0;
 }
 
+aside.seriesToc {
+    font-size: 75%;
+    float: right;
+    border: 1px solid black;
+    border-radius: 1em 0;
+    padding: 1em;
+}
+
 @import 'site-template';
 
 .pagination {
