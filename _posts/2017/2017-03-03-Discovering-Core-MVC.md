@@ -16,7 +16,7 @@ Now that the Vigil Project has breached into the API layer, I started to learn a
 
 My first introduction to MVC (through various tutorials) gave me the impression that the full stack looks basically like this:
 
-![Initial Pipeline Assumptions](/images/mvcpipeline-initial.png)
+![Initial Pipeline Assumptions](/images/mvcpipeline-initial.svg)
 
 There's a lot of black box magic going on in that diagram. But you know what? It doesn't matter. When all I wanted to do was respond to a simple request, then all I had to do was create a `Controller` and an `Action` and then _magic happened_, and I got a functioning application. Do I have any clue about how the data got to the method? Or how the `Controller` was even instantiated in order for _something_ to have an object to call my method? __Nope__! And that's the point.
 
@@ -130,7 +130,13 @@ namespace Microsoft.AspNetCore.Mvc.Formatters
 
 ### What Do I Know, Now?
 
+![Getting the Input Formatter](/images/mvcpipeline-chooseinputformatter.svg)
+
 During startup, using the `AddMvc` extension method, by default, will add a `JsonInputFormatter` to the list of Input Formatters. When reading the request body, the `ReadRequestBodyAsync` using the JSON serializer's [`Deserialize` method](http://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonSerializer_Deserialize_1.htm). I don't see anyway to injet something to override just that one line - or even the object creation portion.
+
+Zoomed in - this is the tiny piece that I learned of the whole pipeline. I have no idea if this is to scale or not, but it certainly feels like only a small step.
+
+![Getting the Input Formatter](/images/mvcpipeline-chooseinputformatter.zoom.svg)
 
 ### What Do I Need To Do?
 
