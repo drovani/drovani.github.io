@@ -158,6 +158,7 @@ article {
 }
 
 .category-summary {
+    padding-bottom: 1em;
     border-bottom: solid 1px $lowlight;
 }
 
@@ -212,6 +213,16 @@ article {
       font-family: 'FontAwesome';
       content: '\f02b';
       margin-right: 5px;
+    }
+}
+
+table.bordered{
+    border: 1px solid $lowlight;
+    border-collapse: collapse;
+
+    td{
+        border: 1px solid $lowlight;
+        padding: 0 1em 0 .5em;
     }
 }
 
