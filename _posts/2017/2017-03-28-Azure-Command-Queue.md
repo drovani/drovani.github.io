@@ -2,7 +2,7 @@
 layout: post
 title: Vigil's Azure Command Queue
 category: Vigil Journey
-treeid: 
+treeid: cc860d1411b9c8b27e810437656128021fac5e05
 tags:
 - azure
 - cqrs
