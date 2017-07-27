@@ -10,6 +10,8 @@ tags:
 - datacamp
 ---
 
+These are some notes that I typed up during an Azure Machine Learning - Data Camp that I attended at the Microsoft learning center in the Aon building. It was entertaining, informative, and all around a great session; unfortunately, it was entirely useless for my job, since this really has nothing to do with the work that I perform. On the plus side - I was able to recommend to my co-workers on the Analytics team that _they_ should attend it.
+
 Ross Loforte, Data Scientist, Microsoft
 https://github.com/melzoghbi/datacamp
 
