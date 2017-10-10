@@ -3,6 +3,7 @@ layout: post
 title: Vigil's Azure Command Queue
 category: Vigil Journey
 treeid: cc860d1411b9c8b27e810437656128021fac5e05
+excerpt_separator: <!--more-->
 tags:
 - azure
 - cqrs
@@ -13,6 +14,8 @@ Command Query Responsibility Segregation ([CQRS](https://martinfowler.com/bliki/
 
 {: .centered }
 ![CQRS - Basic patterns](/images/cqrs-diagram.jpg)
+
+<!--more-->
 
 I am limiting the scope of this step of the project to just creating a Message Queue in Azure, writing a command to it, and triggering an appropriate `Command Handler`. As soon as I started working on the problem, though, I was sidetracked with an important and timely concern &mdash; how do I safely store connection information to a remote server? Considering that I work on this project on at least three different machines, I need a highly portable and secure way to store the connection information to my instance of Azure without exposing that connection information to anyone who may look at the code on [GitHub](https://github.com/drovani/Vigil). Now, instead of having three steps to this stage, I have four; maybe more.
 

@@ -26,7 +26,7 @@
    <rect stroke="#75485e" fill="#75485e" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="405.600604" y="3.749999" width="324.513767" height="73.502281" id="svg_94"/>
    <text stroke="#d7cdcc" fill="#d7cdcc" stroke-width="0" x="205.106553" y="-32.997754" font-size="14" font-family="Calibri, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(1.2116200896258185,0,0,1.3909232865750174,127.91619919344505,70.50139871031651) " id="svg_91">Call method</text>
    <text stroke="#d7cdcc" fill="#d7cdcc" stroke-width="0" x="205.106553" y="-17.02254" font-size="14" font-family="Calibri, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(1.2116200896258185,0,0,1.3909232865750174,127.91619919344505,70.50139871031651) " id="svg_92">ReadRequestBodyAsync(InputFormatterContext, Encoding)</text>
-   <text stroke="#d7cdcc" fill="#d7cdcc" stroke-width="0" x="205.106553" y="-2.48076" font-size="14" font-family="Calibri, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(1.2116200896258185,0,0,1.3909232865750174,127.91619919344505,70.50139871031651) " id="svg_93">To get InputFormatterRsult, which contains the Model</text>
+   <text stroke="#d7cdcc" fill="#d7cdcc" stroke-width="0" x="205.106553" y="-2.48076" font-size="14" font-family="Calibri, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(1.2116200896258185,0,0,1.3909232865750174,127.91619919344505,70.50139871031651) " id="svg_93">To get InputFormatterResult, which contains the Model</text>
   </g>
  </g>
 </svg>

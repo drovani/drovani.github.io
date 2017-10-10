@@ -12,7 +12,8 @@ tags:
 
 These are some notes that I typed up during an Azure Machine Learning - Data Camp that I attended at the Microsoft learning center in the Aon building. It was entertaining, informative, and all around a great session; unfortunately, it was entirely useless for my job, since this really has nothing to do with the work that I perform. On the plus side - I was able to recommend to my co-workers on the Analytics team that _they_ should attend it.
 
-Ross Loforte, Data Scientist, Microsoft
+
+Ross Loforte, Data Scientist, Microsoft\\
 https://github.com/melzoghbi/datacamp
 
 - Data science is about using _data_ to _make decisions_ that _drive actions_, involving Data Selection, Preprocessing, Transformation, Data Mining, Delivering value from data (interpretation and evaluation).
@@ -37,8 +38,10 @@ https://github.com/melzoghbi/datacamp
   - Deploy Model
   - Evaluate / Track Performance
 
+
 - ML Algorithm defines how your _model_ will react
-  - Written in R | Python
+  - Written in R or Python
+
 
 - Classification: answer yes/no
 - Regression: predict a numeric value
