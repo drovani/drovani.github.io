@@ -7,6 +7,7 @@ category: Exactly One Hobby
 All of my other marathon posts seem to have the "three parts" theme going, so it probably fits for this writing. On the second of May,
 I ran the Wisconsin Marathon in Kenosha. It is combined with a half-marathon, and a delayed start 5k. I had a terrible experience, but I came away with some fantastic personal post-race analysis.
 
+
 ### 1) Terrible Marathon Course
 
 Pre-race logistics were fantastic. There were plenty of port-a-pots that I was in line for less than two minutes, with only fifteen minutes before the race started. Most other races I have been to include extremely long lines that snake out even a half hour before race start. The gear check was easily accessible and close to the start line. The self-seeded corrals were large enough that there was no crowding at any of the pace signs (at least from what I could see between the 7:00/mile and the 10:00/mile corrals). The race started on time, and most people seemed to do pretty well in that first mile at keeping with their selected pace.

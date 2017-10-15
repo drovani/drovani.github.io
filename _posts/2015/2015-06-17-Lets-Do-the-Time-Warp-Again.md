@@ -10,6 +10,7 @@ Another summer, another marathon season.
 
 I will be continuing to be a pace leader at the Montrose site for the Chicago Area Runners Association ([CARA](http://www.cararuns.org/)). Two years ago, I was a participant, and the social experience is what got me through training and to the start line. Last year, as a pace leader, helping to bring all of the runners through the long runs and the hot runs and the wet runs is what got me through training and to the start line. This year, I hope to bring my experience, enthusiasm, and energy to a new group of runners.
 
+
 ### Pacing at 8:30/mile
 
 I was on the fence about whether to continue pacing with the [Six Niners](https://www.facebook.com/groups/cara69/) or move up to the 8:30/mile pace group. There was a fair amount of interest among my runners from last year in doing an 8:45/mile pace group (we would call ourselves the Eight Forty Five Bandits). By the time it came around for me to make a firm decision, the site coordinator for Montrose ([who shall](http://www.athlinks.com/Athletes/173452181) [not remain](https://www.facebook.com/kim.maves) [nameless](https://twitter.com/kimmaves)) had already told the front office to put me down for the faster group. Thus, the decision was made for me.

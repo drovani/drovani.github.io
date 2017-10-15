@@ -10,6 +10,7 @@ But here-in lies a problem that I have discovered.  The Divvy rental is for a th
 
 [![Divvy Route]({{ site.baseurl }}/images/divvy-route.png "Divvy Route")](https://goo.gl/maps/rX8KRLvEU6U2)
 
+
 For my first three trips I averaged 27:53, which is dangerously close to the 30 minute allotment. For the next six trips, I took advantage of the "unlimited" rides feature of my pass.  In order to be able to take a more leisurely ride home (and be less worried about hitting every damn stop light along the way), I have been stopping at some point along the route, docking my bike, then borrowing the same bike again.
 
 I feel a little like an urban Pony Express rider.

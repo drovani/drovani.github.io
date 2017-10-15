@@ -54,6 +54,7 @@ baseurl: ""
 
 permalink: /:title/
 paginate: 7
+excerpt_separator: "\n\r\n\r"
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:

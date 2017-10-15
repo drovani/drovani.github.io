@@ -14,6 +14,7 @@ Just when I thought I was in a good place to carry forward with retrieving a per
 
 If I go back to the notion of "User Can Create New Patron", I have realized that I did it entirely wrong. Since what I wanted to demonstrate was the power and ability of using `interface` design to better focus on what I want to accomplish, the statement I should have been "User Can Command A Patron To Be Created". This provides a better starting place for me to carry that command forward. The `CreatePatronCommand` has now already been created (_ipso facto_, it is in the message queue) and now needs an `ICommandHandler` to turn it into one or more events and to persist the command for historical referencing.
 
+
 ### The New Command Interfaces
 
 With this refocus, I now have an `ICommand` that is handled by an `ICommandHandler` with access to a `ICommandRepository` for persistence needs. The narative now becomes:

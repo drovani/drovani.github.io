@@ -7,6 +7,7 @@ tags:
 
 I have found that it is better to put structure in place around a project before going hog wild on implementation. While I recognize that some practices grow organically, a healthy amount of structure up-front can save a project from technical bankruptcy down the line. The two tools that I use early and often are interfaces and contract classes.
 
+
 ### Interfaces and Contract Classes
 
 There are a collection of interfaces that I regularly utilize throughout most projects.

@@ -18,6 +18,7 @@ extensively on why this is so hard. For this particular exercise, I have to deci
 - Entity - this conflicts heavily with Entity Framework, where the Entity object is used everywhere.
 - Patron - this is a compelling term, since it has the dual definition of being both a person who gives financially, and a customer to a store.
 
+
 The other part of the name is that it needs to pair with all of the auxilary tables that will be prefixed with:
 
 - ______Address

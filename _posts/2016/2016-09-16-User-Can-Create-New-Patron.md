@@ -12,6 +12,7 @@ tags:
 
 The first thing that I learned with Dependency Injection is that it encourages a mindset of "I'll figure that out that later." This allows me to put in the bare minimum for what might pass a test, even though I know it will have all kinds of complex integration somewhere down the line. To start this little experiment, I am going to put together a tiny amount of arguably functional code. I will start with the very simple definition of what a User is, what it means to Create an entity, and how a Patron is represented.
 
+
 ### <sup>*</sup>"User"
 
 A "User" in this case is the arbitrary creator of a command and consumer of the factory. For now, the User is the test suite (powered by xUnit).

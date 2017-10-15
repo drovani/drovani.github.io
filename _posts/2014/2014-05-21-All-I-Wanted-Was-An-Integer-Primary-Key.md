@@ -10,6 +10,7 @@ In and of itself, it is a very nice and pleasant library that really does integr
 
 All I wanted was to change the default primary key from a `GUID` to an int.  My initial thought was to change the default `ApplicationUser` from inheriting from the non-generic IdentityUser to the generic `IdentityUser<int, VigilUserLogin, VigilUserRole, VigilUserClaim>`.  Compiling worked just fine, running caused all kinds of type casting problems.  Why?  Because all of the other classes surrounding the `IdentityUser` were all coded to the `string` type (which internally is a `GUID`).
 
+
 Thus began the big hunt to find out all of the places where I needed to override, inherit, or otherwise manipulate the library to get the primary key to be an integer. This meant replacing the five main classes that create the authentication and authorization schema:
 
 - IdentityUser

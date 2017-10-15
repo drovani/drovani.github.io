@@ -13,6 +13,7 @@ Thus far in the series, the Vigil Journey project has been able to [create a pat
 
 I began getting antsy about needing to have some semblence of real progress. Something that I could launch and point to and say "see there; it works!" This was my primary motivator for quickly (and sloppily) writing the [`SqlCommandQueue` and `SqlEventBus`]({% post_url 2017/2017-01-26-Illusions-of-Queues-and-Buses %}) classes. I wanted to be able to demonstrate _something_.
 
+
 ### Recent Observations
 
 While my initial instinct was to spin up a complete user interface for this; what better way to show progress than to open a web browser and display grid views and form fields, thought I. However, I also had grand schemes of building a full API for the UI to utilize. This kept my ambitions in check, and after researching for ways to directly interact with an API, allowing me to reach a more attainable goal. Thus, the next  layer of the project - which is to instantiate the `CreatePatron` command and pass it to an `ICommandQueue`. Utilizing my `SqlCommandQueue`, I could wire that to a database, which would handle persistence of `Command` objects, passing those to a `CommandHandler`. These would, in turn, generate events and put them on the `SqlEventBus`; which would call the appropriate `EventHandler` classes, and thus persist the changes to the relational database.

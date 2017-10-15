@@ -18,6 +18,7 @@ It has been almost over ten years since I last bought a backpack[^1], and now I 
 
 After searching around the internet and asking a few friends, I have narrowed it down to three different brands - based on quality, price, reputation, and what I have seen on the backs of other riders. Timbuk2, Chrome, and Osprey.  In alphabetical order, these are the leading contenders right now.
 
+
 - [Chrome Bravo Night](http://www.chromeindustries.com/us/en/bags/backpacks/bravo-night) - the cross compression straps on this back are extremely inviting, though its large roll-top opening is a turn-off.
 - [Chrome Cardiel Fortnight](http://www.chromeindustries.com/us/en/bags/backpacks/cardiel-fortnight) - I like the profession look of this bag, and the pockets seem well organized.  One of the pictures shows a pair of shoes in the bag, but something tells me that my colossal size 15 running shoes will not fit quite as well.  The bag certainly does not look as large as other 40 liter packs.
 - [Chrome Citadel](http://www.chromeindustries.com/us/en/bags/backpacks/citadel) - I really like the "large zip-around main compartment", in theory it makes getting items out of the bag easier.  I am not sure about having straps that wide on the harness, though.  Another point where I am going to have to try it on it determine if it is a pro or a con.

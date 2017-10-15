@@ -10,6 +10,7 @@ tags:
 
 I may have gone down a long and twisted rabbit hole trying to figure out this problem, but I learned a lot about how model binding along the way, so I consider the whole experiment a productive use of my time, even if I end up ripping it all out in a few weeks. However, since I thought this would be a good idea, I figure others might find a good use for this knowledge. Thus, this is how I am using an explicity constructor when the input is in a `JSON` format and parameter is bound using the request body.
 
+
 ```csharp
 [HttpPost]
 public IActionResult Create([FromBody]CreatePatron command)

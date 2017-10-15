@@ -12,6 +12,7 @@ tags:
 
 I have come to the point where I am building out the initial proof-of-concept for the WebAPI portion of this project. This gives me a place to continue testing out features, and see if how I envisioned things would work can actually work. One of the first parts of unit testing the controller was to mock any of the properties that I need to use that the web server would ordinarily wire up. In a `Controller` that primarily entails the `ControllerContext`, which would also wire the `Controller.User`, `Controller.Url`, and `Controller.HttpContext` properties. So how do I do that?
 
+
 ### Mocking Controller.Url
 
 I use Moq as my mocking framework, though this could be done with any library. The `Url` property returns an `IUrlHelper`, which makes it easy to mock.

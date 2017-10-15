@@ -11,6 +11,7 @@ tags:
 
 Creating a patron (by which I mean, issuing a command such that some process somewhere will instantiate an actual Patron entity, and perhaps persist it in some useful manor) is all well and good, until someone tries to stuff in data that isn't valid. Users like to do things like this all the time, so I am going to attempt to protect against it from the beginning. Additionally, by setting up the mechanisms to test validation and perform validation, I should be able to keep a culture of enforcing these conventions throughout development.
 
+
 ### <sup>*</sup>"Cannot"
 
 With everything revolving around commands, telling a user something can't be done is less accurate, and it is more about declining to queue the command and letting the user know why. This starts by actually validating the command in question.

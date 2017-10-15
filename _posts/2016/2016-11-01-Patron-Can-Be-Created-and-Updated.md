@@ -11,6 +11,7 @@ tags:
 
 Now that I have revised my approach for what constitutes [creating and updating entities]({% post_url 2016/2016-10-31-Revisiting-Creating-and-Updating-Entities%}), I am going back to my `Patron` entity to rework the create and update commands. I have already scrapped the `Factory` class and its associated unit tests, and gone forward with code creation.
 
+
 ### Commands for Create and Update Patron
 
 The first major change is that I have moved the Patron Commands into the `Vigil.Patrons` project; at this moment, I am keeping projects confined by domain. Later, I may find this to be in error, but for now it seems to make sense. I am keeping validation on the Command class and the unit tests for the validation scenarios does not need to change at all. The only change that I made was adding the `Id` property implementation for `ICommand`. Since I would like to track every part of the system, it makes sense to have unique identifiers for everything.

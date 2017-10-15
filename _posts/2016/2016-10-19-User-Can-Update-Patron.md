@@ -12,6 +12,7 @@ tags:
 
 A simple update of an object is as complex as adding a new instance of the object, which means it is both straight forward and laden with all kinds of caveats and unlying processes. As with [creating a new Patron]({% post_url 2016/2016-09-16-User-Can-Create-New-Patron %}), it is trivial for me to put together a contrived example of code that will technically satisfy the requirements for "User Can Update a Patron". A unit Test will create a new Command that will be validated by the Factory and then passed to the MessageQueue for persistance by some other process.
 
+
 ### Command and Tests
 
 There is no surprising code here. The only differences, at this point, between the `CreatePatronCommand` and the `UpdatePatronCommand` is the removal of any fields being required and the addition of an `IKeyIdentity` identifier.

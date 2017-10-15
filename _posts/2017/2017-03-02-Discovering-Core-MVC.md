@@ -9,6 +9,7 @@ tags:
 
 Now that the Vigil Project has breached into the API layer, I started to learn all kinds of new information about what takes place before the Controller's Action method is called and what happens after that method returns. The MVC framework, especially while using Visual Studio, make it incredibly easy to forget about all of the heavy lifting that the framework does &ndash; long before my code is ever executed. It is only when I wanted to start changing how pieces worked that I really start to see the true depth and breadth of what Microsoft has created. As I begin to discover new pieces of the framework, I felt that the best way to retain this information is to repeat it; and since no one around me wants to hear about all of this, I'll just type it into a blog post.
 
+
 {% include series.html %}
 
 ### Upon First Introduction

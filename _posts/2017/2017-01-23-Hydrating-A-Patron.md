@@ -13,6 +13,7 @@ There are two ways to retrieve the current values associated with an entity. The
 
 Looking into the details of what the process is when hydrating a `Patron`, the best place to start is with the constructor. The prelude to calling the constructor, of course, is that something has gone and fetched a collection of `IVersionedEvent` entities with a given `PatronId`.
 
+
 ```csharp
 
 using System;

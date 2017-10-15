@@ -12,6 +12,7 @@ There are many posts out there for how to configure a database schema to handle 
 - Ability to makes changes that apply on a certain date.
 - Easy to answer the question of "why was this gift created" because all gifts are linked to the schedule that generated it.
 
+
 A few limitations that may constraint its universe utility:
 
 - Only one active schedule can be created. Can only do "first Friday of every Month", not "first Friday of every Month, and third Tuesday of every other Month."

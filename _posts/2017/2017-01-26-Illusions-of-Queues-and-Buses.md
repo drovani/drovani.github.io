@@ -11,6 +11,7 @@ tags:
 
 There are many solutions on the market (including [free](https://github.com/zeromq/netmq) [open](https://github.com/pardahlman/RawRabbit) [source](https://www.rabbitmq.com/dotnet.html)) for creating both message queues and event buses. However, for example purposes - and as a simple _proof of concept_ - I just wanted a simple way to store the contents of a `Command`, run the `CommandHandler`, receive `Event` objects, call the `EventHandler` actions, and save all of the results. Everything runs synchronously and there are no retry policies, topics, or request/reply patterns. It is a simple, nearly useless set of code - but it serves its very specific purpose.
 
+
 ### SqlCommandQueue
 
 Calling this a "queue" is a complete misnomer, since there is no actual queuing of the commands. All this does is persist the command to the database, call the command handler, and then declare the command as handled.
