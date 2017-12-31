@@ -3,13 +3,12 @@ layout: post
 title: January 1-7 Meal Planning
 category: Mise-en-Place
 tags:
-- tag1
-- tag2
+- experiment
 ---
 
 |Day of Week|Breakfast        |AM Snack            |Lunch                  |PM Snack        |Dinner            |
 |-----------|-----------------|--------------------|-----------------------|----------------|------------------|
-|Monday     | Std. Breakfast  |                    |                       |                | Stir-fry Chicken |
+|Monday     | Std. Breakfast  |                    | _eating out_          |                | Stir-fry Chicken |
 |Tuesday   *| Std. Breakfast  | Yogurt             | Chicken Salad         |                | Grd Beef Chili   |
 |Wednesday  | Std. Breakfast  | Yogurt             | Cheeseburger Tortilla |                |                  |
 |Thursday  *| Katie's Oatmeal | HBO Eggs + Carrots |                       | Apple + Pecans |                  |
@@ -26,7 +25,7 @@ Snack Plans
 
 Lunch Plans
 - Cheeseburger Tortilla Pizza - 1/4 lb ground beef, chopped red onion, shredded cheddar cheese on a tortilla, side of diced tomato, pickles, lettuce, ketchup
-- Chicken Salad - chicken breast with celery, dijon, lmoen juice, salt, sour cream, and mayo
+- Chicken Salad - chicken breast with celery, dijon, lemon juice, salt, sour cream, and mayo
 
 Dinner Plans (also, leftovers as lunch) 
 - Whole 30 Chili (with Sweet Potato) + Baked Potato
@@ -41,15 +40,26 @@ Shopping List:
 
 Grocery List:
 - Cucumbers
+- Yellow Onion
+- Red Onion
+- Celery
+- Cauliflower
+- Avocado
+- Gala apples (x3)
 - Quaker Oats Old Fashioned
+- English muffin
 - Almond Breeze unsweetened vanilla almond milk
-- Danon _Light Fit_ Greek yogurt - 6 pack
+- Danon _Light Fit_ Greek yogurt vanilla - 6 pack
+- Light mayo
+- Light sour cream
+- Mozzarella
+- Pepperoni
+- Green beans (frozen)
+
+Costco List:
 - Stew beef
 - Salmon
 - Bell peppers
 - Onions
-- Celery
-- Carrots
-- Cauliflower
-- Light mayo
-- Light sour cream
+- Baby carrots
+- Salad
