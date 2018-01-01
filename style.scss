@@ -231,6 +231,28 @@ img.float-right {
     }
 }
 
+
+table.weekly-planner {
+    white-space: nowrap;
+    border-collapse:collapse;
+    overflow-x: auto;
+    border-spacing: 0;
+    display: inline-block;
+    vertical-align: top;
+
+    thead tr th {
+        border-bottom: 1px solid $lowlight;
+    }
+
+    td {
+        padding-right: 1em;
+    }
+
+    tr:nth-child(even) {
+        background-color: $section;
+    }
+}
+
 table.bordered{
     border: 1px solid $lowlight;
     border-collapse: collapse;
@@ -244,6 +266,10 @@ table.bordered{
 @media (max-width: 750px) {
     .sitename, .pager-text {
         display: none;
+    }
+
+    table.weekly-planner {
+        width: 100%;
     }
 }
 @media all and (max-width: 600px){

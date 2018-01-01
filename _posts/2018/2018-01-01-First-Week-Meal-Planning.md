@@ -19,6 +19,7 @@ As with all new years, this one will start with the best of intentions. My wife 
 |Friday     | Std. Breakfast  | Yogurt             | Leftover Pork chop     | Apple + Pecans | Salmon               |
 |Saturday  *| Katie's Oatmeal |                    | Salmon, Salad, naan    |                |                      |
 |Sunday     | _eating out_    |                    |                        |                |                      |
+{: .weekly-planner }
 
 Breakfast Plans
 - Standard Breakfast - 3 eggs, 2 pieces of bacon, 75 grams potatoes, 64 grams Brussels sprouts
