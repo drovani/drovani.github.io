@@ -13,7 +13,7 @@ As with all new years, this one will start with the best of intentions. My wife 
 |Day of Week| Breakfast       | AM Snack           | Lunch                  | PM Snack       | Dinner               |
 |-----------|-----------------|--------------------|------------------------|----------------|----------------------|
 |Monday     | _eating out_    |                    | _leftovers_            |                | Stir-fry Chicken     |
-|Tuesday   *| Std. Breakfast  | Yogurt             | Chicken Salad          | Apple + Pecans | Whole30 Chili        |
+|Tuesday   *| Std. Breakfast  | Yogurt             | [Chicken Salad][1]     | Apple + Pecans | Whole30 Chili        |
 |Wednesday  | Std. Breakfast  | Yogurt             | Cheeseburger Tortilla  | Apple + Pecans | Pork Chops + Veggies |
 |Thursday  *| Katie's Oatmeal | HBO Eggs + Carrots | Leftover Chili + Chips | Apple + Pecans | Stir-fry Shrimp      |
 |Friday     | Std. Breakfast  | Yogurt             | Leftover Pork chop     | Apple + Pecans | Salmon               |
@@ -72,3 +72,5 @@ Grocery List:
 - Mozzarella
 - Pepperoni
 - Green beans (frozen)
+
+[1]: http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386
