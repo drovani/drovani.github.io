@@ -35,7 +35,7 @@ Lunch Plans
 - Cheeseburger Tortilla Pizza - 1/4 lb. ground beef, chopped red onion, shredded cheddar cheese on a tortilla, side of diced tomato, pickles, lettuce, ketchup
 - Chicken Salad - chicken breast with celery, Dijon, lemon juice, salt, sour cream, and mayo
 
-Dinner Plans (also, leftovers as lunch) 
+Dinner Plans (also, leftovers as lunch)
 
 - Whole 30 Chili (with Sweet Potato) + Baked Potato
 - Beef Stew + Tortilla Chips
@@ -45,9 +45,11 @@ Dinner Plans (also, leftovers as lunch)
 - Stir-fry shrimp, bell peppers, onions, celery with paprika and cayenne sauce over coconut rice
 
 Shopping List:
+
 - Container to transport Katie's oatmeal
 
 Costco List:
+
 - Bell peppers
 - Broccoli
 - Onions
@@ -60,6 +62,7 @@ Costco List:
 - Tortilla chips
 
 Grocery List:
+
 - Cucumbers
 - Yellow Onion
 - Red Onion
