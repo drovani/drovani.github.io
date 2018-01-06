@@ -16,9 +16,9 @@ As with all new years, this one will start with the best of intentions. My wife 
 |Tuesday   *| Std. Breakfast  | Yogurt             | [Chicken Salad][1]     | Apple + Pecans | Whole30 Chili        |
 |Wednesday  | Std. Breakfast  | Yogurt             | Cheeseburger Tortilla  | Apple + Pecans | ~~Pork Chops + Veggies~~ Subway |
 |Thursday  *| Katie's Oatmeal | HBO Eggs + Carrots | Leftover Chili + Chips | Apple + Pecans | [Stir-fry Shrimp][2] |
-|Friday     | Std. Breakfast  | Yogurt             | Leftover Pork chop     | Apple + Pecans | Salmon               |
-|Saturday  *| Katie's Oatmeal |                    | Salmon, Salad, naan    |                |                      |
-|Sunday     | _eating out_    |                    |                        |                |                      |
+|Friday     | Std. Breakfast  | Yogurt             | ~~Leftover Pork chop~~ Leftover Shrimp | Apple + Pecans | ~~Salmon~~ Pork Chops + Broccoli |
+|Saturday  *| Katie's Oatmeal |                    | M.Y.O. Pizza           |                | Steak                |
+|Sunday     | Std. Breakfast  |                    | Brunch at [Pinstripes][pin]   |                |                      |
 {: .weekly-planner }
 
 Breakfast Plans
@@ -82,3 +82,4 @@ Grocery List:
 
 [1]: http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386
 [2]: {% post_url 2018/2018-01-04-Shrimp-Stir-Fry-with-Coconut-Rice %}
+[pin]: http://pinstripes.com/northbrook-illinois/bistro-menus/sunday-brunch/
