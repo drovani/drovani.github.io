@@ -10,15 +10,15 @@ tags:
 
 The first week of meal planning went well... as well as a first week of any experiment goes. I didn't do a very good job of thinking about all of the sides and ingredients needed to accompany the main protein. Additionally, I didn't account for the time it would take to prep some of the dishes. Since I'll be back at work this next week, prepping food the night before or morning of is going to be key to successfully following the meal plan this week.
 
-|Day of Week| Breakfast       | AM Snack            | Lunch                  | PM Snack          | Dinner                      |
-|-----------|-----------------|---------------------|------------------------|-------------------|-----------------------------|
-|Monday     | Std. Breakfast  | Yogurt + Clementine | Chili + Rice           | Starbucks Oatmeal | Chicken Stir-fry & Veggies  |
-|Tuesday   *| Katie's Oatmeal | HBO Eggs + Carrots  | Chili + Rice           | Apple + Pecans    | _leftover chicken stir-fry_ |
-|Wednesday  | Std. Breakfast  | Yogurt              |                        | Apple + Pecans    | B.N.P. & C.                 |
-|Thursday  *| Katie's Oatmeal | HBO Eggs + Carrots  |                        | Apple + Pecans    | [Stir-fry Shrimp][2]        |
-|Friday     | Std. Breakfast  | Yogurt              |                        | Apple + Pecans    | M.Y.O. Pizza                |
-|Saturday  *| Katie's Oatmeal |                     |                        |                   | Hamburgers & French Fries   |
-|Sunday     | Std. Breakfast  |                     |                        |                   |                             |
+|Day of Week| Breakfast       | Lunch                  | Dinner                      |
+|-----------|-----------------|------------------------|-----------------------------|
+|Monday     | Std. Breakfast  | Chili + Rice           | Chicken Stir-fry & Veggies  |
+|Tuesday   *| Katie's Oatmeal | Chili + Rice           | Chipotle (post Costco)      |
+|Wednesday  | Std. Breakfast  |                        | B.N.P. & C.                 |
+|Thursday  *| Katie's Oatmeal |                        | [Stir-fry Shrimp][2]        |
+|Friday     | Std. Breakfast  |                        | M.Y.O. Pizza                |
+|Saturday  *| Std. Breakfast  | Hamburgers & French Fries | _kids' birthday party_   |
+|Sunday     | Std. Breakfast  |                        |                             |
 {: .weekly-planner }
 
 Breakfast Plans
