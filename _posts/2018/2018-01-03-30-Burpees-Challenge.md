@@ -10,6 +10,7 @@ tags:
 In the spirit of trying new things for the new year (and being desperate to prevent injury this year), I am going to do 30 burpees every day. I stumbled on a [Runner's World article][1] where the author talks about her progression over the course of 15 days. I will be using her description of the burpee (squat, kick-out, pushup, squat, jump). I know there are many variations, but I can do 30 pushups and I can do 30 squats, so now it's just the dreaded part of putting it with the kickouts. I like that she progressed from 3 sets of 10 burpees with a one minute rest, then dropped 15 seconds of rest every three days.
 
 For reference this will be my schedule:
+
 - Jan 3: 10 burpees, 1 min rest, 10 burpees, 1 min rest, 10 burpees
 - Jan 4: 10 burpees, 1 min rest, 10 burpees, 1 min rest, 10 burpees
 - Jan 5: 10 burpees, 1 min rest, 10 burpees, 1 min rest, 10 burpees
