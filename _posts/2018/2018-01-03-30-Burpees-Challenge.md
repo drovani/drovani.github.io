@@ -26,4 +26,11 @@ For reference this will be my schedule:
 
 If I can continue this until the end of the month, I'll explore adding something more to this. But for now, it's day 1 of this self-imposed challenge, and we'll see how long it lasts.
 
-[1]: https://www.runnersworld.com/general-interest/i-did-30-burpees-for-15-days-and-heres-what-happened
+Update - 2018-01-21
+{: .font-larger }
+
+I did not complete this challenge. I got through Jan 10, and then I just stopped making the time to do them. I'm not even sure that I was doing anything for my body. I really do loathe burpees. No matter how many I do, how often I do them, or what else I mix them with... I never really feel like I make any progress at getting better with them. I always end with a massive headache, and it just doesn't make me feel good.
+
+Now I'm off to find a different exercise I can attempt to do for 30 days (or so).
+
+[1]: <https://www.runnersworld.com/general-interest/i-did-30-burpees-for-15-days-and-heres-what-happened>

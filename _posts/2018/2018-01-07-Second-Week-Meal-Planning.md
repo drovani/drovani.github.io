@@ -41,5 +41,5 @@ Dinner Plans (also, leftovers as lunch)
 - Bacon, Noodles, Peas, and Cheese
 - Make Your Own Pizza (on English muffins)
 
-[1]: http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386
+[1]: <http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386>
 [2]: {% post_url 2018/2018-01-04-Shrimp-Stir-Fry-with-Coconut-Rice %}

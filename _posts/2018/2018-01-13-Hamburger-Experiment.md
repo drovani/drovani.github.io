@@ -56,5 +56,5 @@ An hour before serving
 1. Heat for 1-2 minutes (they cook quickly), then flip for 1-2 more minutes
 1. Remove from skillet and place on warming plate or serve
 
-[cutter]: https://www.amazon.com/gp/product/B007VU2HR6/
-[temp]: https://www.amazon.com/gp/product/B00L9X2RZS/
+[cutter]: <https://www.amazon.com/gp/product/B007VU2HR6/>
+[temp]: <https://www.amazon.com/gp/product/B00L9X2RZS/>

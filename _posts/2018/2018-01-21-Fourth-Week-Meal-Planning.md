@@ -61,7 +61,7 @@ Dinner Plans (also, leftovers as lunch)
 - Hamburgers
 - Make Your Own Pizza (on English muffins)
 
-[1]: http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386
+[1]: <http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386>
 [2]: {% post_url 2018/2018-01-04-Shrimp-Stir-Fry-with-Coconut-Rice %}
-[zoodles]: http://allrecipes.com/recipe/244715/shrimp-florentine-with-zoodles/
+[zoodles]: <https://allrecipes.com/recipe/244715/shrimp-florentine-with-zoodles/>
 [burger]: {% post_url 2018/2018-01-13-Hamburger-Experiment %}

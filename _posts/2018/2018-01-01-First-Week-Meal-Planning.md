@@ -80,6 +80,6 @@ Grocery List:
 - Pepperoni
 - Green beans (frozen)
 
-[1]: http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386
+[1]: <http://www.geniuskitchen.com/recipe/weight-watchers-chicken-salad-162386>
 [2]: {% post_url 2018/2018-01-04-Shrimp-Stir-Fry-with-Coconut-Rice %}
-[pin]: http://pinstripes.com/northbrook-illinois/bistro-menus/sunday-brunch/
+[pin]: <http://pinstripes.com/northbrook-illinois/bistro-menus/sunday-brunch/>
