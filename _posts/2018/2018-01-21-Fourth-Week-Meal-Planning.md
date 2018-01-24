@@ -31,14 +31,16 @@ Starting with "what's in the refrigerator", this week; I'm hoping that by listin
 
 |Day of Week| Breakfast       | Lunch                         | Dinner                      |
 |-----------|-----------------|-------------------------------|-----------------------------|
-|Monday     | Std. Breakfast  | _leftover chicken and peas_   | [Stir-fry Shrimp][2]        |
-|Tuesday   *| Katie's Oatmeal | _work is providing_           | Chicken breast and salad    |
-|Wednesday  | Std. Breakfast  | _leftover stir-fry shrimp_    | [Shrimp Florentine with Zoodles][zoodles] |
-|Thursday  *| Katie's Oatmeal | English Muffin & Turkey       | Chicken fajitas             |
+|Monday     | Std. Breakfast  | _leftover chicken and peas_   | _on your own!_              |
+|Tuesday   *| Katie's Oatmeal | _work is providing_           | [Stir-fry Shrimp][2]        |
+|Wednesday  | Std. Breakfast  | _leftover stir-fry shrimp_    | Chicken fajitas             |
+|Thursday  *| Katie's Oatmeal | English Muffin & Turkey       |                             |
 |Friday     | Std. Breakfast  | Chicken Salad (Dijon, etc.)   | M.Y.O. Pizza                |
 |Saturday  *| Std. Breakfast  |                               | [Hamburgers][burger] and salad |
-|Sunday     | Std. Breakfast  |                               |                             |
+|Sunday     | Std. Breakfast  |                               | [Shrimp Florentine with Zoodles][zoodles] |
 {: .weekly-planner }
+
+Chicken breast and salad
 
 Breakfast Plans
 
