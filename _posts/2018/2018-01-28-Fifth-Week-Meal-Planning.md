@@ -24,7 +24,7 @@ Last week I started planning with a "what's in the refrigerator" and I found it 
 - English muffins
 - Naan
 
-- Salmon (in the refigerator)
+- Salmon (in the refrigerator)
 - Shrimp (in the freezer)
 - Boneless, skinless chicken breasts (frozen)
 - Chicken thighs (frozen, 4 thighs per bag)
