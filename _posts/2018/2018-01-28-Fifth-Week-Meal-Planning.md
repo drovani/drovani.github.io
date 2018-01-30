@@ -33,7 +33,7 @@ Last week I started planning with a "what's in the refrigerator" and I found it 
 |Day of Week| Breakfast       | Lunch                         | Dinner                      |
 |-----------|-----------------|-------------------------------|-----------------------------|
 |Monday     | Std. Breakfast  | _work lunch out of office_    | Chicken Fajitas             |
-|Tuesday   *| Katie's Oatmeal | [Chicken Salad][1] (Dijon, etc.) | Steak, Veggies, and Salad   |
+|Tuesday   *| Katie's Oatmeal | _vendor provided lunch_       | Steak, Veggies, and Salad   |
 |Wednesday  | Std. Breakfast  | _leftovers from last week_    | Salmon, Veggies, and Salad  |
 |Thursday  *| Katie's Oatmeal | English Muffin & Turkey       | [Shrimp Stir-fry][2] and Salad   |
 |Friday     | _Petro's_       | _leftover Shrimp Stir-fry_    | M.Y.O. Mini Pizzas          |
