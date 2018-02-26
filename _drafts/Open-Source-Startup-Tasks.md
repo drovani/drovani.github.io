@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Source Startup Tasks
+title: Inavord - An Attempt at Getting Started
 category: Vigil Journey
 tags:
 - opensource
@@ -8,6 +8,8 @@ tags:
 - todolist
 ---
 
+
+
 - Storage & Recovery of Secrets
-- Authorization & Authentication
 - Azure Accounts: storage, key vault, functions
+- Authorization & Authentication
