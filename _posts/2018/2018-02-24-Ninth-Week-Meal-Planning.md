@@ -28,13 +28,13 @@ What's In The Refrigerator
 
 |Day of Week| Breakfast       | Lunch                         | Dinner                      |
 |-----------|-----------------|-------------------------------|-----------------------------|
-|Sunday     | Instant Pot Oatmeal | Chicken Salad & Naan      | [Lasagna][lasagna] & Salad  |
-|Monday     | Std. Breakfast  | Lasagna Leftovers             | Pesto Pork Chops & [Potatoes][rrp] |
-|Tuesday  **| Katie's Oatmeal |                               | Slow Cooker Chili           |
-|Wednesday  | Std. Breakfast  |                               | Chicken Pot Pie             |
-|Thursday  *| Katie's Oatmeal |                               |                             |
-|Friday     | _IHOP_          |                               |                             |
-|Saturday  *| Std. Breakfast  |                               |                             |
+|Sunday     | Instant Pot Oatmeal | Turkey Sandwiches         | [Lasagna][lasagna] & Salad  |
+|Monday     | Std. Breakfast  | Chicken Pot Pie               | Beef Stroganoff & Roasted Green Beans |
+|Tuesday  **| Katie's Oatmeal | Lasagna Leftovers             | Slow Cooker Chili           |
+|Wednesday  | Std. Breakfast  | Turkey Sandwich               | Everything-but-the-Bagel Salmon |
+|Thursday  *| Katie's Oatmeal | Everything-but-the-Bagel Salmon | Pesto Pork Chops & [Potatoes][rrp] |
+|Friday     | _IHOP_          | Slow Cooker Chili             | Chicken Fajitas & Bang Bang Broccoli |
+|Saturday  *| Overnight Oatmeal | Sandwiches and Leftovers    | _party at friends' house_   |
 |Sunday     | Std. Breakfast  |                               |                             |
 {: .weekly-planner }
 
@@ -43,17 +43,19 @@ Breakfast Plans
 - Instant Pot Oatmeal - 1 cup oats, 3 cups milk, 1 tbsp butter, pinch salt, 4 minutes on Low Pressure
 - Standard Breakfast - 3 eggs, 2 pieces of bacon, 75 grams potatoes, 64 grams Brussels sprouts
 - Katie's Oatmeal - 1 serving oatmeal, 1 serving almond milk, 1/2 serving organic peanut butter
+- Overnight Oatmeal - 2 cups oats, 1 can coconut milk, 1 scoop protean powder; leave in fridge overnight
 
 Lunch Plans
 
+- Turkey and English Muffin sandwich, with shredded cheese and mustard
 - [Chicken Salad][1] - chicken breast with celery, Dijon, lemon juice, salt, sour cream, and mayo
-- Turkey and English Muffin sandwich
 
 Dinner Plans (also, leftovers as lunch)
 
 - [Salmon Foil Packs][foil]
 - Chicken Fajitas - bell peppers, onions, sauce, cheese, fajitas
 - [Stir-fry shrimp][2], bell peppers, onions, celery with paprika and cayenne sauce over plain rice
+- Roasted Green Beans - 450&deg;F, preheat oven with oil coated pan, add frozen green beans tossed in olive oil
 - [Bang Bang Broccoli][bbb]
 - [Rosemary Roasted Potatoes][rrp]
 
