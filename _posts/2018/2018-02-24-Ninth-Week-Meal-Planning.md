@@ -30,12 +30,12 @@ What's In The Refrigerator
 |-----------|-----------------|-------------------------------|-----------------------------|
 |Sunday     | Instant Pot Oatmeal | Turkey Sandwiches         | [Lasagna][lasagna] & Salad  |
 |Monday     | Std. Breakfast  | Chicken Pot Pie               | Beef Stroganoff & Roasted Green Beans |
-|Tuesday  **| Katie's Oatmeal | Lasagna Leftovers             | Slow Cooker Chili           |
+|Tuesday  **| Katie's Oatmeal | Lasagna Leftovers             | [Slow Cooker Chili][chili]  |
 |Wednesday  | Std. Breakfast  | Turkey Sandwich               | Everything-but-the-Bagel Salmon |
-|Thursday  *| Katie's Oatmeal | Everything-but-the-Bagel Salmon | Pesto Pork Chops & [Potatoes][rrp] |
+|Thursday  *| Katie's Oatmeal | Lasagna Leftovers             | [O'Shaughnessy's Public House][house] |
 |Friday     | _IHOP_          | Slow Cooker Chili             | Chicken Fajitas & Bang Bang Broccoli |
-|Saturday  *| Overnight Oatmeal | Sandwiches and Leftovers    | _party at friends' house_   |
-|Sunday     | Std. Breakfast  |                               |                             |
+|Saturday  *| Overnight Oatmeal | _Culver's_                  | _party at friends' house_   |
+|Sunday     | Std. Breakfast  | _sandwiches and leftovers_    | Shrimp Stir-fry and veggies |
 {: .weekly-planner }
 
 Breakfast Plans
@@ -66,3 +66,5 @@ Dinner Plans (also, leftovers as lunch)
 [foil]: <http://www.delish.com/cooking/recipe-ideas/recipes/a51594/salmon-foil-packs-recipe2>
 [lasagna]: <https://www.tasteofhome.com/recipes/best-lasagna>
 [marsala]: <https://confessionsofafitfoodie.com/2017/03/21-day-fix-instant-pot-chicken-marsala>
+[chili]: <http://www.myrecipes.com/recipe/beef-and-butternut-squash-chili>
+[house]: <http://www.oshaughnessyschicago.com>
