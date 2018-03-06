@@ -7,7 +7,7 @@ tags:
 - expensivethings
 ---
 
-Another gift giving season has come and gone, and I find myself pretending to enjoy some gifts; genuinely enjoying other gifts; and unsure about the rest. However, I have discovered that there are classes of gifts that I are just not for me. While it may be well intentioned to buy me a gift - I figure it can't hurt to put forth some guidelines for getting me the perfect gift.
+Another gift giving season has come and gone, and I find myself pretending to enjoy some gifts; genuinely enjoying other gifts; and unsure about the rest. However, I have discovered that there are classes of gifts that are just not for me. While it may be well intentioned to buy me a gift - I figure it can't hurt to put forth some guidelines for getting me the perfect gift.
 
 First - buy something from my [Amazon list][1]. I know it can be boring to just buy something off a list, but I keep it up to date. Come August or after Thanksgiving, I won't buy myself anything that is on that list. Frequently, though, anything leftover on the list after the season is over, I will just buy on my own - especially if it is something that I can convince myself that I _need_.
 

@@ -26,16 +26,16 @@ What's In The Refrigerator
 - Chicken thighs (frozen, 4 thighs per bag)
 - Steak (frozen), probably filet mignons, individually wrapped
 
-|Day of Week| Breakfast       | Lunch                         | Dinner                      |
-|-----------|-----------------|-------------------------------|-----------------------------|
-|Sunday     | Instant Pot Oatmeal | Turkey Sandwiches         | [Lasagna][lasagna] & Salad  |
-|Monday     | Std. Breakfast  | Chicken Pot Pie               | Beef Stroganoff & Roasted Green Beans |
-|Tuesday  **| Katie's Oatmeal | Lasagna Leftovers             | [Slow Cooker Chili][chili]  |
-|Wednesday  | Std. Breakfast  | Turkey Sandwich               | Everything-but-the-Bagel Salmon |
-|Thursday  *| Katie's Oatmeal | Lasagna Leftovers             | [O'Shaughnessy's Public House][house] |
-|Friday     | _IHOP_          | Slow Cooker Chili             | Chicken Fajitas & Bang Bang Broccoli |
-|Saturday  *| Overnight Oatmeal | _Culver's_                  | _party at friends' house_   |
-|Sunday     | Std. Breakfast  | _sandwiches and leftovers_    | Shrimp Stir-fry and veggies |
+|Day of Week| Breakfast        | Lunch                         | Dinner                      |
+|-----------|------------------|-------------------------------|-----------------------------|
+|Sunday     | Instant Pot Oatmeal | Turkey Sandwiches          | [Lasagna][lasagna] & Salad  |
+|Monday     | Std. Breakfast   | Chicken Pot Pie               | Beef Stroganoff & Roasted Green Beans |
+|Tuesday  **| Standard Oatmeal | Lasagna Leftovers             | [Slow Cooker Chili][chili]  |
+|Wednesday  | Std. Breakfast   | Turkey Sandwich               | Everything-but-the-Bagel Salmon |
+|Thursday  *| Standard Oatmeal | Lasagna Leftovers             | [O'Shaughnessy's Public House][house] |
+|Friday     | _IHOP_           | Slow Cooker Chili             | Chicken Fajitas & Bang Bang Broccoli |
+|Saturday  *| _On Your Own_    | _Culver's_                    | _party at friends' house_   |
+|Sunday     | Std. Breakfast   | _Chipotle_                    | _leftover spaghetti and chili_ |
 {: .weekly-planner }
 
 Breakfast Plans
