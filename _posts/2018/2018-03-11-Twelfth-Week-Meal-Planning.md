@@ -10,7 +10,7 @@ I just can't seem to manage consistently planning meals for two weeks in a row. 
 
 |Day of Week| Breakfast         | Lunch                         | Dinner                      |
 |-----------|-------------------|-------------------------------|-----------------------------|
-|Saturday  *| _on your own_     | ["Breaded" Paleo Chicken Cutlets][cutlets] | _dinner at parents' |
+|Saturday  *| _on your own_     | ["Breaded" Paleo Chicken Cutlets][cutlets] | _dinner at parents' for March birthdays_ |
 |Sunday     | _[Wishbone][wish]_ | _on your own_                | "Brinner" - pancakes, bacon, eggs |
 |Monday     | Eggs & Tortillas  | Turkey Sandwich               | |
 |Tuesday  **| M.Y.O. Oatmeal    |  | Slow Cooker Chili |
@@ -63,5 +63,5 @@ Dinner Plans (also, leftovers as lunch)
 [lasagna]: <https://www.tasteofhome.com/recipes/best-lasagna>
 [marsala]: <https://confessionsofafitfoodie.com/2017/03/21-day-fix-instant-pot-chicken-marsala>
 [chili]: <http://www.myrecipes.com/recipe/beef-and-butternut-squash-chili>
-[cutlet]: <https://www.paleorunningmomma.com/paleo-chicken-cutlets-whole30>
+[cutlets]: <https://www.paleorunningmomma.com/paleo-chicken-cutlets-whole30>
 [wish]: <http://www.wishbonenorth.com/>

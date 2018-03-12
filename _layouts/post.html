@@ -6,8 +6,10 @@ layout: default
     <header>
         <h2>{{ page.title }}</h2>
         <time datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%e %B %Y" }}</time>
+        {% if page.category %}
         &mdash;
-        <span class="category">{{ page.category }}</span>
+        <span class="category"><a href="{{ site.baseurl}}/category/{{ page.category | slugify }}">{{ page.category }}</a></span>
+        {% endif %}
         {% if page.treeid %}
             <a href="https://github.com/drovani/Vigil/tree/{{ page.treeid }}" title="View this tree on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
         {% endif %}
