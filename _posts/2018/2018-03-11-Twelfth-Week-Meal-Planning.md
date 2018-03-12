@@ -1,13 +1,25 @@
 ---
 layout: post
-title: March 4 - 11 Meal Planning
+title: March 10 - 20 Meal Planning
 category: Mise-en-Place
 tags:
-- experiment
-- notwhole30
+- mealplanning
 ---
 
-I just can't seem to manage consistently planning meals for two weeks in a row. This last week, however, was probably my best non-planned out week of meals. Several of the meals were either leftovers of meals or used the uncooked protein from meals from the prior week. For example, I did a pot roast stew on Tuesday night in the slow cooker using the portion of the beef that I didn't use from the Beef Stroganoff.
+I just can't seem to manage consistently planning meals for two weeks in a row. This last week, however, was probably my best non-planned out week of meals. Several of the meals were either leftovers of meals or used the uncooked protein from meals from the prior week. For example, I did a pot roast stew on Tuesday night in the slow cooker using the portion of the beef that I didn't use from the Beef Stroganoff. Since we will be on vacation half of next week, I am going to be super ambitious and try to plan out 10 whole days of meals.  However, considering that I am writing this on Monday morning, I might have already made this a losing proposition.
+
+|Day of Week| Breakfast         | Lunch                         | Dinner                      |
+|-----------|-------------------|-------------------------------|-----------------------------|
+|Saturday  *| _on your own_     | ["Breaded" Paleo Chicken Cutlets][cutlets] | _dinner at parents' |
+|Sunday     | _[Wishbone][wish]_ | _on your own_                | "Brinner" - pancakes, bacon, eggs |
+|Monday     | Eggs & Tortillas  | Turkey Sandwich               | |
+|Tuesday  **| M.Y.O. Oatmeal    |  | Slow Cooker Chili |
+|Wednesday  | Std. Breakfast    |  |  |
+|Thursday  *| M.Y.O. Oatmeal    |  |  |
+|Friday     | _IHOP_            |  |  |
+|Saturday  *|                   |  |  |
+|Sunday     |                   |  |  |
+{: .weekly-planner }
 
 What's In The Refrigerator
 {: .font-larger }
@@ -15,34 +27,21 @@ What's In The Refrigerator
 - Brussels sprouts - three cut containers
 
 - Tortillas
-- Hamburger bun (yes, just one)
 - English muffins
 - Naan
 
-- Boneless, skinless chicken breasts (frozen, running low)
+- Boneless, skinless chicken breasts (frozen)
 - Steak (frozen), probably filet mignons, individually wrapped
 - Boneless Pork chops (defrosting)
 - Shrimp (frozen bag)
-
-|Day of Week| Breakfast         | Lunch                         | Dinner                      |
-|-----------|-------------------|-------------------------------|-----------------------------|
-|Saturday  *| _on your own_     | ["Breaded" Paleo Chicken Cutlets][cutlets] | _dinner at parents' |
-|Sunday     | Pancakes and Eggs | _Costco food court_           |  |
-|Monday     | Std. Breakfast    |   |  |
-|Tuesday  **| M.Y.O. Oatmeal    |   |  |
-|Wednesday  | Std. Breakfast    |   |  |
-|Thursday  *| M.Y.O. Oatmeal    |   |  |
-|Friday     | _IHOP_            |   |  |
-|Saturday  *|                   |   |  |
-|Sunday     |                   |   |  |
-{: .weekly-planner }
+- Ground beef (frozen)
+- Chicken Thighs (frozen, 3x packs of 4)
 
 Breakfast Plans
 
 - Standard Breakfast - 2 eggs, 2 pieces of bacon, 75 grams potatoes, 64 grams Brussels sprouts
 - Katie's Oatmeal - 1 serving oatmeal, 1 serving almond milk, 1/2 serving organic peanut butter
 - Overnight Oatmeal - 2 cups oats, 1 can coconut milk, 1 scoop protean powder; leave in fridge overnight
-- Instant Pot Oatmeal - 1 cup oats, 3 cups milk, 1 tbsp butter, pinch salt, 4 minutes on Low Pressure
 
 Lunch Plans
 
@@ -64,5 +63,5 @@ Dinner Plans (also, leftovers as lunch)
 [lasagna]: <https://www.tasteofhome.com/recipes/best-lasagna>
 [marsala]: <https://confessionsofafitfoodie.com/2017/03/21-day-fix-instant-pot-chicken-marsala>
 [chili]: <http://www.myrecipes.com/recipe/beef-and-butternut-squash-chili>
-[house]: <http://www.oshaughnessyschicago.com>
 [cutlet]: <https://www.paleorunningmomma.com/paleo-chicken-cutlets-whole30>
+[wish]: <http://www.wishbonenorth.com/>
