@@ -80,23 +80,16 @@ namespace Vigil.MessageQueue.Commands
 
 ### Testing the Code
 
+{::options parse_block_html="true" /}
+
 <aside class="tests">
-	<dl>
-		<dt>CreatePatronCommandTest</dt>
-		<dd>
-			<ul>
-				<li>Validation_On_DisplayName_Has_Maximum_String_Length</li>
-				<li>Validation_Requires_DisplayName_and_PatronType</li>
-			</ul>
-		</dd>
-		<dt>PatronFactoryTest</dt>
-		<dd>
-			<ul>
-				<li>User_Can_Create_New_Patron</li>
-				<li>User_Cannot_Create_Patron_That_Fails_Validation</li>
-			</ul>
-		</dd>
-	</dl>
+CreatePatronCommandTest
+: - <i class="fas fa-check-circle"></i>Validation_On_DisplayName_Has_Maximum_String_Length
+  - <i class="fas fa-check-circle"></i>Validation_Requires_DisplayName_and_PatronType
+
+PatronFactoryTest
+: - <i class="fas fa-check-circle"></i>User_Can_Create_New_Patron
+  - <i class="fas fa-check-circle"></i>User_Cannot_Create_Patron_That_Fails_Validation
 </aside>
 
 Of course, since new code has been added, new tests need to be made. Following the Microsoft convention for where tests are located, the solution is broken into two root folders: src and test. There is a one-to-one matching of projects with real code in the src folder, and projects that hold the unit tests for those projects. Test projects have the same name as their target, suffixed with '.Tests' (eg. `src\Vigil.Domain` and `test\Vigil.Domain.Tests`). The folder structure in the two projects should be identical, and all test classes have the same name as their target class, suffixed with 'Test' (eg. `Vigil.Patrons.PatronFactory`, `Vigil.Patrons.PatronFactoryTest`).

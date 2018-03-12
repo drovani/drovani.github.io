@@ -89,12 +89,13 @@ code {
   border-radius: 1em 0;
 }
 
-aside.seriesToc {
+aside.tableofcontents {
     font-size: 75%;
     float: right;
     border: 1px solid black;
     border-radius: 1em 0;
     padding: 1em;
+    margin: 1em 0 1em 1em;
 }
 
 @import 'site-template';
@@ -118,20 +119,21 @@ aside.seriesToc {
     }
 }
 
-.posts .post {
+.post {
     border-bottom: 1px solid $highlight;
     padding-bottom: 3em;
     margin-bottom: 3em;
 
-    p::first-letter {
-        color: #dfcc74;
-        font-size: 6rem;
-        line-height: 4rem;
-        float: left;
-    }
-
     .entry {
         text-align: justify;
+
+        > p:first-of-type::first-letter {
+            color: #dfcc74;
+            font-size: 6rem;
+            line-height: 4rem;
+            float: left;
+        }
+    
     }
 }
 
@@ -190,22 +192,15 @@ img.float-right {
         margin: 0;
     }
 
-    dt:before {
-        font-family: 'FontAwesome';
-        content: '\f0dd';
-        display: inline-block;
-        padding-right: .5em;
-    }
-
     ul {
         list-style: none;
-    }
+        padding: 0;
+        margin:0;
 
-    li:before {
-        font-family: 'FontAwesome';
-        content: '\f058';
-        margin: 0 5px 0 -15px;
-        color: green;
+        li svg{
+            padding-right: 1em;            
+            color: green;
+        }
     }
 }
 
@@ -215,7 +210,7 @@ img.float-right {
     flex-wrap: wrap;
     justify-content: space-around;
     border: 0;
-    font-size: $small;
+    font-size: $small * 1.25;
 
     span{
       border: 1px solid;
@@ -223,11 +218,13 @@ img.float-right {
       padding: .125em 1em;
       background-color: #35212B;
       color:#d7cdcc;
+
+      .fa-tag{
+          padding-right: $small * 1.25;
+      }
     }
 
     span:before {
-      font-family: 'FontAwesome';
-      content: '\f02b';
       margin-right: 5px;
     }
 }

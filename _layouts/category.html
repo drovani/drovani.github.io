@@ -18,12 +18,14 @@ layout: default
         </header>
         <div class="entry">
             {{ post.excerpt }}
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more fa fa-long-arrow-right"></a>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+                <li class="fas fa-long-arrow-alt-right fa-3x"></li>
+            </a>
         </div>
         {% if post.tags %}
         <aside class="tags">
             {% for tag in post.tags %}
-            <span>{{ tag }}</span>
+            <span><i class="fas fa-tag"></i>{{ tag }}</span>
             {% endfor %}
         </aside>
         {% endif %}
