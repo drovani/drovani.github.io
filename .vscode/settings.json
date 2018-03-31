@@ -11,5 +11,12 @@
     },
     "markdown.styles": [
         "**/_site"
+    ],
+    "spellright.language": "en",
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "scss"
     ]
 }
