@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Grid Test Page – Rovani in C&sharp;</title>
+
+    <link rel="stylesheet" type="text/css" href="/grid.css" />
+</head>
+
+<body>
+    <header>
+        <a href="" class="avatar">
+            &nbsp;
+        </a>
+        <a href="" class="sitename">
+            Rovani in C&sharp;
+        </a>
+        <nav role="navigation">
+            <ul>
+                <li><a href="{{ site.baseurl }}/about">About</a></li>
+                <li><a href="{{ site.baseurl }}/">Blog</a></li>
+                <li><a href="{{ sire.baseurl }}/category/exactly-one-hobby">Exactly One Hobby</a></li>
+                <li><a href="{{ site.baseurl }}/category/vigil-journey">Vigil Journey</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" class="main">
+        {{ content }}
+    </main>
+    <footer class="footer">
+        <a href="mailto:{{ site.footer-links.email }}"><i class="fas fa-3x fa-at"></i></a>
+        <a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="fab fa-3x fa-facebook"></i></a>
+        <a href="https://github.com/{{ site.footer-links.github }}"><i class="fab fa-3x fa-github"></i></a>
+        <a href="https://instagram.com/{{ site.footer-links.instagram }}"><i class="fab fa-3x fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="fab fa-3x fa-linkedin"></i></a>
+        <a href="{{ site.baseurl }}/feed.xml"><i class="fas fa-3x fa-rss"></i></a>
+        <a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class="fab fa-3x fa-twitter"></i></a>
+        <a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}"><i class="fab fa-3x fa-stack-overflow"></i></a>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>
