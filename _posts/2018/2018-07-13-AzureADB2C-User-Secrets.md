@@ -23,7 +23,7 @@ All of the code came as part of the default ASP.NET Code Web Application templat
 
 ## User Secrets
 
-The other significant advancement in my project start-up task list was the ability to find a place for secrets and connection strings that don't belong in the source files. During testing, the callback URL for the application is _localhost_. This means that anyone would be able to download the source and run the code and be able to use my instance of AADB2C to store accounts - this is not an ideal solution. Instead, I can move the values for the _ClientId_ and _Domain_ into User Secrets!
+The other significant advancement in my project start-up task list was the ability to find a place for secrets and connection strings that don't belong in the source files. During testing, the callback URL for the application is _localhost_. This means that anyone would be able to download the source and run the code and be able to use my instance of AADB2C to store accounts - this is not an ideal solution. Instead, I can move the values for the _ClientId_ and _Domain_ into User Secrets! The ```appsettings.json``` file can have any values in the _ClientId_ and _Domain_ properties. In fact, they don't even need to be present. I like to put them there as a way to remind developers where the values should go. It would be terrible if someone thought the properties were missing, "helpfully" checked them in, and then blew the whole secret.
 
 ``` json
 {
@@ -43,3 +43,30 @@ The other significant advancement in my project start-up task list was the abili
   }
 }
 ```
+
+In Visual Studio, it is a simple right-click on the project, and select Manage User Secrets.
+S
+![Visual Studio 2017 Manage User Secrets](/images/vs2017-inavord-manage-user-secrets.png)
+{: .centered }
+
+This will bring up the ```secrets.json``` file for the local computer. There are caveats to using this method of storage, namely that it isn't actually secure. These settings are generally stored in plain text on the filesystem. What is key is that they are not stored in a location that might get it pushed into source control.
+
+``` json
+{
+  "AzureAdB2C": {
+    "ClientId": "00000000-0000-0000-0000-000000000000",
+    "Domain": "adb2c-subdomain.onmicrosoft.com"
+  }
+}
+```
+
+The values for these properties are pulled directly from the Azure portal.
+
+![Azure AD B2C Application Properties](/images/azure-adb2c-application-properties.png)
+{: .centered }
+
+## Authentication and Secrets
+
+Each time I pull down the solution to a new computer, or if I need to change the Application ID or the Doman name, then I need to update the values in the locally stored secrets. This is an inconvenience I can deal with as a way to no longer worry about accidentally checking them into source control.
+
+Pulled together, this really jump starts the prospects of having the knowledge to quickly pull together a project in the future. It starts with this, and as I continue to build on the basics, I plan to keep updating this series.
