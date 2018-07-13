@@ -49,7 +49,7 @@ S
 ![Visual Studio 2017 Manage User Secrets](/images/vs2017-inavord-manage-user-secrets.png)
 {: .centered }
 
-This will bring up the ```secrets.json``` file for the local computer. There are caveats to using this method of storage, namely that it isn't actually secure. These settings are generally stored in plain text on the filesystem. What is key is that they are not stored in a location that might get it pushed into source control.
+This will bring up the ```secrets.json``` file for the local computer. There [are caveats](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets) to using this method of storage, namely that it isn't actually secure. These settings are generally stored in plain text on the filesystem. What is key is that they are not stored in a location that might get it pushed into source control.
 
 ``` json
 {
