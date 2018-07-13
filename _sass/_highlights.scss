@@ -1,11 +1,11 @@
 
-.highlight {
+pre.highlight {
   border: 1px solid $highlight;
   border-left-width: 1em;
   border-radius: 1em 0;
   margin: 1em 0;
   padding-left: 1em;
-  overflow-x: scroll;
+  overflow-x: auto;
 
   code {
     background-color: inherit;
