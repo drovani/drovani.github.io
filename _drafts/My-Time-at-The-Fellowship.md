@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Career Choices and Directions
-category: Exactly One Hobby
+title: My Time at _The Fellowship_
+category: "Rovani in C&sharp;"
 tags:
 - career
 - teachablemoments
