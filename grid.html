@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -12,24 +13,61 @@
 
 <body>
     <header>
-        <a href="" class="avatar">
-            &nbsp;
-        </a>
-        <a href="" class="sitename">
-            Rovani in C&sharp;
-        </a>
-        <nav role="navigation">
-            <ul>
-                <li><a href="{{ site.baseurl }}/about">About</a></li>
-                <li><a href="{{ site.baseurl }}/">Blog</a></li>
-                <li><a href="{{ sire.baseurl }}/category/exactly-one-hobby">Exactly One Hobby</a></li>
-                <li><a href="{{ site.baseurl }}/category/vigil-journey">Vigil Journey</a></li>
-            </ul>
-        </nav>
+        <h1>
+            <a href="" class="sitename">
+                <i class="avatar">&nbsp;</i>
+                Rovani in C&sharp;
+            </a>
+        </h1>
     </header>
+    <nav role="navigation">
+        <ul>
+            <li class="nav__item"><a href="{{ site.baseurl }}/about">About</a></li>
+            <li class="nav__item"><a href="{{ site.baseurl }}/">Blog</a></li>
+            <li class="nav__item"><a href="{{ sire.baseurl }}/category/exactly-one-hobby">Exactly One Hobby</a></li>
+            <li class="nav__item"><a href="{{ site.baseurl }}/category/vigil-journey">Vigil Journey</a></li>
+        </ul>
+    </nav>
     <main role="main" class="main">
         {{ content }}
     </main>
+    <aside class="sidebar">
+        <h3>Additional stuff</h3>
+
+        <ul>
+            <li>Items</li>
+            <li>Are</li>
+            <li>Listed</li>
+            <li>Here</li>
+            <li>Wow!</li>
+        </ul>
+    </aside>
+    <section class="sponsors-wrapper">
+        <h2>Our sponsors</h2>
+
+        <section class="sponsors">
+            <figure class="sponsor">
+                <img src="https://via.placeholder.com/150x150">
+            </figure>
+
+            <figure class="sponsor">
+                <img src="https://via.placeholder.com/200x150">
+            </figure>
+
+            <figure class="sponsor">
+                <img src="https://via.placeholder.com/100x200">
+            </figure>
+
+            <figure class="sponsor">
+                <img src="https://via.placeholder.com/100x100">
+            </figure>
+
+            <figure class="sponsor">
+                <img src="https://via.placeholder.com/200x200">
+            </figure>
+        </section>
+
+    </section>
     <footer class="footer">
         <a href="mailto:{{ site.footer-links.email }}"><i class="fas fa-3x fa-at"></i></a>
         <a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="fab fa-3x fa-facebook"></i></a>
@@ -41,7 +79,8 @@
         <a href="http://stackoverflow.com/{{ site.footer-links.stackoverflow }}"><i class="fab fa-3x fa-stack-overflow"></i></a>
     </footer>
 
-    <script defer src="https://pro.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-+1nLPoB0gaUktsZJP+ycZectl3GX7wP8Xf2PE/JHrb7X1u7Emm+v7wJMbAcPr8Ge" crossorigin="anonymous"></script>
+    <script defer src="https://pro.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-+1nLPoB0gaUktsZJP+ycZectl3GX7wP8Xf2PE/JHrb7X1u7Emm+v7wJMbAcPr8Ge"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
