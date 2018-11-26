@@ -5,11 +5,12 @@ permalink: /about
 stylesheet: about
 ---
 
-<aside class="aside" style="text-align: center;">
-Downloadable Formats<br />
-<a href="/david-rovani-resume.docx"><i class="fal fa-3x fa-file-word" title="Word"></i></a>
-<a href="/david-rovani-resume.pdf"><i class="fal fa-3x fa-file-pdf" title="PDF"></i></a>
-<a href="/david-rovani-resume.txt"><i class="fal fa-3x fa-file-alt" title="txt"></i></a>
+<aside class="aside" style="text-align: center; font-size: 100%;">
+Additional Formats<br />
+<a href="/david-rovani-resume.docx"><i class="fal fa-2x fa-file-word" title="Microsoft Word"></i></a>
+<a href="/david-rovani-resume.pdf"><i class="fal fa-2x fa-file-pdf" title="PDF"></i></a>
+<a href="https://docs.google.com/document/d/e/2PACX-1vTdjpOF6GqYfknejhwLLuZQRa2MbfT6fIoov64EzOjnIuRWPmqgWye_346EJtSGShBZsyW6QIyikPr-/pub"><i class="fal fa-2x fa-file-alt" title="Google Docs"></i></a>
+<a href="/david-rovani-resume.txt"><i class="fal fa-2x fa-file" title="txt"></i></a>
 </aside>
 
 ## Passions and Motivators
