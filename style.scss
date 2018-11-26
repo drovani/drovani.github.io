@@ -66,7 +66,7 @@ h1 {
     margin-right: auto;
     padding-bottom: .5em;
 }
-h2 {font-size: $xx-large;}
+h2 {font-size: $xx-large; text-decoration: underline;}
 h3 {font-size: $x-large;}
 h4 {font-size: $large;}
 small, .font_small {font-size: $small;}
@@ -89,7 +89,7 @@ code {
   border-radius: 1em 0;
 }
 
-aside.tableofcontents {
+aside.tableofcontents, aside.aside {
     font-size: 75%;
     float: right;
     border: 1px solid black;
