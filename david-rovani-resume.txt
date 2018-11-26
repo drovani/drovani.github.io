@@ -1,16 +1,13 @@
----
-layout: page
-title: David Rovani - R&eacute;sum&eacute;
-permalink: /about
-stylesheet: about
----
+David Rovani
 
-<aside class="aside">
-Downloadable Formats &mdash;
-<a href="/david-rovani-resume.docx"><i class="far fa-file-word">Word</i></a>&nbsp;&bull;&nbsp;
-<a href="/david-rovani-resume.pdf"><i class="far fa-file-pdf">PDF</i></a>&nbsp;&bull;&nbsp;
-<a href="/david-rovani-resume.txt"><i class="far fa-file-alt">txt</i></a>
-</aside>
+email: david@rovani.net
+phone: 812.760.1258
+website: https://rovani.net
+Location: Chicago, IL
+LinkedIn: drovani
+Twitter: @davidrovani
+Stack Overflow: drovani
+Github: drovani
 
 ## Passions and Motivators
 
@@ -20,7 +17,7 @@ I have built a reputation among my colleagues of trust and honesty, which afford
 
 ## Proficiencies & Technical Knowledge
 
-<aside class="aside">While I have been exclusively in a Microsoft environment for the last 10+ years professionally, I have started side projects over the years in various other languages to get an idea of how they approach problems differently. Such languages include <em>Ruby on Rails</em>, <em>PHP on Zend framework</em>, and <em>VB on legacy ASP.NET</em>.</aside>
+While I have been exclusively in a Microsoft environment for the last 10+ years professionally, I have started side projects over the years in various other languages to get an idea of how they approach problems differently. Such languages include Ruby on Rails, PHP on Zend framework, and VB on legacy ASP.NET.
 
 - Microsoft development environment – C#, MSSQL, .NET Framework, .NET core, Visual Studio
 - Azure DevOps – Boards, Project Planning, Backlog item tracking, Repos, Pipelines, CI/CD
@@ -30,38 +27,35 @@ I have built a reputation among my colleagues of trust and honesty, which afford
 
 ## Experience and Responsibilities
 
-### Director of Information Services at _IFCJ_
+### Director of Information Services at IFCJ
 
-<aside class="aside"><em>The International Fellowship of Christians and Jews</em> (IFCJ) is a global non-profit with offices in Chicago, Toronto, Brazil, South Korea, and Jerusalem providing humanitarian work in the eastern Mediterranean and former Soviet Union areas of the world.</aside>
+The International Fellowship of Christians and Jews (IFCJ) is a global non-profit with offices in Chicago, Toronto, Brazil, South Korea, and Jerusalem providing humanitarian work in the eastern Mediterranean and former Soviet Union areas of the world.
+November 2012 to present
 
-_November 2012 to present_
+Management of Developer Operations
+- Plan, assign, and direct the activities of the technical personnel involved in the design, development, and implementation of the internal Donor Relationship Management software and extensive supporting internal processes.
+- Set and implement policies and procedures related to application quality standards, automated testing, and release management.
+- Manage routine and complicated projects by actively listening, probing and interacting with end users to deliver desired results.
+- Oversee interactions with technical personnel of external vendors and consultants.
+Management of Data Integrity Team
+- Plan, assign, and direct the activities of the technical personnel responsible for ensuring the security, integrity, performance, and administration of database servers.
+- Set and implement policies and procedures related to the stewardship, accuracy, and timely delivery of data between internal and external systems and between departments.
+Departmental Management
+- Develop and implement IS strategic vision that aligns with the mission and vision of IFCJ. Provide consultative advice to business unit leaders on IS best practices to improve efficiencies and effectiveness of business processes.
+- Manage the career and technical skill development of all direct and indirect reports that will enable them to provide effective support to the organization.
+- Guide and mentor the IS team to ensure staff is appropriately trained, motivated and engaged. Effectively manage and direct IS staff to ensure accurate and timely delivery of services.
+Keep abreast of new and emerging technological advances in systems, frameworks, and vendor product offerings to ensure the department is using the most cost-effective, secure solutions to issues and problems.
 
-1. Management of Developer Operations
-    - Plan, assign, and direct the activities of the technical personnel involved in the design, development, and implementation of the internal Donor Relationship Management software and extensive supporting internal processes.
-    - Set and implement policies and procedures related to application quality standards, automated testing, and release management.
-    - Manage routine and complicated projects by actively listening, probing and interacting with end users to deliver desired results.
-    - Oversee interactions with technical personnel of external vendors and consultants.
-1. Management of Data Integrity Team
-    - Plan, assign, and direct the activities of the technical personnel responsible for ensuring the security, integrity, performance, and administration of database servers.
-    - Set and implement policies and procedures related to the stewardship, accuracy, and timely delivery of data between internal and external systems and between departments.
-1. Departmental Management
-    - Develop and implement IS strategic vision that aligns with the mission and vision of _IFCJ_. Provide consultative advice to business unit leaders on IS best practices to improve efficiencies and effectiveness of business processes.
-    - Manage the career and technical skill development of all direct and indirect reports that will enable them to provide effective support to the organization.
-    - Guide and mentor the IS team to ensure staff is appropriately trained, motivated and engaged. Effectively manage and direct IS staff to ensure accurate and timely delivery of services.
-1. Keep abreast of new and emerging technological advances in systems, frameworks, and vendor product offerings to ensure the department is using the most cost-effective, secure solutions to issues and problems.
+Initial position at IFCJ was as a Senior .NET Developer, then after a year was promoted to .NET Developer Team Lead. Two years later, promoted to Manager of Application Development.
 
-Initial position at _IFCJ_ was as a _Senior .NET Developer_, then after a year was promoted to _.NET Developer Team Lead_. Two years later, promoted to _Manager of Application Development_.
+### Application Development Practice Manager at Falkor Group
 
-### Application Development Practice Manager at _Falkor Group_
-
-<aside class="aside"><em>Falkor Group</em> is an IT consulting firm specializing in providing managed services, infrastructure support, and applications development for small to mid-sized businesses.</aside>
-
-_May 2006 to November 2012_
+Falkor Group is an IT consulting firm specializing in providing managed services, infrastructure support, and applications development for small to mid-sized businesses.
+May 2006 to November 2012
 
 Beginning as a junior developer my initial responsibilities consisted of working within a group of developers collaborating on joint projects. From there I was able to transition from small solo assignments to leading teams of junior developers on larger projects, and within two years had assumed management of the Application Development practice, overseeing a team of five full-time employees and several contractors.
 
 Projects Included:
-
 * Lead Developer on a three year project to convert a large website from classic ASP to ASP.NET Web Forms to support retail franchises for an international tire corporation with product ordering, event scheduling, and to act as an informational hub between the franchises and corporate.
 * Developer on a project to analyze and document the business processes for a large humanitarian non-profit, and recommend application solutions to transition their donor management software away from a closed-source Windows forms application.
 * Lead Developer on the project to implement the replacement solution for the same large humanitarian non-profit, which included migrating to a new open source platform, and recreating customized business logic in the new system.
@@ -71,13 +65,12 @@ Projects Included:
 
 ### Additional work experience
 
-* _Best Buy_ (May 2004 - May 2006), Geek Squad "Double Agent"
+Best Buy (May 2004 - May 2006), Geek Squad "Double Agent"
     * On-premise technical support for home and small businesses.
     * Diagnose and solve problems with home networking, Windows computers, and printers; and provide user training.
     * Required a significant amount of in-person customer support and working with both the central dispatch and local Best Buy employees to ensure that customer needs and expectations were always met.
 
-## _University of Evansville_ class of 2004
-
+## University of Evansville class of 2004
 * Received both a B.S. in Computer Science and a B.S. in Computer Engineering.
 * Resident Assistant (RA), 2 years
 * Leadership Academy, President
@@ -86,7 +79,6 @@ Projects Included:
 * Resident Gamers Society, President
 
 ## Additional Interests and Activities
-
 * Avid cook, handyman, reader, and runner.
 * Currently learning Italian.
-* Recovered _World of Warcraft_ addict.
+* Recovered World of Warcraft addict.
