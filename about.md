@@ -21,15 +21,15 @@ I have built a reputation among my colleagues of trust and honesty, which afford
 
 ## Proficiencies & Technical Knowledge
 
-<aside class="aside">While I have been exclusively in a Microsoft environment for the last 10+ years professionally, I have started side projects over the years in various other languages to get an idea of how they approach problems differently. Such languages include <em>Ruby on Rails</em>, <em>PHP on Zend framework</em>, and <em>VB on legacy ASP.NET</em>.</aside>
-
+- SCRUM, Agile, Waterfall methodologies
 - Microsoft development environment – C#, MSSQL, .NET Framework, .NET core, Visual Studio
 - Azure DevOps – Boards, Project Planning, Backlog item tracking, Repos, Pipelines, CI/CD
 - Cloud-First Development - Azure Functions, Cosmos DB, App Services, Storage and Queues, AD B2C Tenants, Key Vault, Application Insights
-- SCRUM, Agile, Waterfall methodologies
-- Avid user of OneNote, Trello, LinqPad, Teams, Word, Excel, Outlook
+- Avid user of OneNote, Trello, LinqPad, Teams; frequent user of Slack, Project, Outlook, Word, Excel
 
-## Experience and Responsibilities
+<aside class="aside">While I have been exclusively in a Microsoft environment for the last 10+ years professionally, I have started side projects over the years in various other languages to get an idea of how they approach problems differently. Such languages include <em>Node.js</em>, <em></em> <em>Ruby on Rails</em>, <em>PHP on Zend framework</em>, and <em>VB on legacy ASP.NET</em>.</aside>
+
+## Experience & Responsibilities
 
 ### Director of Information Services at _IFCJ_
 
