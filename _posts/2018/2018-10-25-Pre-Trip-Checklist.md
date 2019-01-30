@@ -7,7 +7,7 @@ tags:
 - todolist
 ---
 
-Remembering what to pack, what clothes to wear, and what device accessories to bring has never been a problem for me. What inevitably causes me problems is attempting to do some work in that dreaded space of time when I am _Without Internet_. It's a terrible place to be, filled with unanswerable questions, unupdatable packages, unreviewable documentation, unwatchable shows and movies; and possibly worst of all, untouchable code repositories. Below are the list of items that I always need to remember to do the day before any planned travel - be it by car or by airplane - because time without internet access doesn't have to be wasted time browsing a magazine or reading a book or practicing Italian on Duolingo.
+Remembering what to pack, what clothes to wear, and what device accessories to bring has never been a problem for me. What inevitably causes me problems is attempting to do some work in that dreaded space of time when I am _Without Internet_. It's a terrible place to be, filled with unanswerable questions, un-updatable packages, unreviewable documentation, unwatchable shows and movies; and possibly worst of all, untouchable code repositories. Below are the list of items that I always need to remember to do the day before any planned travel - be it by car or by airplane - because time without internet access doesn't have to be wasted time browsing a magazine or reading a book or practicing Italian on Duolingo.
 
 ## Laptop Updates
 
