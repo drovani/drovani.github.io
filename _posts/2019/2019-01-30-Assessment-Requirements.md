@@ -61,6 +61,8 @@ I set off right away to get working - this should be easy, right? I've never use
 1. ... more progress bars. But it's all green text - so that should be good.
 1. New let's build and run this barebones project!
 
+## Hello, World
+
 ![Hello, World](/images/techass-hello-world.png)
 
 Well that worked out well enough - time to break this template down and make it do what I want.
