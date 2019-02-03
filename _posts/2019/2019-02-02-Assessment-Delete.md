@@ -3,7 +3,7 @@ layout: post
 title: Adding Delete Functionality
 series: Technical Assessment
 category: "Rovani in C&sharp;"
-treeid: techassessment-basic/tree/cd380ed7d3eb0b6c5d46dc0504afe9cffcbdb5d5
+treeid: techassessment-basic/tree/590d44659fd286391e44d12fbce753963d71328a
 tags:
 - career
 - angular
