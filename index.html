@@ -35,15 +35,16 @@ layout: default
         <div class="entry">
             {{ post.excerpt }}
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-                <i class="fas fa-long-arrow-alt-right fa-3x"></i>
+                Continue reading
+                <i class="fas fa-caret-circle-right"></i>
             </a>
         </div>
         {% if post.tags %}
-        <aside class="tags">
+        <div class="tags">
             {% for tag in post.tags %}
             <span><i class="fas fa-tag"></i>{{ tag }}</span>
             {% endfor %}
-        </aside>
+        </div>
         {% endif %}
     </article>
     {% endfor %}

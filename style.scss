@@ -151,7 +151,7 @@ article {
 
     .read-more {
         float: right;
-        margin-top: -10px;
+        margin-top: -1.3em;
         color: $lowlight;
     }
 
@@ -216,6 +216,7 @@ img.float-right {
     justify-content: space-around;
     border: 0;
     font-size: $small * 1.25;
+    padding-top: 2em;
 
     span{
       border: 1px solid;

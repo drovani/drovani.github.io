@@ -88,7 +88,7 @@ namespace Vigil.Patrons
 
 ### <sup>***</sup>"Patron"
 
-A patron, this early in development, is an abstract representation of what should be created - it does not care about persistance or structure.
+A patron, this early in development, is an abstract representation of what should be created - it does not care about persistence or structure.
 
 ```csharp
 using System.ComponentModel;
