@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assessment Requirements and First Pass
+title: Requirements and First Pass
 series: Technical Assessment
 category: "Rovani in C&sharp;"
 treeid: techassessment-basic/tree/528a447383b5ce2037b042138b7f5b2a3ac76476
