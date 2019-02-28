@@ -7,10 +7,9 @@ stylesheet: about
 
 <aside class="aside" style="text-align: center; font-size: 100%;">
 Additional Formats<br />
-<a href="/david-rovani-resume.docx"><i class="fal fa-2x fa-file-word" title="Microsoft Word"></i></a>
-<a href="/david-rovani-resume.pdf"><i class="fal fa-2x fa-file-pdf" title="PDF"></i></a>
-<a href="https://docs.google.com/document/d/e/2PACX-1vTdjpOF6GqYfknejhwLLuZQRa2MbfT6fIoov64EzOjnIuRWPmqgWye_346EJtSGShBZsyW6QIyikPr-/pub"><i class="fal fa-2x fa-file-alt" title="Google Docs"></i></a>
-<a href="/david-rovani-resume.txt"><i class="fal fa-2x fa-file" title="txt"></i></a>
+<a href="/david-rovani-resume.docx" type="application/msword"><i class="fal fa-2x fa-file-word" title="Microsoft Word"></i></a>
+<a href="/david-rovani-resume.pdf" target="_blank" rel="noopener" type="application/pdf"><i class="fal fa-2x fa-file-pdf" title="PDF"></i></a>
+<a href="/david-rovani-resume.txt"><i class="fal fa-2x fa-file-alt" title="txt"></i></a>
 </aside>
 
 ## Passions and Motivators
@@ -83,5 +82,6 @@ Projects Included:
 ## Additional Interests and Activities
 
 * Avid cook, handyman, reader, and runner.
+* Volunteer as marathon pace leader for Chicago Area Runners Association
 * Currently learning Italian.
 * Occasional motorcyclist.
