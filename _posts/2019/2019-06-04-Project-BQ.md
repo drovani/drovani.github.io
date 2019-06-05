@@ -9,7 +9,7 @@ tags:
 excerpt_separator: <!--more-->
 ---
 
-![N1400 for June 4th]({{ site.baseurl }}/images/2019-06-04-n1400.jpg)
+[![N1400 for June 4th]({{ site.baseurl }}/images/2019-06-04-n1400.jpg)]({{ site.baseurl}}/Project-BQ)
 
 June is here, which means the official beginning of the training season for the 2019 Chicago Marathon - only 130 days away. As I look ahead to what life is like now and will be by the time October comes around, I feel that this is my last, best hope (for a while, at least) to run a qualifying time for the Boston Marathon. Once this season is over, I will be undergoing back surgery, which the doctor estimates will take a year before I can be back to endurance running. This means I will be missing out on the 2020 season and potentially not getting back into BQ shape until the 2021 season - which puts me over 40 for the next time I can run Chicago.
 
