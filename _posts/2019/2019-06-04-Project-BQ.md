@@ -6,11 +6,14 @@ tags:
 - projectbq
 - N1400
 - noeasyruns
+excerpt_separator: <!--more-->
 ---
 
 ![N1400 for June 4th]({{ site.baseurl }}/images/2019-06-04-n1400.jpg)
 
 June is here, which means the official beginning of the training season for the 2019 Chicago Marathon - only 130 days away. As I look ahead to what life is like now and will be by the time October comes around, I feel that this is my last, best hope (for a while, at least) to run a qualifying time for the Boston Marathon. Once this season is over, I will be undergoing back surgery, which the doctor estimates will take a year before I can be back to endurance running. This means I will be missing out on the 2020 season and potentially not getting back into BQ shape until the 2021 season - which puts me over 40 for the next time I can run Chicago.
+
+<!--more-->
 
 Previous years, I have kept it quiet about my goal of running a Boston-qualifying time. Fellow runners would occasionally ask, and my first year thinking about it (2016) I kept coy with plenty of "we'll see what happens". I ran a 03:21:43 - only sixteen minutes away from going to Boston. During the 2017 training season, I was a little more open - "it would be nice, but there's a lot that would need to go right". 03:21:56 - I was no closer to my goal, and only getting older. Last year, I was very open - "I'm going for it this year - BQ or Bust!" I improved to 03:17:15, which is still over seven minutes short of qualifying and was almost 13 minutes short of getting to actually run.
 
