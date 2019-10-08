@@ -4,5 +4,5 @@ gem 'jekyll-feed'
 gem 'jekyll-gist'
 gem 'jekyll-paginate'
 gem 'jekyll-redirect-from'
-gem 'json', '1.8.3'
-gem 'wdm', '~> 0.1.0' if Gem.win_platform?
+gem 'json'
+gem 'wdm' if Gem.win_platform?
