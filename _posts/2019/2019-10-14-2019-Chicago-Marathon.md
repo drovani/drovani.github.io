@@ -67,6 +67,8 @@ Come mile 8, I tried again to eat some LaraBar but with the same result. It was 
 
 Mile 11 had a quick pause to kiss my wife, then onward to the halfway point. At 01:31:20 for the first 13.1 miles, that beat my best Half Marathon time. It felt great to hit that milestone, but I could also tell that I was struggling. With the swirling wind, time lost to the pit stop, changes in my nutrition plan, and a general sense of dread at doing this for another hour-and-a-half, I almost gave myself a walking break right there. This was the first time I've hit this point at a Chicago Marathon this early.
 
+![Mount Halstead - it doesn't look big, but it sucks after 17 miles](/images/2019chi-mthalstead.png)
+
 I reminded myself of my first goal - get to 18 miles at BQ pace. That meant I just had to keep it up for 5 more miles; just 35 more minutes. Then it was just 28 more minutes, then just 21 more minutes, then just 14 more minutes - ok, I can do this for two more miles. The Halstead overpass between mile 17 and 18 is always a struggle. It's a big hill (by Chicago standards) that is very exposed to wind and car noise, and previously has been the first point where I usually start regretting my life decisions. This year was no different. But I had to run to 18 - just 3 more minutes.
 
 I did it. I got to mile 18, pulled off to the side, and had a coughing fit so hard that I nearly threw up. Shortly thereafter, the 03:05:00 pace group passed me. I slowly ran to the Gatorade energy gel table, squeezed down a packet of vanilla, grabbed some water to wash it down, and set off again. The new plan was to run for two miles then walk a little - four intervals and then it would be done.
@@ -81,7 +83,7 @@ Surprising even myself, that's exactly what I did for the rest of the race. The 
 
 I had put so much focus at the beginning of the year on qualifying for Boston that it took a little bit for it to sink in that I had indeed set a PR. I definitely needed to be proud of that. I had also hit my goal of staying in front of the 03:05:00 pace group for 18 miles. I have always been terrible at recognizing the achievement of completing a marathon, much less doing it faster than I've done before. I get caught up in the lofty goal that I set and then get down on myself for not hitting it.
 
-
+![Glad that I am finished](/images/2019chi-postrace.jpg)
 
 Wrapping it all up, I am grateful for having set a new personal record. I am grateful for the love and support of my entire family for encouraging me all through training. I am especially grateful to my wife for putting up with all the highs, the lows, the early mornings, the bitching and complaining, the smelly clothes, and that she is still so excited to come out on a cold Autumn morning to see me for a grand total of probably two whole minutes. It always has meant a lot to me and continues to mean a lot.
 
