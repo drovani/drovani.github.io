@@ -265,6 +265,19 @@ table.bordered{
         border: 1px solid $lowlight;
         padding: 0 1em 0 .5em;
     }
+
+    th{
+        text-align: center;
+    }
+
+    tfoot{
+        font-weight:bold;
+    }
+}
+table.firstcolumn{
+    td:first-child{
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 750px) {
