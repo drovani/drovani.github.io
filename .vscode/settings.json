@@ -19,5 +19,27 @@
         "plaintext",
         "scss"
     ],
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "cSpell.enabledLanguageIds": [
+        "csharp",
+        "css",
+        "git-commit",
+        "html",
+        "javascript",
+        "javascriptreact",
+        "jekyll",
+        "json",
+        "jsonc",
+        "less",
+        "markdown",
+        "plaintext",
+        "scss",
+        "sql",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
+    "cSpell.language": "en,en-US"
 }
