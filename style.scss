@@ -176,6 +176,9 @@ article {
 .float-left {
     float:left;
 }
+.boxed {
+    border: solid 1px $highlight;
+}
 img.float-left {
     margin-right: 1em;
 }
