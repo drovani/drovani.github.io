@@ -28,8 +28,22 @@ This turned out to be really easy. Shopify has a UI to export the files in a the
 ![Shopify Download Theme file](/images/shopify-download-theme.png)
 {: .centered }
 
+I decided to go with a `theme` subfolder that contains all of the files, allowing me to have a root folder with any non-theme related files I might need to include with the project.
+
 ## Step 2: Create Release; Copy Files
 
 I started by creating a new release pipeline, using the "Empty job" template, and naming the initial stage as "Deploy to Shopify".
 
 ![Azure DevOps - Create new pipeline](/images/azure-devops-new-pipeline.png)
+
+Next step is to add artifacts and a trigger. I have a lot of ideas for features for this project, but at this point I am trying to just get an initial proof-of-concept. The source is the local repo, defaulting to the `master` branch. I have enabled the `Continuous deployment trigger` on the `master` branch.
+
+![Azure DevOps - Artifacts and New Trigger](/images/azure-devops-artifacts-trigger.png)
+
+Azure Pipelines allows for sharing variables across Pipelines and Releases in the `Library` section using [Variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml). Taking the values from the Shopify Private app that I created, I stored the API Key, Password, and store name in new Variable group. To help prevent leaking credentials, I also marked the first two as secrets.
+
+![Azure DevOps - Variable Group](/images/azure-devops-shopify-variables.png)
+
+
+
+**Footnote:** Before I get mocked for publicly displaying the API key, password, and other sensitive information, please know that this was for a sandbox environment and most of it has been torn down since then. None of the credentials in this post work anymore.
