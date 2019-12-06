@@ -38,7 +38,8 @@ _October 2019 to present_
 
 Brought on as a general technologist to provide solutions support for projects large and small, I have assisted and mentored for work on the UX front-end of projects, back-end architecture, and integrations with other systems.
 
-- Provided UX support and created intregrations between a new Shopify store and custom fulfillment workflows for a leading publisher of religious books and resources serving 12,000+ products with multiple fulfillment services and product types.
+- Provided UX support and created integrations between a new Shopify store and custom fulfillment workflows for a leading publisher of religious books and resources serving 12,000+ products with multiple fulfillment services and product types.
+- Researched and provided detailed instructions for integrating Auth0 with Shopify and TalentLMS.
 
 ### Director of Information Services at _IFCJ_
 
