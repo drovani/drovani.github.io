@@ -20,20 +20,21 @@ What better way to follow up from the last two posts by combining the concepts. 
 
 The primary steps involved in this process include:
 
-1. Enable Multipass on Shopify account
-1. Create an Auth0 Application
-1. Add Auth0 rule to create Multipass token and redirect user
-1. Update Shopify Login and Logout links to send user to Auth0
+1. placeholder for table-of-contents
+{:toc}
 
 <!--more-->
 
+_This post was updated on 2020-01-31, adding a ```return_to``` URL to redirect the user to after being authenticated by Shopify._
+
 ## Prerequisites
+{:.no_toc}
 
 Similar to how TalentLMS requires an upgraded subscription in order to utilize SSO, Shopify requires a _Shopify Plus_ storefront. As a [Shopify Partner](https://www.shopify.com/partners), you can create development stores to test out any functionality you need to implement on a Plus store.
 
 An Auth0 account is also required. Their free tier includes everything necessary, but even if it didn't, a newly created instance includes all paid features for a few weeks to get you started.
 
-## Start with Shopify
+## Enable Multipass on Shopify account
 
 Log into the Shopify store, go to the `Settings` page and click into the `Checkout` window. Customer accounts need to be either optional or required. This will allow you to enable Multipass for the store.
 
@@ -41,7 +42,7 @@ Log into the Shopify store, go to the `Settings` page and click into the `Checko
 
 This Multipass secret will be used by the encryption routine to create a cipher that Shopify will be able to decrypt and verify that a Multipass request is legitimate. If you ever suspect that your Multipass key has been compromised, then Disable and re-Enable Multipass. This will generate a new secret key which you will need to copy into Auth0.
 
-## Auth0 - Create Application
+## Create an Auth0 Application
 
 Within the Auth0 dashboard, go to `Applications`, click `Create Application`, given it a name (like "Shopify Store" - this is publicly visible!) and choose the `Regular Web Application`.
 
@@ -62,7 +63,7 @@ Expand the _Advanced Settings_ section and add these two key/value pairs under A
 
 ![Auth0 - Applications - Advanced Settings - Application Metadata](/images/multipass-step3-auth0-appmetadata.png)
 
-## Auth0 - Create Shopify Multipass Rule
+## Add Auth0 rule to create Multipass token and redirect user
 
 Now that we have a landing point for the Shopify store to send users to, we need to be able to pass the authenticated user back to the Shopify store. This is where Multipass comes into play.
 
@@ -73,14 +74,16 @@ Start by creating a new Rule in Auth0, use the `Empty rule` template, give it a 
 {% gist 8199b1e0ffa1976c00af6781fcb98fbf %}
 
 - **Line 2**: since Auth0 runs all rules for all authentications, we want to restrict this to just when the Auth0 Application has declared the `shopify_domain` and `shopify_multipass_seceret` metadata.
-- **Line 4-10**: Shopify requires at least the `email` and `created_at` data points. For added information, we are also passing an `identifier` (in case multiple Auth0 accounts have the same email address) and `remote_ip` to ensure that this Multipass request can only be used by the same computer that sent the initial login request.
-- **Line 11-15**: In my [TalentLMS/Auth0 post]({% post_url 2019/2019-11-14-TalentLMS-Auth0-SAML %}), I describe how to grab first/last name when signing up a user. If that is in place, this will also add those data points to the Shopify account.
-- **Line 17-28**: These lines that do the actual encryption were taken from [a repository](https://github.com/beaucoo/multipassify/blob/master/multipassify.js) that I found on GitHub, so thanks go to [Cory Smith](https://github.com/corymsmith) from Calgary, AB for this one.
-- **Line 30-32**: This sets the destination for the authenticated user.
+- **Line 4-6**: Some minor logging, just to verify that the rule is being run.
+- **Line 8-14**: Shopify requires at least the `email` and `created_at` data points. For added information, we are also passing an `identifier` (in case multiple Auth0 accounts have the same email address) and `remote_ip` to ensure that this Multipass request can only be used by the same computer that sent the initial login request.
+- **Line 15-17**: If there is a ```return_to``` value in the query string, then add this to the Shopify token.
+- **Line 19-23**: In my [TalentLMS/Auth0 post]({% post_url 2019/2019-11-14-TalentLMS-Auth0-SAML %}), I describe how to grab first/last name when signing up a user. If that is in place, this will also add those data points to the Shopify account.
+- **Line 25-36**: These lines that do the actual encryption were taken from [a repository](https://github.com/beaucoo/multipassify/blob/master/multipassify.js) that I found on GitHub, so thanks go to [Cory Smith](https://github.com/corymsmith) from Calgary, AB for this one.
+- **Line 38-40**: This sets the destination for the authenticated user.
 
 Once this rule runs, the user will be redirected back to the Shopify store. This is important, because if there are any Auth0 rules after this one, they will be completely skipped.
 
-## Shopify - Editing the Theme
+## Update Shopify Theme with Auth0 Links
 
 For this example, we are just going to add a link to login into Auth0. If you want to completely replace the Shopify Login process with Auth0, then instead of presenting the user with a login page, you can redirect the user directly to Auth0. As a Proof-of-Concept, though, this will require the user to manually click the link.
 
@@ -130,7 +133,7 @@ This snippet creates a new settings section called "Auth0 Config" and add the tw
 }
 ```
 
-## Add URL Values
+### Add URL Values
 
 To put the values for the Auth0 URLs, you can either directly edit the `settings_data.json` file or you can use the Shopify admin UI. I prefer the UI, because then Shopify handles escaping any necessary characters.
 
@@ -141,8 +144,9 @@ Let's first build the login URL. Go back to Auth0 and copy the `Client ID` for y
 - **auth0-instance**: the URL for your Auth0 instance.
 - **clientid**: the value from Auth0
 - **shopify-domain**: the domain you want the user sent back to. This must match the **Allowed Callback URLs** initially specified.
+- **return-to-path**: this can either be set as a hardcoded value (like "account") or it can be dynamically replaced with JavaScript on the page. This is helpful if you want to override the login on the Cart page.
 
-`https://{auth0-instance}.auth0.com/authorize?response_type=code&client_id={clientid}&redirect_uri=https://{shopify-domain}/account&scope=SCOPE&state=STATE`
+`https://{auth0-instance}.auth0.com/authorize?response_type=code&client_id={clientid}&return_to=https://{shopify-domain}/{return-to-path}&scope=SCOPE&state=STATE`
 
 The logout URL looks very similar:
 
@@ -150,13 +154,13 @@ The logout URL looks very similar:
 - **clientid**: the value from Auth0
 - **shopify-domain**: the domain you want the user sent back to. This must match the **Allowed Logout URLs** initially specified.
 
-`https://{auth0-instance}.auth0.com/v2/logout?response_type=code&client_id={clientid}&returnTo=https://{shopify-domain/account/logout`
+`https://{auth0-instance}.auth0.com/v2/logout?response_type=code&client_id={clientid}&returnTo=https://{shopify-domain}/account/logout`
 
 Back to the Themes page, now click the `Customize` button, switch to the `Theme settings`, expand the `Auth0 Config` section, and paste the URLs from above.
 
 ![Shopify - Theme - Customize - Theme settings - Auth0 Config](/images/multipass-step9-shopify-settings.gif)
 
-## Capturing First & Last Name
+## Optional: Capture First & Last Name During Signup
 
 The final step is to customize the Sign Up page to require the user to enter values for First and Last name. The simplest way (that I found) to do this is to customize the login page in Auth0. Under `Universal Login`, click on the `Login` tab, toggle the "Customer Login Page" and select the "Lock" Default Template. This uses the [Auth0Lock](https://auth0.com/docs/libraries/lock/) and for our purposes, we will be utilizing the `additionalSignUpFields` array [configuration option](https://auth0.com/docs/libraries/lock/v11/configuration#additionalsignupfields-array-). Add the following _JSON_ snippet to the code block:
 
@@ -176,3 +180,8 @@ And it should look something like this:
 ![Auth0 - Customize Sign Up Fields](/images/sso-step7-customize-login-page.png)
 
 Click `Save Changes` and that should be it! Go back to Shopify's login page and you can test it out. To make sure it really works, log yourself out of Shopify, and when logging back in, click the `Log in with Auth0` link you created earlier. You can go through the Sign Up workflow, which should require First name, Last name, Email, and Password.
+
+## In Production
+{:.no_toc}
+
+Once you are ready to force all users to use Auth0 to login, the ```customers/login.liquid``` template can be completely replaced with a redirect to the ```auth0_login_url```. All links to the login page can be replaced with direct links to the same setting. Also, all logout links need their url to be replaced with the ```auth0_logout_url``` setting.

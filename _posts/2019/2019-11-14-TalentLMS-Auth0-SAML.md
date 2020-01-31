@@ -11,13 +11,21 @@ tags:
 
 Prior to this week, I did not know who [TalentLMS](https://www.talentlms.com/) is, what [SAML](https://wiki.oasis-open.org/security/FrontPage#SAML_V2.0_Standard) does, and how [Auth0](https://auth0.com/) fits into the SSO alphabet soup. However, when a client wants something figured out, that's what I am here to do! After pouring over documentation for both TalentLMS and for Auth0, going down several dead-end paths, and nagging a few of my coworkers to "try it again?", I now successfully (and very delicately) have credentials collected from Auth0 logging a user into TalentLMS.
 
+The primary steps involved in this process include:
+
+1. table-of-contents placeholder
+{:toc toc_levels=1}
+
+_This post was updated on 2020-01-31, adding information about TalentLMS's ```nameidentifier``` requirements and how to lock down user accounts._
+
 ## Prerequisites
+{:.no_toc}
 
 TalentLMS requires a subscription level of _Basic_ or above to implement Single Sign-On. I could not find any way around this, even temporarily. They don't have any sort of a "developer" plan or other trial period to be able to demonstrate a proof-of-concept. At $159.00 per month, one will need to invest at least that much to make this work. Thankfully, my client had no problem bumping up their subscription tier without even knowing if SSO would work.
 
 An Auth0 account is also required. Their free tier includes everything necessary, but even if it didn't, a newly created instance includes all paid features for a few weeks to get you started.
 
-## Start with TalentLMS
+## Enable SAML2.0 SSO integration in TalentLMS
 
 Over in TalentLMS, go to `Home / Account & Settings / Users` and change the `SSO integration type` to "SAML2.0".
 
@@ -35,7 +43,7 @@ At the bottom of the page is the `Identity provider (IdP) configuration` section
     https://{instance}.talentlms.com/simplesaml/module.php/saml/sp/saml2-logout.php/{instance}.talentlms.com
 
 
-## Auth0 - Create Application
+## Create an Auth0 Application
 
 Within the Auth0 dashboard, go to `Applications`, click `Create Application`, given it a name (like "TalentLMS") and choose the `Regular Web Application`.
 
@@ -88,7 +96,7 @@ After you click the `Save` button at the bottom of the modal, switch over to the
     zohmAMID02C7cYoiR1e2dK+wjHsuBGptjGmOkL44ZjjY1FCljomvzYalCFeNeHo=
     -----END CERTIFICATE-----
 
-## Back to TalentLMS
+## Map Setting in TalentLMS
 
 Flipping over to that other tab (you didn't close it, right? Because there's a lot more of this back-and-forth to do) - now we can fill out most of these values:
 
@@ -104,40 +112,47 @@ Now that everything has been pasted into their respective fields, go ahead and c
 
 ![TalentLMS Check your SSO configuration](/images/sso-step5-login-signup.png)
 
-## So Close!
+## Create Auth0 Rule To Define SAML Mapping
 
 There are two pieces still missing: sending the `given_name` and `family_name` fields from Auth0, and capturing those fields during the Sign Up process.
 
-Auth0 stores any additional data that is captured into `user_metadata`, which can be viewed in `Users & Roles -> Users`, select a user, then scroll down to the `Metadata` section. Add the following _JSON_ to the `user_metadata`.
+Auth0 stores any additional data that is captured into `user_metadata`, which can be viewed in `Users & Roles -> Users`, select a user, then scroll down to the `Metadata` section. The next step is in our process to add these SAML configuration mappings to pull data from the ```user_metadata```. To do this, we are going to add a new Auth0 rule. Click on `Rules`, `+ Create Rule`, select `</> Empty rule`. Give it a name like "TalentLMS SAML Mappings" and paste the following into the Script section:
 
+{% gist 41b6f9c5acb186e8ca5ef4b4c7321c54 %}
+
+- **Line 3**: substitute {{auth0-application-client-id}} with the ```Client ID``` value for this Auth0 application. This ensures the rule only runs for the Auth0 application configured for TalentLMS login.
+- **Line 5-7**: simple logging to validate the rule runs when it is supposed to
+- **Line 9-14**: validate that the first and last names have been captured already, otherwise abort. A subsequent rule can be made to enable _[Progressive Profiling]({% post_url 2019/2019-12-24-Auth0-Simple-Progressing-Profiling %})_
+- **Line 16-20**: strip out the pipe in the Auth0 id, assign it to the cached ```user``` object
+- **Line 22-27**: map the fields from the rule's scope of variables to the SAML schema.
+
+Click `Save Changes`. You can even click `Try This Rule`.
+
+1. Replace the ```User``` part of the test input:
 ```json
 {
-  "given_name": "FirstnameTest",
-  "family_name": "LastnameTest"
+  "name": "jdoe@foobar.com",
+  "email": "jdoe@foobar.com",
+  "user_id": "auth0|0123456789",
+  "nickname": "jdoe",
+  "picture": "http://foobar.com/pictures/jdoe.png",
+  "identities": [
+    {
+      "provider": "auth0",
+      "user_id": "0123456789",
+      "connection": "Username-Password-Connection",
+      "isSocial": false
+    }
+  ],
+  "user_metadata": {
+    "given_name": "John",
+    "family_name": "Doe"
+  }
 }
 ```
+1. Replace the ```clientID``` portion of the ```Context``` script with the same value used in the rule.
 
-Next step is to add these fields into the SAML configuration mappings. To do this, we are going to add a new Auth0 rule. Click on `Rules`, `+ Create Rule`, select `</> Empty rule`. Give it a name like "SAML Attributes mapping" and paste the following into the Script section:
-
-```js
-function (user, context, callback) {
-  context.samlConfiguration.mappings = {
-     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "user_id",
-     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": "email",
-     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "name",
-     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/given_name": "user_metadata.given_name",
-     "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/family_name": "user_metadata.family_name"
-  };
-
-  callback(null, user, context);
-}
-```
-
-Click `Save Changes`. You can even click `Try This Rule`. The "Output" should contain the a section for the `samlConfiguration` object containing a `mappings` object that matches when you entered above.
-
-Flip back to the TalentLMS `Check your SSO configuration` page, click the `Log out` button (to clear your Auth0 session), and click the `Log in` button. Once you do so, you should now have four green checkmarks!
-
-![TalentLMS - Successfully logged in.](/images/sso-step6-successfully-logged-in.png)
+After clicking the ```Try``` button, the "Output" should indicate that the rules context has a `samlConfiguration` object containing a `mappings` object that matches when you entered above.
 
 ## Capturing First & Last Name
 
@@ -158,7 +173,22 @@ And it should look something like this:
 
 ![Auth0 - Customize Sign Up Fields](/images/sso-step7-customize-login-page.png)
 
-Click `Save Changes` and that should be it! Go back to TalentLMS's configuration page and you can test it out. To make sure it really works, log yourself out of TalentLMS, and when logging back in, click the `Log in with SAML 2.0`. You can go through the Sign Up workflow, which should require First name, Last name, Email, and Password.
+Click `Save Changes` and that should be it! 
+
+Flip back to the TalentLMS `Check your SSO configuration` page, click the `Log out` button (to clear your Auth0 session), and click the `Log in` button. Once you do so, you should now have four green checkmarks!
+
+![TalentLMS - Successfully logged in.](/images/sso-step6-successfully-logged-in.png)
+
+If you get an error here, it is probably because the profile you are using did not have a ```given_name``` and ```family_name``` in the user's meta data. Within Auth0, go to ```Users & Roles -> Users```, edit the user you are logging in with, scroll down to the ```user_metadata``` window and add the following:
+
+```json
+{
+  "given_name": "TestGivenName",
+  "family_name": "TestFamilyName"
+}
+```
+
+Save changes, go back to TalentLMS, and attempt to log in again.
 
 ## How to Break TalentLMS
 
@@ -166,19 +196,28 @@ The major problem I found with this solution is that it is **extremely** fragile
 
 ### TalentLMS "Username" must match Auth0 "Name"
 
-When setting us TalentLMS for SAML, the field that gets mapped to "TargetedID" becomes the user's "Username". This is editable by the user in TalentLMS (and I could not find a way to disable this). If the user changes that value in TalentLMS, then the next time Auth0 sends over the authenticated user information, the values won't match. TalentLMS will then try to create another user, but will fail because the email address is already on an existing account.
+When setting us TalentLMS for SAML, the field that gets mapped to "TargetedID" becomes the user's "Username". By default, this is editable by the user in TalentLMS. If the user changes that value in TalentLMS, then the next time Auth0 sends over the authenticated user information, the values won't match. TalentLMS will then try to create another user, but will fail because the email address is already on an existing account.
 
-If this happens, you can either update the "Name" in Auth0, or revert the "Username" in TalentLMS back to the matching value.
+Thankfully, the steps are straightforward in how to disable the ability for a user to change their username in TalentLMS:
+
+1. From the administrator panel, click on "User types"
+1. Click the edit icon next to the Learner-Type
+1. Expand the General -> Profile tree
+1. Disable "Update" and "Reset password" settings
+1. Click the Save button
+1. Repeat these steps for Trainer-Type and Admin-Type (you cannot remove the ability from the SuperAdmin user type)
+
+![TalentLMS - Disable Profile Editing](/images/sso-step8-talentlms-disable-profile-update.png)
 
 ### Don't Switch "SSO login screen" Until Everything Works
 
 At the bottom of the Users settings page in TalentLMS is an innocent looking drop down list with the label of "SSO login screen" with two options: "Login page + IdP login link" and "IdP login page". Since I was just testing things out, I flipped the option to the second of the two, clicked "Save" and promptly locked myself (and everyone else) out of the TalentLMS instance. It required submitting a support ticket to have them revert the setting - quite an embarrassing moment, since I had to go back to the client and have them verify to customer support that this change needed to be made. TalentLMS should really have a modal pop up that says:
 
-> Are you sure? Because if SSO login isn't perfectly working, you're going to screw things up. Also, if you haven't already made a SSO user a "SuperAdmin" you should do that, or you might not be able to get back into the administrative dashboard to fix any SSO settings.
+> Are you sure? Because if SSO login isn't perfectly working, you're going to screw things up. Also, if you haven't already made a SSO user a "SuperAdmin" you should do that, or you won't be able to get back into the administrative dashboard to fix any SSO settings.
 > 
 > Save Changes? or Revert?
 
-**After** you have everything working with SSO, and have an SSO user as a SuperAdmin, then you can change the login to be "IdP login page". This will force users directly to Auth0 to authenticate, removing the step of clicking the "Log in with SAML 2.0" link.
+**After** you have everything working with SSO, **and** have an SSO user as a SuperAdmin, **then** you can change the login to be "IdP login page". This will force users directly to Auth0 to authenticate, removing the step of clicking the "Log in with SAML 2.0" link.
 
 ### TalentLMS Does Not Permanently Delete Users
 
@@ -187,5 +226,6 @@ In my testing, I would frequently delete a user from both TalentLMS and Auth0 so
 It turns out that TalentLMS only soft-deletes users (even if an Admin clicks the Delete button). If you want to [permanently delete users](https://help.talentlms.com/hc/en-us/articles/360014658253-How-to-delete-users-and-courses-permanently) you need to go through the convoluted process to permanently delete them. Thankfully, the Knowledge Base article was easy to find.
 
 ## Is There a Better Way?
+{:.no_toc}
 
 TalentLMS and Auth0 also support OpenID Connect as an SSO option, so that would also be an option. I don't have a good reason why I went with SAML over OpenID. Maybe someone else can share their experience and we'll see what the advantages for each might be.
