@@ -41,5 +41,10 @@
         "yaml",
         "yml"
     ],
-    "cSpell.language": "en,en-US"
+    "cSpell.language": "en,en-US",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#8c681B",
+        "titleBar.activeBackground": "#fff7d0",
+        "titleBar.activeForeground": "#43165d"
+    }
 }
