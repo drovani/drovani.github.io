@@ -4,7 +4,6 @@ title: Inavord Architecture - A Template for Success
 category: Vigil Journey
 tags:
 - inavord
-- tag2
 ---
 
 The first quarter of 2020 is over and I have yet to write a single blog post. I have been tinkering away constantly, but with the [change of employment]({% post_url /2019/2019-10-11-BlueBolt-First-Week %}) I haven't really made much progress. Lots of brain power has been spent on what I _want_ to do, but I haven't put together the keyboard time to build anything of substance nor in writing about it. Time to get things pushed along, though.

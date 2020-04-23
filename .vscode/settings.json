@@ -43,8 +43,9 @@
     ],
     "cSpell.language": "en,en-US",
     "workbench.colorCustomizations": {
-        "activityBar.background": "#8c681B",
-        "titleBar.activeBackground": "#fff7d0",
-        "titleBar.activeForeground": "#43165d"
+        // https://paletton.com/#uid=73-0u0kfsib8-rHcFmBk5eOoSba
+        "activityBar.background": "#b4a36d",
+        "titleBar.activeBackground": "#ddcfa2",
+        "titleBar.activeForeground": "#10253a"
     }
 }
