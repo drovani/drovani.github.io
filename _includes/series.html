@@ -12,7 +12,8 @@
 {% endfor %}
 
 <aside class="tableofcontents">
-	<p>This article is <strong>Part {{ idx }}</strong> in a <strong>{{ count }}-Part</strong> Series.</p>
+	<h1>{{ page.series }} Series</h1>
+	<p>This article is <strong>Part {{ idx }}</strong> in the <strong>{{ count }}-Part</strong> Series.</p>
 	<ul>
 	{% assign count = '0' %}
 	{% for post in site.posts reversed %}

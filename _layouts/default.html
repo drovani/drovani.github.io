@@ -13,7 +13,7 @@
     <meta http-equiv="refresh" content="100; url={{ page.redirect }}" />
     {% endif %}
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
+    <title>{% if page.title %}{% if page.series %}{{page.series}} - {% endif %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     {% if page.stylesheet %}
