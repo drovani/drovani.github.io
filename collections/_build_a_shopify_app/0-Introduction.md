@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Introduction to Node.js and React and Azure
 ---
 

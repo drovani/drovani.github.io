@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Set up your local app instance
 ---
 

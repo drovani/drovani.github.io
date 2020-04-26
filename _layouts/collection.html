@@ -1,0 +1,20 @@
+---
+layout: post
+---
+
+{{ content }}
+
+<ul>
+{% for document in site[page.collection_name] %}
+    <li><a href="#{{ document.title | slugify:'ascii' }}">{{ document.title }}</a></li>
+{% endfor %}
+</ul>
+
+{% for document in site[page.collection_name] %}
+<article id="{{ document.title | slugify:'ascii' }}">
+    <h2>{{ document.title }}</h2>
+    <section>
+    {{ document.content | markdownify }}
+    </section>
+</article>
+{% endfor %}
