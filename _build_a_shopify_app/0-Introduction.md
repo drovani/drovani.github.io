@@ -1,25 +1,9 @@
 ---
 layout: post
 title: Introduction to Node.js and React and Azure
-category: "Rovani in C&sharp;"
-series: Build a Shopify App
-tags:
-- shopify
-- node
-- react
-- azure-storage
-- azure-functions
 ---
 
-Shopify has a really good tutorial on [building a Shopify App](https://shopify.dev/tutorials/build-a-shopify-app-with-node-and-react) using Node.js and React. It includes the initial ```node``` and ```npm``` set-up. The tutorial uses ```ngrok``` to handle allowing communication from Shopify to the local ```node``` server. Then it gives a quick GraphQL primer, uses ```Apollo``` to fetch data, goes through setting up Billing the Shopify store, and listening for webhooks. There is a pretty sizable leap from taking this information and getting a proof-of-concept app running. My serious of posts is going to adapt the tutorial from Shopify and add some more steps to get an app deployed on Azure.
-
-{% include series.html %}
-
-## Credit Where Credit Is Due
-
-A significant portion of this guide is lifted directly from the Shopify Tutorial. The goal of this tutorial is to take what Shopify has already built and augment it to provide for more context.
-
-## Requirements
+### Requirements
 
 Before you begin, make sure you have the background knowledge and skills to complete this tutorial:
 
@@ -28,23 +12,23 @@ Before you begin, make sure you have the background knowledge and skills to comp
 - You should be familiar with installing software using the npm package manager.
 - If you don't already have one, you'll need to [create a Shopify Partner account](https://partners.shopify.com/signup) and [create an Azure account](https://azure.microsoft.com/en-us/free/).
 
-## Tools
+### Tools
 You’ll use several frameworks, tools, and libraries to build your app. You should need only a general knowledge and understanding of them to complete this tutorial. We use many of these tools at Shopify to build our own apps, and we believe this technology stack will help you get up and running fast.
 
-### Node.js
+#### Node.js
 [Node.js](https://nodejs.org/en/) is an open-source, cross-platform JavaScript run-time environment. You’ll use it to create a server to host your app.
 
-### React
+#### React
 [React](https://reactjs.org/) is a JavaScript library for building component-based user interfaces. Building with components makes it faster for you to build and makes interfaces more consistent for users. Shopify uses React for its flexibility and performance.
 
-### Next.js
+#### Next.js
 [Next.js](https://nextjs.org/) is a framework for quickly setting up React-based apps. It provides a helpful baseline configuration, so you don’t have to manually set up features like URL routing or server-side rendering.
 
-### GraphQL
+#### GraphQL
 [GraphQL](https://graphql.org/) is a query language for interacting with an API. It streamlines the way your app talks to Shopify’s platform, and provides only the data you ask for, reducing bandwidth and overhead. Most of Shopify already runs on GraphQL and we believe the learning curve will be worth the investment for developers.
 
-### Apollo
+#### Apollo
 [Apollo](https://www.apollographql.com/) is a family of JavaScript libraries that makes it easier to work with GraphQL. You’ll use Apollo Client to create a React component that conveniently handles all your operations with Shopify’s API.
 
-### Polaris
+#### Polaris
 [Polaris](https://polaris.shopify.com/) is Shopify’s React component library and design system. It includes guidelines for design, content, and accessibility. It also includes a full-featured library of ready-to-use React components. Using Polaris components helps your app look and feel native to Shopify, so it’s easier to use for merchants.

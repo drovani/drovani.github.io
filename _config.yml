@@ -11,9 +11,9 @@ description: "Ostinato, Pensato, Scordatura"
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: "https://avatars3.githubusercontent.com/u/898478"
 
-#
-# Flags below are optional
-#
+
+collections:
+  - build_a_shopify_app
 
 # Includes an icon in the footer for each username you enter
 footer-links:
