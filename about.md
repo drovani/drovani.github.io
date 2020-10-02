@@ -7,9 +7,9 @@ stylesheet: about
 
 <aside class="aside" style="text-align: center; font-size: 100%;">
 Additional Formats<br />
-<a href="/david-rovani-resume.docx" type="application/msword"><i class="fal fa-2x fa-file-word" title="Microsoft Word"></i></a>
-<a href="/david-rovani-resume.pdf" target="_blank" rel="noopener" type="application/pdf"><i class="fal fa-2x fa-file-pdf" title="PDF"></i></a>
-<a href="/david-rovani-resume.txt"><i class="fal fa-2x fa-file-alt" title="txt"></i></a>
+<a href="/assets/david-rovani-resume.docx" type="application/msword"><i class="fal fa-2x fa-file-word" title="Microsoft Word"></i></a>
+<a href="/assets/david-rovani-resume.pdf" target="_blank" rel="noopener" type="application/pdf"><i class="fal fa-2x fa-file-pdf" title="PDF"></i></a>
+<a href="/assets/david-rovani-resume.txt"><i class="fal fa-2x fa-file-alt" title="txt"></i></a>
 </aside>
 
 ## Passions and Motivators
@@ -47,7 +47,7 @@ Brought on as a general technologist to provide solutions support for projects l
 
 _November 2012 to October 2019_
 
-My time at _The Fellowship_ was highlighted by moments of teaching and mentoring my team; growing and adapting the Information Services department to meet the ever changing needs of the company; and the ongoing work of maintaining and enhancing the custom built donor management system (_KesherNet_). 
+My time at _The Fellowship_ was highlighted by moments of teaching and mentoring my team; growing and adapting the Information Services department to meet the ever changing needs of the company; and the ongoing work of maintaining and enhancing the custom built donor management system (_KesherNet_).
 
 Overseeing a team of 3 application developers, 2 database administrators, and a data hygienist, my role was both manager/mentor for the team and the senior technical resource. The department was responsible for ensuring that the organization has timely access to accurate data that is securely stored yet easily accessible. Information was retrieved from dozens of vendors through file imports, API calls, webhooks, and manual keying. The data was accessed by internal users through _KesherNet_, through custom reports, and shared with vendors through file exports.
 
