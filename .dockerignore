@@ -1,0 +1,4 @@
+.git
+.cache
+.jekyll-metadata
+Gemfile.lock
