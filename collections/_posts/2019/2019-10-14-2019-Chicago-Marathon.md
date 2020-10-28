@@ -47,7 +47,7 @@ The morning was quite chilly, roughly 39&deg;F (3.8&deg;C), and it never got abo
 
 ![David and Jay in Corral B, ready for the start of the 2019 Chicago Marathon](/images/2019chi-prerace-corral.jpg)
 
-As I was standing Corral B, waiting for the race to start, I decided that my goal for the race was going to be to keep a BQ pace for the first 18 miles (roughly 2/3 of the race) and then do the best I could to PR from there. Doing the math, that meant that if I could hold 7:00/mile pace, I would leave myself with 01:11:15 to finish the last 8.2 miles (an 8:40/mile pace) and still PR. I knew that my training this summer had not lent itself to putting me in a good place to BQ, and I had been battling a nasty cold and cough all week. Setting realistic goals was my best chance for mental success.
+As I was standing in Corral B, waiting for the race to start, I decided that my goal for the race was going to be to keep a BQ pace for the first 18 miles (roughly 2/3 of the race) and then do the best I could to PR from there. Doing the math, that meant that if I could hold 7:00/mile pace, I would leave myself with 01:11:15 to finish the last 8.2 miles (an 8:40/mile pace) and still PR. I knew that my training this summer had not lent itself to putting me in a good place to BQ, and I had been battling a nasty cold and cough all week. Setting realistic goals was my best chance for mental success.
 
 ## Three Hours of Hell
 
@@ -65,7 +65,7 @@ Shortly thereafter, my bladder started really nagging me. I've been in this situ
 
 Come mile 8, I tried again to eat some LaraBar but with the same result. It was still early enough that I could hopefully modify my strategy without too much hard. I tossed the remainder of the bar and decided to do a quick gulp of Gatorade at each stop instead of only taking a half-cup of water with each piece of bar.
 
-Mile 11 had a quick pause to kiss my wife, then onward to the halfway point. At 01:31:20 for the first 13.1 miles, that beat my best Half Marathon time. It felt great to hit that milestone, but I could also tell that I was struggling. With the swirling wind, time lost to the pit stop, changes in my nutrition plan, and a general sense of dread at doing this for another hour-and-a-half, I almost gave myself a walking break right there. This was the first time I've hit this point at a Chicago Marathon this early.
+Mile 11 had a quick pause to kiss my wife, then onward to the halfway point. At 01:31:20 for the first 13.1 miles, that beat my best Half Marathon time (and was my second-fastest first-half of a marathon). It felt great to hit that milestone, but I could also tell that I was struggling. With the swirling wind, time lost to the pit stop, changes in my nutrition plan, and a general sense of dread at doing this for another hour-and-a-half, I almost gave myself a walking break right there. This was the earliest in a Chicago Marathon I had my mental "maybe I can't do this" - it happens every race at some point, but not this early.
 
 ![Mount Halstead - it doesn't look big, but it sucks after 17 miles](/images/2019chi-mthalstead.png)
 
