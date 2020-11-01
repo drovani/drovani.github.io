@@ -47,5 +47,8 @@
         "activityBar.background": "#b4a36d",
         "titleBar.activeBackground": "#ddcfa2",
         "titleBar.activeForeground": "#10253a"
-    }
+    },
+    "cSpell.words": [
+        "mandalorian"
+    ]
 }
