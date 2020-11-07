@@ -24,3 +24,15 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - Acid spittle! I'll be that's miserable.
 - Never believe it's dead on the first attempt.
 - I was definitely expecting an epic bass recorder hit when Mando came flying out of the krayt dragon.
+
+## Chapter 10: Oh, the passenger / She rides and she rides
+
+- I have a unique idea for an opening shot - wide open dessert, the hero riding towards the camera on his steed, dust flowing behind him.
+- And hijinx ensure... that's how the plot was pitched.
+- If this cargo is so damn precious, why isn't it strapped down?
+- So you're saying that through all the steering and banking, nothing fell, but a little hole in the wall and all of the cargo suddenly falls to the ground?
+- I find it hard to believe that this mother isn't FUCKING LIVID that there are missing eggs. There aren't enough in the tank to not notice that multiple are gone.
+- How many times does The Kid point out something that turns out to be irrelevant? Because so far, the plot has shown that anytime The Kid points, the Mandalorian should take heed. So why does he keep telling The Kid to piss-off?
+- Face huggers? Is this an Alien/Star Wars cross-over event?
+- The nice part about sublight, I guess, is that you an just point your ship and fire... and it'll coast to where you need to go.
+- That's the end of the episode? That felt extraordinarily short. New content started at 00:01:43 and the show was over at 00:36:55; 00:35:12 for a show of this magnitude seems sorely lacking.
