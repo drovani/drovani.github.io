@@ -34,5 +34,17 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - I find it hard to believe that this mother isn't FUCKING LIVID that there are missing eggs. There aren't enough in the tank to not notice that multiple are gone.
 - How many times does The Kid point out something that turns out to be irrelevant? Because so far, the plot has shown that anytime The Kid points, the Mandalorian should take heed. So why does he keep telling The Kid to piss-off?
 - Face huggers? Is this an Alien/Star Wars cross-over event?
-- The nice part about sublight, I guess, is that you an just point your ship and fire... and it'll coast to where you need to go.
+- The nice part about sublight, I guess, is that you can just point your ship and fire... and it'll coast to where you need to go.
 - That's the end of the episode? That felt extraordinarily short. New content started at 00:01:43 and the show was over at 00:36:55; 00:35:12 for a show of this magnitude seems sorely lacking.
+
+## Chapter 11: The Heiress
+
+- "It might get a little choppy", famous last words. The problem with forboding messages about possibility of death to the titular character is that there is no suspense to the audience that it might actually be fatal.
+- The "Marco Polo" of this reptilian alien race?
+- Katee Sackhoff is always a win.
+- Mandalorian sects add a lot of potential depth to this whole series.
+- "Do you see that ship that we are all looking at and is framed in the shot? That's what we're going to talk about."
+- "Can I leave him with you a bit?" You know, the child that ate several of your eggs, can you hang out with him for a bit. I still don't see how these parents aren't really upset about that.
+- Why don't you start with all of the doors being closed? hahahaha... ok, that was fantastic
+- Am I really just watching a live stream of Mandalorian the RPG? The quest text from Bo-Katan was as exactly the gibberish you'd get from an exclamation point. And all that matters is where the directional arrow points to.
+- Another disappointingly short episode. Less than 30 minutes.
