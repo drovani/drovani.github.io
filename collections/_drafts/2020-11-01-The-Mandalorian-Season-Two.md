@@ -48,3 +48,23 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - Why don't you start with all of the doors being closed? hahahaha... ok, that was fantastic
 - Am I really just watching a live stream of Mandalorian the RPG? The quest text from Bo-Katan was as exactly the gibberish you'd get from an exclamation point. And all that matters is where the directional arrow points to.
 - Another disappointingly short episode. Less than 30 minutes.
+
+## Chapter 12: The Seige
+
+- In which I really just hope there's more Katee Sackhoff, or maybe even some more Giancarlo Esposito.
+- The statue of the attack robot is a fantastic touch!
+- This guy shows no aptitude for this mission, yet they bring him in on a whim, and just to do the most important part? This seems like a terrible way to do a set-up on the plot.
+- The acting and action in this scene at the top of the base is ridiculously awful. It's a terrible, cartoonish spectacle without any redeeming humor or novel sequences. It's just bad television.
+- What's the point in red-target lock if it doesn't actually mean an instant hit?
+- How does his ship get repaired that quickly? It's been hours at best, definitely not even a full day.
+
+## Chapter 13:
+
+- In which I really, really hope there's more Katee Sackhoff.
+- Episode starts 00:01:48 in. This isn't a hopeful sign.
+- White beam lightsabers?! A unique set of action sequences! This is what I came here for.
+- What's the point in heavily fortified walls when there are jetpacks and spaceships that can easily circumvent the walls?
+- Well... the kid has a name. I'm curious what committee of writers it took to come up with that name.
+- What idiot of an evil villian leaves her guards behind and leaves herself unprotected?
+- Grand Admiral Thron? Why do I care about this person?
+- Cool... cool... another "go here, find this, do that" quest.
