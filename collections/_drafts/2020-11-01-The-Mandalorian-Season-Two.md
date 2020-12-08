@@ -10,7 +10,7 @@ tags:
 
 I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian_, so I'll keep doing that for this second season. I'm sure no one appreciates what I have to say, but at least I'm entertained by it.
 
-## Chapter 9: I Can't Marshall Any New Cute Names
+## Chapter 9: I Can't Marshal Any New Cute Names
 
 - Whistling birds! Have you not heard of his birdies?
 - I guess there are like five planets worth putting plot elements on?
@@ -58,13 +58,28 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - What's the point in red-target lock if it doesn't actually mean an instant hit?
 - How does his ship get repaired that quickly? It's been hours at best, definitely not even a full day.
 
-## Chapter 13:
+## Chapter 13: The jedi
 
 - In which I really, really hope there's more Katee Sackhoff.
 - Episode starts 00:01:48 in. This isn't a hopeful sign.
 - White beam lightsabers?! A unique set of action sequences! This is what I came here for.
 - What's the point in heavily fortified walls when there are jetpacks and spaceships that can easily circumvent the walls?
 - Well... the kid has a name. I'm curious what committee of writers it took to come up with that name.
-- What idiot of an evil villian leaves her guards behind and leaves herself unprotected?
+- What idiot of an evil villain leaves her guards behind and leaves herself unprotected?
 - Grand Admiral Thron? Why do I care about this person?
-- Cool... cool... another "go here, find this, do that" quest.
+- Cool... cool... another "go here, find this, do that" quest, referencing places that mean _absolutely nothing to me, the casual viewer_.
+
+## Chapter 14: The Tragedy
+
+- Maybe _now_ we'll get more Katee Sackhoff? Or even some more Timothy Olyphant?
+- I appreciate that they gave Din Djarin a little sense of humor. Gives the character a little more depth than Season 1's "this is the way".
+- "The magic rock"... yep, sounds about right.
+- It's good to hear that the strong bass recorder is back.
+- In fact, this whole scene of "I have no idea what is happening or what to do" is refreshing, as opposed to the trope of people knowing exactly what to do with something completely foreign.
+- Why would he run away from his jetpack, when it's a simple "clip to back" attachment? And how did he get over the valley so quickly without it? These are all continuity problems that weren't hard to notice.
+- She's taking cover behind him and never once does she take a shot, even after pointing her rifle at several of them. I don't know if this is the fight choreographer, the editing team, or DP or what... but these are egregious mistakes!!!
+- Hahahahaha - laser blast it from orbit! It's the only way to be sure.
+- Incoming Dark Troopers: someone just watched Iron Man 2 before sketching out this scene.
+- MAYBE YOU SHOULDN'T HAVE LEFT YOUR JETPACK BEHIND, ASSHOLE!!!
+- How do Boba Fett's sensors not detect that giant ship long before he clears the cloud cover?
+- Baby Yoda shackles are adorable - how long until Lover's Lane is selling them?
