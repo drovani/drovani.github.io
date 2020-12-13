@@ -8,7 +8,7 @@ tags:
 - disneyplus
 ---
 
-I watched season one of _The Mandalorian_ as it was released a year ago. I had **_a lot_** of thoughts on the matter at the time, so going into this second season, I wanted to go back and rewatch the first season. This time, writing down all the highlights that I could remember from the first go around.
+I watched season one of _The Mandalorian_ as it was released a year ago. I had **_a lot_** of thoughts on the matter at the time, so going into this second season, I wanted to go back and rewatch the first season. This time, writing down all the highlights that I could remember from the first go around. You'll find that I was fond of this show. There were some entertaining pieces, but overall I found it to basically just be an episodic gunslinger-in-space derivative. There's nothing particularly unique or extraordinary about the show. It's half-decent entertainment, so long as you ignore continuity errors, dry dialog, and lots of tropes.
 
 ## Episode 1: The Gunslinger... er... Mandalorian
 
