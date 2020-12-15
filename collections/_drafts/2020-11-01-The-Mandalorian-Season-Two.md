@@ -83,3 +83,20 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - MAYBE YOU SHOULDN'T HAVE LEFT YOUR JETPACK BEHIND, ASSHOLE!!!
 - How do Boba Fett's sensors not detect that giant ship long before he clears the cloud cover?
 - Baby Yoda shackles are adorable - how long until Lover's Lane is selling them?
+
+## Chapter 15: I Believe this is the Penultimate Episode!
+
+- Opening on a dystopian, penal colony run by robots - bold move, writers!
+- Inmate 34667 seems like a really low number as an identifier.
+- The score for this show is definitely the best part of the series; kudos to the composer.
+- 'There's nothing on that planet.'
+'Yes there is.'
+'I scanned the planet and there's a base on it.'
+- haha - fakeout with the helmet removal!
+- This might be the first time in Star Wars history where someone had to take a second to figure out how a new vehicle operates; not that he had any trouble with it.
+- No way, a peasant village that lives in the shadow of a mining operation! What new troupe will they explore next?
+- "Let's get one thing straight, you and I are nothing alike." Sadly, that's an actual quote at 00:12:53.
+- Be super delicate with the ore, they said. It's highly volatile, they claimed. But a couple of blaster shots from a tie fighter landing at close range? It's cool!
+- Literally, none of the other storm troopers have their helmets off, so why does no one say a thing about this driver getting out of the truck without a helmet?
+- "TPS reports" - well played.
+- 'Such a shame the guy died' - where do they come up with these plot twists?!
