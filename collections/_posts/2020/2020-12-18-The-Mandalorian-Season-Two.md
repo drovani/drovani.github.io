@@ -100,3 +100,31 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - Literally, none of the other storm troopers have their helmets off, so why does no one say a thing about this driver getting out of the truck without a helmet?
 - "TPS reports" - well played.
 - 'Such a shame the guy died' - where do they come up with these plot twists?!
+
+## Chapter 16: Sweat Christmas, It's Almost Done
+
+- This is supposed to be an epic season finale, so it'll either be an exciting lead into Season 3, or a total disappointment. My expectations are low.
+- "Comms are down" and space is a vacuum, so how can they hear him?
+- Ok, ok... so two Mandalorians walk into a bar.
+- Creative use of a jetpack indoors; I appreciate that.
+- "It cannot cut through pure beskar", I'll put $5 on that becoming a key plot point in the final epic battle between Gideon and Djarin.
+- Sound/score win #312 for this show! Flipping to a heavy techno beat for the dark troopers, then cutting to the bass recorder for Mando. I would nominate this show for an Emmy for sound engineering (or whatever the proper award is).
+- The complete ineptitude of storm troopers has gone so far beyond comedy to the point of just being a tired trope. What's even the point in having _any_ on board the ship when they are that worthless.
+- I won my $5, hurray!
+- haha - "I yield, it's yours." Possibly the best line this season.
+- oh, did you think that little hallway battle was the last of the dark troopers? I didn't think so, either.
+- What's the over-under on "the kid saves the day with magic"? I might take up that bet.
+- The x-wing not responding to hails tells me this is the response to Grogu's call on the force phone. I should have seen that coming from the "previously on" recap. Moments later, Jedi is confirmed.
+- I am super disappointed in the dark troopers not having a better battle plan. Wouldn't a wall of them, all shooting at the exact same time, pointing at different body parts be the best way to score a hit? A lightsaber, after all, can only block a linear series of shots. A "shotgun" blast of pewpew would thus be a strong strategy, right? And then the number of times the damn robots just straight-up missed. How does a state-of-the-art robot miss an easy shot at a stationary target?
+- At first, I'm all "wow, they found an actor with a striking resemblance to Mark Hamill. Interesting move to go with another white boy." So I was curious who this actor is and then I read that the character actually is Luke Skywalker, and now I am back to completely hating this show.
+- A post-credits Easter egg; I guess that's kinda cute. Oh, it's just a trailer for another Star Wars series. Uuugh.
+
+## End of Season Thoughts
+
+- I have never hate-watched a show as hard as I am with this one. If I wasn't live-ish blogging this, I would have stopped watching half-way through this season.
+- Give the show an Emmy nomination for original score and maybe sound editing. There might be some other valid technical awards to toss its way. It should be ignored in the acting, writing, and directing categories.
+- What could have made this a better show, in my uneducated, uninformed, unsolicited, humble opinion:
+  - Dispense with throwing away dozens of white suits with every battle. It's just filler that adds nothing to action sequences and detracts from the suspense of the scene.
+  - Find an episodic format that has more variety than "go here, find this, shoot baddies, tease next episode".
+  - Decide if this show is just for Star Wars fanatics or if it is for casual viewers. If it's for fanatics, go deeper into the lore behind the characters instead of just subtle winks and nods to references these fans would understand (I'm sure I missed a whole lot of Easter eggs). If the show is for casual viewers than give a little better explanation of why the audience should care about various characters that come and go.
+- I appreciate that the show dispensed with a cliffhanger at the end of this season. The show could wrap-up here and the only open thread seems to be Bo-Katan's continued quest to claim the throne of Mandalore.
