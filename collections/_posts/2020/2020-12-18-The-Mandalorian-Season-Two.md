@@ -8,7 +8,7 @@ tags:
 - disneyplus
 ---
 
-I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian_, so I'll keep doing that for this second season. I'm sure no one appreciates what I have to say, but at least I'm entertained by it.
+I enjoyed [jotting down my thoughts]({% post_url 2020/2020-10-31-The-Mandalorian-Season-One %}) while watching Season One of _The Mandalorian_, so I'll keep doing that for this second season. I'm sure no one appreciates what I have to say, but at least I'm entertained by it.
 
 ## Chapter 9: I Can't Marshal Any New Cute Names
 
@@ -21,14 +21,14 @@ I enjoyed jotting down my thoughts while watching Season One of _The Mandalorian
 - We just saw in the flashback that he used the sights on his helmet to fire the missile; but now he doesn't have his helmet. What if he needs to fire the missile?
 - The Replacements - I want to do a whole spoof take on using these townspeople as a replacement set of townspeople because the regular townspeople are on strike and the governor wants to carry out the season without dealing with regulars.
 - I bet it eats a bantha steed with all the explosives.
-- Acid spittle! I'll be that's miserable.
+- Acid spittle! I'll bet that's miserable.
 - Never believe it's dead on the first attempt.
 - I was definitely expecting an epic bass recorder hit when Mando came flying out of the krayt dragon.
 
 ## Chapter 10: Oh, the passenger / She rides and she rides
 
 - I have a unique idea for an opening shot - wide open dessert, the hero riding towards the camera on his steed, dust flowing behind him.
-- And hijinx ensure... that's how the plot was pitched.
+- And hijinx ensue... that's how the plot was pitched.
 - If this cargo is so damn precious, why isn't it strapped down?
 - So you're saying that through all the steering and banking, nothing fell, but a little hole in the wall and all of the cargo suddenly falls to the ground?
 - I find it hard to believe that this mother isn't FUCKING LIVID that there are missing eggs. There aren't enough in the tank to not notice that multiple are gone.
