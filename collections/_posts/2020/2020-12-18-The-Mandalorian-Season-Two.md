@@ -1,14 +1,17 @@
 ---
 layout: post
-title: The Mandalorian, Season Two - A Few Thoughts
+title: Season Two - A Few Rants
 category: Exactly One Hobby
+series: The Mandalorian
 tags:
 - starwars
 - commentary
 - disneyplus
 ---
 
-I enjoyed [jotting down my thoughts]({% post_url 2020/2020-10-31-The-Mandalorian-Season-One %}) while watching Season One of _The Mandalorian_, so I'll keep doing that for this second season. I'm sure no one appreciates what I have to say, but at least I'm entertained by it.
+I enjoyed [jotting down my thoughts]({% post_url 2020/2020-10-31-The-Mandalorian-Season-One %}) while watching Season One of _The Mandalorian_, so I'll keep doing that for this second season. I'm sure no one appreciates what I have to say, but at least I'm entertained by it. There are spoilers, but I don't care; this is best understood if you have already watched the season.
+
+{% include series.html %}
 
 ## Chapter 9: I Can't Marshal Any New Cute Names
 
