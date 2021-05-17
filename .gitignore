@@ -11,3 +11,4 @@ package.json
 /project.lock.json
 /obj
 /bin
+.skb
