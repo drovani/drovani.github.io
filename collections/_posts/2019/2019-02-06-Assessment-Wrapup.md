@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Assessment Final Notes
+title: Final Notes
 series: Technical Assessment
 category: "Rovani in C&sharp;"
 treeid: techassessment-basic/tree/8eca6ef7c2a9295b00e91aecca9268ccf46d9758

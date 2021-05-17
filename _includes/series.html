@@ -14,12 +14,10 @@
 <aside class="tableofcontents">
 	<h1>{{ page.series }} Series</h1>
 	<p>This article is <strong>Part {{ idx }}</strong> in the <strong>{{ count }}-Part</strong> Series.</p>
-	<ul>
-	{% assign count = '0' %}
+	<ol>
 	{% for post in site.posts reversed %}
 	{% if post.series == page.series %}
-		{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-		<li>Part {{ count }} - 
+		<li>
 		{% if page.url == post.url %}
 			<em>{{post.title}}</em>
 		{% else %}
@@ -28,7 +26,7 @@
 		</li>
 	{% endif %}
 	{% endfor %}
-	</ul>
+	</ol>
 </aside>
 
 {% assign count = nil %}

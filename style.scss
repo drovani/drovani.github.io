@@ -189,7 +189,7 @@ article {
   border-bottom: solid 1px $lowlight;
 }
 
-.blockcenter {
+.blockcenter, .twitter-tweet {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -295,6 +295,8 @@ table.bordered {
 
   th {
     text-align: center;
+    padding-left: 1em;
+    padding-right: 2em;
   }
 
   tfoot {
