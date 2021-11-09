@@ -18,13 +18,18 @@ When I finally saw the 800 meters sign, I decided that's where I was going to st
 
 Now, I'm officially a marathoner. I still can't bring myself to say that I've run a marathon, because I haven't. I ran 22 miles, and walked another 4. But this is what happened at my first half-marathon. I ran 12 miles, and walked the last one. Then I came back a year later, and destroyed my goal time. I'm not downtrodden, I'm not depressed, just disappointed. I'll be back next year. I may not run in the Chicago Marathon, but I'll do another Fall marathon. I'm disappointed in my finish, but I'm not finished just yet.
 
-> 3:47:14 PM me: I'm such a terrible writer. 
-3:47:44 PM Dorothea: no! I liked your posts :)! they are gripping and easy to read 
-3:48:32 PM me: haha! I'd call them rambling and incoherent. 
-3:52:09 PM Dorothea: na!!! I've an MA in literary studies, so I know what I'm talking about. so shush! 
-3:53:28 PM me: Well! I believe I just got schooled. 
+> 3:47:14 PM me: I'm such a terrible writer.
+>
+> 3:47:44 PM Dorothea: no! I liked your posts :)! they are gripping and easy to read
+>
+> 3:48:32 PM me: haha! I'd call them rambling and incoherent.
+>
+> 3:52:09 PM Dorothea: na!!! I've an MA in literary studies, so I know what I'm talking about. so shush!
+>
+> 3:53:28 PM me: Well! I believe I just got schooled.
 
 Footnote - my favorite motivational sign, which I saw at multiple points was:
 
-> Some day, you won't be able to finish a marathon 
-today is not that day.
+> Some day, you won't be able to finish a marathon
+>
+> today is not that day.
