@@ -1,3 +1,9 @@
+# Archived Repository
+
+I have since migrated my personal blog to gridsome + Netlify. Find the repo at [drovani/rovaninet](https://github.com/drovani/rovaninet).
+
+-----------------------------------------------
+
 "Rovani in C#" was supposed to be a clever little play on words - obvious but catchy. Maybe it was just lame, but it's simple and it works for me. Of course, that meant I needed to have a catchy little tagline to go with it. So I dutifully pulled the entire list of musical terms, and from that pulled three (it's always three) that seemed like I could make up as something related to what I do.
 
 ## Ostinato
